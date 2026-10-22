@@ -10,6 +10,15 @@
 | **muse**    | μοῦσα      | the muse (inspiration)    | muse-cli (model/Muse harness)                                         | live   | `pens/olympus/products/muse`                 |
 | **keryx**   | κῆρυξ      | herald                    | fleet chat                                                            | live   | `pens/olympus/products/keryx`                |
 | **hodos**   | ὁδός       | way / road                | cloud provider router                                                 | live   | `pens/olympus/products/hodos`                |
-| **kairos**  | καιρός     | the opportune moment      | (kairos runtime)                                                      | live   | `pens/olympus/products/kairos`               |
-| **kryptos** | κρυπτός    | hidden                    | (cryptography/stealth)                                                | live   | `pens/olympus/products/kryptos`              |
+| **kairos**  | καιρός     | the opportune moment      | 4-second deadline runtime & breach racer (`run-fast`)                 | live   | `pens/olympus/products/kairos`               |
+| **kryptos** | κρυπτός    | hidden                    | secretsmith keyring & stealth credentials                             | live   | `pens/olympus/products/kryptos`               |
+| **agele**   | ἀγέλη      | herd (of cattle)          | local LLM inference front door (`llama-swap` :25100; was `herd`)      | live   | `pens/olympus/products/agele`                |
+| **pinax**   | πίναξ      | tablet / catalog          | provider catalog SSOT (`@toxicwind/pinax`)                            | live   | `pens/olympus/products/pinax`                |
+| **agon**    | ἀγών       | contest / race            | code-racer benchmark & racing engine (was `furlong`)                  | live   | `pens/olympus/products/agon`                 |
+| **antilogos** | ἀντίλογος | counter-argument / debate | multi-agent debate oracle (was `duel`)                                | live   | `pens/olympus/products/antilogos`            |
+| **pylae**   | πύλαι      | gates                     | unified Tailscale/cloudflared/ngrok tunnel scaffolding                | live   | `pens/olympus/products/pylae`                |
+| **propylon** | πρόπυλον  | monumental gateway        | front-door gateway & mesh landing                                     | live   | `pens/olympus/products/propylon`             |
+| **opsis**   | ὄψις       | sight / appearance        | visual surface & viewer                                               | live   | `pens/olympus/products/opsis`                |
+| **didymos** | δίδυμος    | twin                      | twin-state synchronization & mirror                                   | live   | `pens/olympus/products/didymos`              |
+| **chronos-forge** | χρόνος | time                     | temporal build & trace forge                                          | live   | `pens/olympus/products/chronos-forge`        |
 
