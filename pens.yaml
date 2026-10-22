@@ -13,6 +13,13 @@ pens:
     local: /home/toxic/pens/ranch
 
 convention:
-  - pens is a pointer repo (manifest + registry only).
-  - '*' ignores every pen; pens is never a monorepo.
-  - No submodules; each component repo has its own GitHub remote.
+  - "pens is a pointer repo (manifest + registry only)."
+  - "'*' ignores every pen; pens is never a monorepo."
+  - "No submodules; each component repo has its own GitHub remote."
+  - "Layers (orthogonal, per component):"
+  - "  registry  .meta.yaml (ranch) / pens.yaml (pens)  — WHICH repos exist"
+  - "  vcs       jj (Jujutsu) and/or git                  — HOW history is tracked"
+  - "  runtime   mise (mise.toml, mise run/exec)         — WHICH toolchains to run with"
+  - "  build     moon (moon.yml, moon run)               — HOW to build/test each component"
+  - "  deploy    pitchfork/forge in estate               — WHERE it runs (health-checked)"
+  - "Components mix the tools they need (e.g. tau: mise+jj+git; squawk-ws: moon; campfire: moon+git)."
