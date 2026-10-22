@@ -3,13 +3,13 @@
 
 | Codename | Greek root | Meaning | Product | Lives in |
 | --- | --- | --- | --- | --- |
-| **τ τau**   | τ (tau)    | Greek letter              | the coding agent (ranch serves this one)                                         | live   | `estate/ranch/tau`                                                    |
-| **κ kappa** | κ (kappa)  | Greek letter              | code agent (runs in `kappa-code` / `kilo`)                                       | live   | `estate/ranch/kappa/kappa-code` (served by `estate/kappa-acp` :25159) |
-| **skopos**  | σκοπός     | watcher / lookout / scout | persistent browser (headed Chromium + CDP + supervisor + failover; was `keeper`) | live   | `toxicwind/skopos` (estate `ranch/keeper` daemon)                     |
-| **kilo**    | χίλιοι     | "thousand"                | kilo-code / kilo-cli toolchain                                                   | live   | `estate/ranch/kilo-code`                                              |
-| **muse**    | μοῦσα      | the muse (inspiration)    | muse-cli (model/Muse harness)                                                    | live   | `estate/ranch/muse-cli`                                               |
-| **keryx**   | κῆρυξ      | herald                    | fleet chat                                                                       | live   | `estate/ranch/keryx`                                                  |
-| **hodos**   | ὁδός       | way / road                | cloud provider router                                                            | live   | `estate/ranch/hodos`                                                  |
-| **kairos**  | καιρός     | the opportune moment      | (kairos runtime)                                                                 | live   | `estate/ranch/kairos`                                                 |
-| **kryptos** | κρυπτός    | hidden                    | (cryptography/stealth)                                                           | live   | `estate/ranch/kryptos`                                                |
+| **τ τau**   | τ (tau)    | Greek letter              | the coding agent                                                      | live   | `pens/olympus/products/tau`                  |
+| **κ kappa** | κ (kappa)  | Greek letter              | code agent (`kappa-code`) — served by `estate/kappa-acp` :25159       | live   | `pens/olympus/products/kappa`                |
+| **skopos**  | σκοπός     | watcher / lookout / scout | persistent browser (headed Chromium + CDP + supervisor; was `keeper`) | live   | `pens/olympus/products/skopos`               |
+| **kilo**    | χίλιοι     | "thousand"                | kilo-code / kilo-cli toolchain                                        | live   | `pens/olympus/products/kilo`                 |
+| **muse**    | μοῦσα      | the muse (inspiration)    | muse-cli (model/Muse harness)                                         | live   | `pens/olympus/products/muse`                 |
+| **keryx**   | κῆρυξ      | herald                    | fleet chat                                                            | live   | `pens/olympus/products/keryx`                |
+| **hodos**   | ὁδός       | way / road                | cloud provider router                                                 | live   | `pens/olympus/products/hodos`                |
+| **kairos**  | καιρός     | the opportune moment      | (kairos runtime)                                                      | live   | `pens/olympus/products/kairos`               |
+| **kryptos** | κρυπτός    | hidden                    | (cryptography/stealth)                                                | live   | `pens/olympus/products/kryptos`              |
 
