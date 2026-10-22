@@ -21,6 +21,7 @@ generate_ignore() {
     echo "*"
     echo "!.gitignore"
     echo "!pensctl"
+    echo "!pens.yaml"
   } > "$ignore"
   echo "regenerated $ignore"
 }
