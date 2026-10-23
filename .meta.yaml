@@ -1,0 +1,482 @@
+# ranch/.meta.yaml — the multi-repo manifest (meta 0.2.22+).
+# Generated from the peer model (meta-themes + on-disk standalone clones) —
+# repos are PEERS, not submodules: each stays an independent clone with its
+# own history. Sync with
+#   meta git update       # clone missing + pull all
+#   meta git status       # per-repo state
+#   meta exec '<cmd>'     # run any command across every component
+# Regenerate: bun toolkit/gen-meta-manifest.ts
+# CATEGORIZED by theme (DATA-DRIVEN from .meta-themes.yaml — see
+# toolkit/THEME-DESIGN.md §2 for the bounded-context holders; "general"
+# is the honest fallback). NO .gitmodules dependency (submodule doctrine is
+# retired — repos are peers). Edit the DATA, never this generator.
+
+olympus:
+  "agon":
+    repo: https://github.com/toxicwind/agon.git
+  "antilogos":
+    repo: https://github.com/toxicwind/antilogos.git
+  "arroyo":
+    repo: https://github.com/toxicwind/arroyo.git
+  "chronos-forge":
+    repo: https://github.com/toxicwind/chronos-forge.git
+  "didymos":
+    repo: https://github.com/toxicwind/didymos.git
+  "hodos":
+    repo: https://github.com/toxicwind/hodos.git
+  "kairos":
+    repo: https://github.com/toxicwind/kairos.git
+  "keryx":
+    repo: https://github.com/toxicwind/keryx.git
+  "kilo":
+    repo: https://github.com/toxicwind/kilo.git
+  "kryptos":
+    repo: https://github.com/toxicwind/kryptos.git
+  "muse-cli":
+    repo: https://github.com/toxicwind/muse-cli.git
+  "olympus":
+    repo: https://github.com/toxicwind/olympus.git
+  "opsis":
+    repo: https://github.com/toxicwind/opsis.git
+  "pinax":
+    repo: https://github.com/toxicwind/pinax.git
+  "skopos":
+    repo: https://github.com/toxicwind/skopos.git
+  "tau-verify":
+    repo: https://github.com/toxicwind/tau.git
+  "tau/tau-extensions":
+    repo: https://github.com/toxicwind/tau-extensions.git
+
+ranch-structure:
+  "barn":
+    repo: https://github.com/toxicwind/barn.git
+  "barn/corral":
+    repo: ./barn/corral
+  "barn/flatbread":
+    repo: https://github.com/toxicwind/flatbread.git
+  "barn/nativelink":
+    repo: https://github.com/toxicwind/nativelink.git
+  "barn/rosec":
+    repo: https://github.com/toxicwind/rosec.git
+  "barn/weave":
+    repo: https://github.com/toxicwind/weave.git
+  "barn/weave-sub":
+    repo: https://github.com/toxicwind/weave.git
+  "borrowed/herdr":
+    repo: https://github.com/ogulcancelik/herdr.git
+  "corral":
+    repo: https://github.com/toxicwind/corral.git
+  "flicker":
+    repo: https://github.com/toxicwind/flicker.git
+  "forge":
+    repo: https://github.com/toxicwind/forge.git
+  "forge/router/weasel":
+    repo: https://github.com/diegosouzapw/OmniRoute
+  "forge/web":
+    repo: https://github.com/toxicwind/CMSaasStarter.git
+  "herd":
+    repo: https://github.com/toxicwind/herd.git
+  "herdproof-bun":
+    repo: https://github.com/toxicwind/herdproof-bun.git
+  "skillforge":
+    repo: https://github.com/toxicwind/skillforge.git
+
+gatehouse-mcp:
+  "bridge":
+    repo: https://github.com/toxicwind/bridge.git
+  "doorbell":
+    repo: https://github.com/toxicwind/doorbell.git
+  "identity-router":
+    repo: https://github.com/toxicwind/identity-router.git
+  "mcp":
+    repo: https://github.com/toxicwind/mcp.git
+  "mcp/mcp-prompt-injection-detector":
+    repo: https://github.com/thilinawishvekeerthi/mcp-prompt-injection-detector.git
+  "mcp/mcpproxy-go":
+    repo: https://github.com/toxicwind/mcpproxy-go.git
+  "mcp/pd-mcp-standalone":
+    repo: https://github.com/toxicwind/pd-mcp.git
+  "mcp/rsync-mcp":
+    repo: https://github.com/toxicwind/rsync-mcp.git
+  "mcpproxy-go":
+    repo: https://github.com/toxicwind/mcpproxy-go.git
+  "null-g-proxy":
+    repo: https://github.com/toxicwind/null-g-proxy.git
+  "OmniRoute":
+    repo: https://github.com/toxicwind/OmniRoute.git
+  "session-bus-refresh":
+    repo: https://github.com/toxicwind/session-bus-refresh.git
+  "universal-keypool-bun":
+    repo: https://github.com/toxicwind/universal-keypool-bun.git
+  "universal-keypool-gateway":
+    repo: https://github.com/toxicwind/universal-keypool-gateway.git
+  "VansRouter":
+    repo: https://github.com/toxicwind/VansRouter.git
+
+oracle:
+  "antilogos/vendor/argus-ai-debate":
+    repo: https://github.com/Argus-Framework/argus-ai-debate.git
+  "antilogos/vendor/ChatEval":
+    repo: https://github.com/thunlp/ChatEval.git
+  "antilogos/vendor/debate-or-vote":
+    repo: https://github.com/deeplearning-wisc/debate-or-vote.git
+  "antilogos/vendor/llm_debate":
+    repo: https://github.com/ucl-dark/llm_debate.git
+  "gavel":
+    repo: https://github.com/toxicwind/gavel.git
+  "gavel/vendor/agora":
+    repo: https://github.com/KAIJUJO/Agora.git
+  "gavel/vendor/auction-agent11":
+    repo: https://github.com/wushuchris/11-distributed-auction-task-allocation-agent.git
+  "gavel/vendor/contract-net-router":
+    repo: https://github.com/M00C1FER/contract-net-router.git
+  "outsource":
+    repo: https://github.com/toxicwind/outsource.git
+  "trading-post":
+    repo: https://github.com/toxicwind/trading-post.git
+
+corral:
+  "android-fleet":
+    repo: https://github.com/toxicwind/android-fleet.git
+  "dots-client":
+    repo: https://github.com/toxicwind/dots-client.git
+  "drover":
+    repo: https://github.com/toxicwind/drover.git
+  "extensions/drover":
+    repo: https://github.com/toxicwind/drover.git
+  "fleet":
+    repo: https://github.com/toxicwind/fleet.git
+  "fleet-chat":
+    repo: https://github.com/toxicwind/fleet-chat.git
+  "fleet-ops":
+    repo: https://github.com/toxicwind/fleet-ops.git
+  "fleetd":
+    repo: https://github.com/toxicwind/fleetd.git
+  "kodi-fleet":
+    repo: https://github.com/toxicwind/kodi-fleet.git
+  "mission-control":
+    repo: https://github.com/toxicwind/mission-control.git
+  "super-board":
+    repo: https://github.com/toxicwind/super-board.git
+  "workmux":
+    repo: https://github.com/toxicwind/workmux.git
+
+estate-ops:
+  "ai-merge-resolve":
+    repo: https://github.com/toxicwind/ai-merge-resolve.git
+  "cron-trust":
+    repo: https://github.com/toxicwind/cron-trust.git
+  "dashboard":
+    repo: https://github.com/toxicwind/dashboard.git
+  "dedicated/dedicated-server-ops":
+    repo: https://github.com/toxicwind/dedi-ops.git
+  "estate-chat":
+    repo: https://github.com/toxicwind/estate-chat.git
+  "estate-dispersal":
+    repo: https://github.com/toxicwind/estate-dispersal.git
+  "estate-dispersal-monolith":
+    repo: https://github.com/toxicwind/estate-dispersal-monolith.git
+  "estate-end4":
+    repo: https://github.com/toxicwind/estate-end4.git
+  "estate-hatch-toolkit":
+    repo: https://github.com/toxicwind/estate-hatch-toolkit.git
+  "estate-kappa-plugin":
+    repo: https://github.com/toxicwind/estate-kappa-plugin.git
+  "estate-monitor":
+    repo: https://github.com/toxicwind/estate-monitor.git
+  "estate-recon":
+    repo: https://github.com/toxicwind/estate-recon.git
+  "estate-scripts-dispersal":
+    repo: https://github.com/toxicwind/estate-scripts-dispersal.git
+  "estate-scripts-end4":
+    repo: https://github.com/toxicwind/estate-scripts-end4.git
+  "estate-scripts-scripts":
+    repo: https://github.com/toxicwind/estate-scripts-scripts.git
+  "estate-scripts-skills":
+    repo: https://github.com/toxicwind/estate-scripts-skills.git
+  "estate-shell":
+    repo: https://github.com/toxicwind/estate-shell.git
+  "estate-skills":
+    repo: https://github.com/toxicwind/estate-skills.git
+  "estate-skills-hub":
+    repo: https://github.com/toxicwind/estate-skills-hub.git
+  "estate-whoa-breakthrough":
+    repo: https://github.com/toxicwind/estate-whoa-breakthrough.git
+  "host-proof":
+    repo: https://github.com/toxicwind/host-proof.git
+  "ledger":
+    repo: https://github.com/toxicwind/ledger.git
+  "ops":
+    repo: https://github.com/toxicwind/ops.git
+  "pack-fix":
+    repo: https://github.com/toxicwind/pack-fix.git
+  "paper-poller":
+    repo: https://github.com/toxicwind/paper-poller.git
+  "toxicwind-repos":
+    repo: https://github.com/toxicwind/toxicwind-repos
+
+herd:
+  "godzilla-llama.cpp":
+    repo: https://github.com/toxicwind/godzilla-llama.cpp.git
+  "hf-model-sync":
+    repo: https://github.com/toxicwind/hf-model-sync.git
+  "ml-serve":
+    repo: https://github.com/toxicwind/ml-serve.git
+  "nvidia-alive":
+    repo: https://github.com/toxicwind/nvidia-alive.git
+  "nvidia-kernel-guard":
+    repo: https://github.com/toxicwind/nvidia-kernel-guard.git
+  "nvidia-nim-model-probe":
+    repo: https://github.com/toxicwind/nvidia-nim-model-probe.git
+  "openrouter-probe":
+    repo: https://github.com/toxicwind/openrouter-probe.git
+
+skills:
+  "agent-customization-style-guide":
+    repo: https://github.com/toxicwind/agent-customization-style-guide.git
+  "bash-style-guide":
+    repo: https://github.com/toxicwind/bash-style-guide.git
+  "classifier":
+    repo: https://github.com/toxicwind/classifier.git
+  "classifier-preflight":
+    repo: https://github.com/toxicwind/classifier-preflight.git
+  "naming-audit":
+    repo: https://github.com/toxicwind/naming-audit.git
+  "outlier-toolkit":
+    repo: https://github.com/toxicwind/outlier-toolkit.git
+  "safety-review-gate":
+    repo: https://github.com/toxicwind/safety-review-gate.git
+
+security:
+  "keep":
+    repo: https://github.com/toxicwind/keep.git
+  "leakfix-src":
+    repo: https://github.com/toxicwind/leakfix-src.git
+  "pdfshield":
+    repo: https://github.com/purvalsingh/pdfshield.git
+  "rust-wrappers":
+    repo: https://github.com/toxicwind/rust-wrappers.git
+  "secretsmith":
+    repo: https://github.com/toxicwind/secretsmith.git
+  "stealthprint":
+    repo: https://github.com/toxicwind/stealthprint.git
+
+research:
+  "AgentForensics":
+    repo: https://github.com/aparnaa19/AgentForensics.git
+  "agon/vendor/coder_reviewer_reranking":
+    repo: https://github.com/facebookresearch/coder_reviewer_reranking.git
+  "agon/vendor/RACE":
+    repo: https://github.com/jszheng21/RACE.git
+  "agon/vendor/speed-run":
+    repo: https://github.com/2389-research/speed-run.git
+  "agon/vendor/SRank-CodeRanker":
+    repo: https://github.com/FSoft-AI4Code/SRank-CodeRanker.git
+  "bench-radar":
+    repo: https://github.com/toxicwind/bench-radar.git
+  "bugbounty":
+    repo: https://github.com/toxicwind/bugbounty.git
+  "disparate-latent-experiment":
+    repo: https://github.com/toxicwind/disparate-latent-experiment.git
+  "dualspace-ast-bm25-hybrid":
+    repo: https://github.com/toxicwind/dualspace-ast-bm25-hybrid.git
+  "emergent":
+    repo: https://github.com/toxicwind/emergent.git
+  "fanout":
+    repo: https://github.com/toxicwind/fanout.git
+  "fast-race":
+    repo: https://github.com/toxicwind/fast-race.git
+  "ferret-den":
+    repo: https://github.com/toxicwind/ferret-den.git
+  "ffs-diff":
+    repo: https://github.com/toxicwind/ffs-diff.git
+  "gayxxx-estate":
+    repo: https://github.com/toxicwind/gayxxx-estate.git
+  "meta-research-toolkit":
+    repo: https://github.com/toxicwind/meta-research-toolkit.git
+  "metaaivm":
+    repo: https://github.com/toxicwind/metaaivm.git
+  "metaaivm-profile":
+    repo: https://github.com/toxicwind/metaaivm-profile.git
+  "metaclaw-runtime":
+    repo: https://github.com/toxicwind/metaclaw-runtime.git
+  "refusal-hunt":
+    repo: https://github.com/toxicwind/refusal-hunt.git
+  "roundup-site":
+    repo: https://github.com/owieth/turborepo-example
+  "wezterm":
+    repo: https://github.com/toxicwind/wezterm.git
+
+websites:
+  "websites/arlockworks/app":
+    repo: https://github.com/toxicwind/arlockworks-next.git
+  "websites/arlockworks/main":
+    repo: https://github.com/toxicwind/arlockworks-core.git
+  "websites/effusionlabs/main":
+    repo: https://github.com/toxicwind/effusion-labs.git
+  "websites/effusionlabs/tickets":
+    repo: https://github.com/toxicwind/effusion-labs-tickets.git
+
+nim:
+  "nim-inkling-api-research":
+    repo: https://github.com/toxicwind/nim-inkling-api-research.git
+  "nim-omnibus":
+    repo: https://github.com/toxicwind/nim-omnibus.git
+  "nim-repos/api-evangelist-nvidia-nim":
+    repo: https://github.com/api-evangelist/nvidia-nim
+  "nim-repos/bauka0-nvidia-nim-provider":
+    repo: https://github.com/bauka0/nvidia-nim-provider
+  "nim-repos/david-eve-za-nvidia-nim-mcp":
+    repo: https://github.com/david-eve-za/nvidia-nim-mcp
+  "nim-repos/diegovisk-pi-nvidia-nim":
+    repo: https://github.com/diegovisk/pi-nvidia-nim
+  "nim-repos/furqanafridi-free-claude-code":
+    repo: https://github.com/furqanafridi/free-claude-code
+  "nim-repos/gabriel-ferraresi-NIMGEN":
+    repo: https://github.com/gabriel-ferraresi/NIMGEN
+  "nim-repos/Gitlawb-openclaude":
+    repo: https://github.com/Gitlawb/openclaude
+  "nim-repos/h0rcrux-hermes-backup":
+    repo: https://github.com/h0rcrux/hermes-backup
+  "nim-repos/iammalego-keymux":
+    repo: https://github.com/iammalego/keymux
+  "nim-repos/joeldg-nvidiarouter":
+    repo: https://github.com/joeldg/nvidiarouter
+  "nim-repos/lizhebio-nim-qwen-model-router":
+    repo: https://github.com/lizhebio/nim-qwen-model-router
+  "nim-repos/lucky-mandator-gocode-router":
+    repo: https://github.com/lucky-mandator/gocode-router
+  "nim-repos/mschwarzmueller-pi_agent_rust":
+    repo: https://github.com/mschwarzmueller/pi_agent_rust
+  "nim-repos/musistudio-claude-code-router":
+    repo: https://github.com/musistudio/claude-code-router
+  "nim-repos/nezerkc-opencode-provider-nvidia-nim":
+    repo: https://github.com/nezerkc/opencode-provider-nvidia-nim
+  "nim-repos/nirholas-three.ws":
+    repo: https://github.com/nirholas/three.ws
+  "nim-repos/NVIDIA-NemoClaw":
+    repo: https://github.com/NVIDIA/NemoClaw
+  "nim-repos/olszalsik-a0-nvidia-nim":
+    repo: https://github.com/olszalsik/a0-nvidia-nim
+  "nim-repos/rickeshtn-nim-code":
+    repo: https://github.com/rickeshtn/nim-code
+  "nim-repos/Sateeshreddymaddi-Custom-Nvidia-Nim-Node":
+    repo: https://github.com/Sateeshreddymaddi/Custom-Nvidia-Nim-Node
+  "nim-repos/shaivpidadi-freeridev3":
+    repo: https://github.com/shaivpidadi/freeridev3
+  "nim-repos/stillhue-claudio":
+    repo: https://github.com/stillhue/claudio
+  "nim-repos/thispointon-kondi":
+    repo: https://github.com/thispointon/kondi
+  "nim-repos/tibbee-pi-nvidia-nim-provider":
+    repo: https://github.com/tibbee/pi-nvidia-nim-provider
+  "nim-repos/xRyul-pi-nvidia-nim":
+    repo: https://github.com/xRyul/pi-nvidia-nim
+
+general:
+  "ast-grep-rules":
+    repo: https://github.com/toxicwind/ast-grep-rules.git
+  "auto1m":
+    repo: https://github.com/toxicwind/auto1m.git
+  "awesome-free-ai-coding":
+    repo: https://github.com/toxicwind/awesome-free-ai-coding.git
+  "borrowed/loom":
+    repo: https://github.com/rjwalters/loom.git
+  "campfire":
+    repo: https://github.com/toxicwind/campfire.git
+  "codebase-memory":
+    repo: https://github.com/toxicwind/codebase-memory.git
+  "computer-use-linux":
+    repo: https://github.com/toxicwind/computer-use-linux.git
+  "duel/vendor/argus-ai-debate":
+    repo: https://github.com/Argus-Framework/argus-ai-debate.git
+  "duel/vendor/ChatEval":
+    repo: https://github.com/thunlp/ChatEval.git
+  "duel/vendor/debate-or-vote":
+    repo: https://github.com/deeplearning-wisc/debate-or-vote.git
+  "duel/vendor/llm_debate":
+    repo: https://github.com/ucl-dark/llm_debate.git
+  "examples":
+    repo: https://github.com/toxicwind/examples.git
+  "extensions":
+    repo: https://github.com/toxicwind/extensions.git
+  "freebuffet":
+    repo: https://github.com/toxicwind/freebuffet.git
+  "furlong/vendor/coder_reviewer_reranking":
+    repo: https://github.com/facebookresearch/coder_reviewer_reranking.git
+  "furlong/vendor/RACE":
+    repo: https://github.com/jszheng21/RACE.git
+  "furlong/vendor/speed-run":
+    repo: https://github.com/2389-research/speed-run.git
+  "furlong/vendor/SRank-CodeRanker":
+    repo: https://github.com/FSoft-AI4Code/SRank-CodeRanker.git
+  "ghq":
+    repo: https://github.com/toxicwind/ghq.git
+  "github-search":
+    repo: https://github.com/toxicwind/github-search.git
+  "gito":
+    repo: https://github.com/toxicwind/gito.git
+  "hatch":
+    repo: https://github.com/toxicwind/hatch.git
+  "hatch-decode":
+    repo: https://github.com/toxicwind/hatch-decode.git
+  "hatch/kite-cli":
+    repo: https://github.com/toxicwind/kite-cli.git
+  "kimi-auto":
+    repo: https://github.com/toxicwind/kimi-auto.git
+  "kimi-claw":
+    repo: https://github.com/toxicwind/kimi-claw.git
+  "lasso":
+    repo: https://github.com/toxicwind/lasso.git
+  "lib":
+    repo: https://github.com/toxicwind/lib.git
+  "loom":
+    repo: https://github.com/toxicwind/loom.git
+  "matter-server":
+    repo: https://github.com/toxicwind/matter-server.git
+  "maw":
+    repo: https://github.com/toxicwind/maw.git
+  "mesh":
+    repo: https://github.com/toxicwind/mesh.git
+  "mesh/pylae":
+    repo: https://github.com/toxicwind/flocksync.git
+  "nuvio":
+    repo: https://github.com/toxicwind/nuvio.git
+  "oh-my-pi":
+    repo: https://github.com/toxicwind/oh-my-pi.git
+  "openfang":
+    repo: https://github.com/toxicwind/openfang.git
+  "openfang-join":
+    repo: https://github.com/toxicwind/openfang-join.git
+  "pearlctl":
+    repo: https://github.com/toxicwind/pearlctl.git
+  "phone-lane":
+    repo: https://github.com/toxicwind/phone-lane.git
+  "phone-ocr-sweep":
+    repo: https://github.com/toxicwind/phone-ocr-sweep.git
+  "pj-fast":
+    repo: https://github.com/toxicwind/pj-fast.git
+  "plugin-ecosystem":
+    repo: https://github.com/toxicwind/plugin-ecosystem.git
+  "plugin-ecosystem/agentpluginzoo":
+    repo: https://github.com/tezansahu/agentpluginzoo.git
+  "ralph-dashboard":
+    repo: https://github.com/toxicwind/ralph-dashboard.git
+  "repo-first-class":
+    repo: https://github.com/toxicwind/repo-first-class.git
+  "rig":
+    repo: https://github.com/toxicwind/rig.git
+  "strudel-dev-vite":
+    repo: https://github.com/toxicwind/strudel-dev-vite.git
+  "strudel-sampler-server-vite":
+    repo: https://github.com/toxicwind/strudel-sampler-server-vite.git
+  "submodules/phone-sentinel":
+    repo: /home/toxic/phone-sentinel
+  "tok":
+    repo: https://github.com/toxicwind/tok.git
+  "tools/c8":
+    repo: https://github.com/bcoe/c8.git
+  "vendor/tailnet-doctor":
+    repo: https://github.com/toxicwind/tailnet-doctor.git
+  "zed-android-port":
+    repo: https://github.com/toxicwind/zed-android-port.git

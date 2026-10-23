@@ -1,0 +1,198 @@
+# .meta-themes.yaml — the canonical theme → repo classification (data, not code).
+#
+# Read by toolkit/gen-meta-manifest.ts (dumb generator: `map[path] ?? map[topLevel]
+# ?? general`, zero kindlex/prefix heuristics, no code monkey-patch). Grounded by
+# DDD bounded-context + HiGitClass/MUDABlue (papers in THEME-DESIGN.md): holders are
+# domains named by responsibility; this map is CURATED DATA, maintained by slices.
+#
+# A repo belongs to exactly one holder. `submodules`, `tools`, `vendor` are NEVER
+# holders (tracking ≠ domain). Unknown repos fall to `general` — honest fallback.
+
+# olympus — Greek-coded products (the pantheon: τ, κ, skopos, kilo, muse, agele, ...).
+olympus:
+  - "agele"
+  - "agon"
+  - "antilogos"
+  - "tau/tau-extensions"
+  - "tau-verify"
+  - "skopos"
+  - "kilo"
+  - "muse-cli"
+  - "keryx"
+  - "hodos"
+  - "kairos"
+  - "kryptos"
+  - "pinax"
+  - "pylae"
+  - "propylon"
+  - "opsis"
+  - "arroyo"
+  - "chronos-forge"
+  - "didymos"
+  - "olympus"
+
+# ranch-structure — the venture's pens, shelters & build infra (NOT Greek).
+ranch-structure:
+  - "barn"
+  - "barn/corral"
+  - "barn/flatbread"
+  - "barn/nativelink"
+  - "barn/rosec"
+  - "barn/weave"
+  - "barn/weave-sub"
+  - "borrowed/herdr"
+  - "corral"
+  - "flicker"
+  - "forge"
+  - "forge/router/weasel"
+  - "forge/web"
+  - "herd"
+  - "herdproof-bun"
+  - "skillforge"
+
+# gatehouse-mcp — connectivity (MCP gateways, routers, drop-ins).
+gatehouse-mcp:
+  - "OmniRoute"
+  - "VansRouter"
+  - "bridge"
+  - "doorbell"
+  - "identity-router"
+  - "mcp"
+  - "mcp/mcp-prompt-injection-detector"
+  - "mcp/mcpproxy-go"
+  - "mcp/pd-mcp-standalone"
+  - "mcp/rsync-mcp"
+  - "mcpproxy-go"
+  - "null-g-proxy"
+  - "session-bus-refresh"
+  - "universal-keypool-bun"
+  - "universal-keypool-gateway"
+
+# oracle — the agent-market (auction, debate, trading).
+oracle:
+  - "antilogos/vendor/argus-ai-debate"
+  - "antilogos/vendor/ChatEval"
+  - "antilogos/vendor/debate-or-vote"
+  - "antilogos/vendor/llm_debate"
+  - "gavel"
+  - "gavel/vendor/agora"
+  - "gavel/vendor/auction-agent11"
+  - "gavel/vendor/contract-net-router"
+  - "outsource"
+  - "trading-post"
+
+# corral — orchestration & fleet control.
+corral:
+  - "android-fleet"
+  - "dots-client"
+  - "drover"
+  - "extensions/drover"
+  - "fleet"
+  - "fleet-chat"
+  - "fleet-ops"
+  - "fleetd"
+  - "kodi-fleet"
+  - "mission-control"
+  - "super-board"
+  - "workmux"
+
+# estate-ops — estate-level operations / control planes.
+estate-ops:
+  - "ai-merge-resolve"
+  - "cron-trust"
+  - "dashboard"
+  - "dedicated/dedicated-server-ops"
+  - "estate-chat"
+  - "estate-dispersal"
+  - "estate-dispersal-monolith"
+  - "estate-end4"
+  - "estate-hatch-toolkit"
+  - "estate-kappa-plugin"
+  - "estate-monitor"
+  - "estate-recon"
+  - "estate-scripts-dispersal"
+  - "estate-scripts-end4"
+  - "estate-scripts-scripts"
+  - "estate-scripts-skills"
+  - "estate-shell"
+  - "estate-skills"
+  - "estate-skills-hub"
+  - "estate-whoa-breakthrough"
+  - "host-proof"
+  - "ledger"
+  - "ops"
+  - "pack-fix"
+  - "paper-poller"
+  - "toxicwind-repos"
+
+# herd — models & inference.
+herd:
+  - "godzilla-llama.cpp"
+  - "hf-model-sync"
+  - "ml-serve"
+  - "nvidia-alive"
+  - "nvidia-kernel-guard"
+  - "nvidia-nim-model-probe"
+  - "openrouter-probe"
+
+# skills — authoring/mentoring (guide + classifier + naming tools).
+skills:
+  - "agent-customization-style-guide"
+  - "bash-style-guide"
+  - "classifier"
+  - "classifier-preflight"
+  - "naming-audit"
+  - "outlier-toolkit"
+  - "safety-review-gate"
+
+# security — secrets, trust, hardening.
+security:
+  - "keep"
+  - "leakfix-src"
+  - "pdfshield"
+  - "rust-wrappers"
+  - "secretsmith"
+  - "stealthprint"
+
+# research — audits, hunts, labs, benchmarks (experiment work).
+research:
+  - "AgentForensics"
+  - "bench-radar"
+  - "bugbounty"
+  - "disparate-latent-experiment"
+  - "dualspace-ast-bm25-hybrid"
+  - "emergent"
+  - "fanout"
+  - "fast-race"
+  - "ferret-den"
+  - "ffs-diff"
+  - "agon/vendor/RACE"
+  - "agon/vendor/SRank-CodeRanker"
+  - "agon/vendor/coder_reviewer_reranking"
+  - "agon/vendor/speed-run"
+  - "gayxxx-estate"
+  - "meta-research-toolkit"
+  - "metaaivm"
+  - "metaaivm-profile"
+  - "metaclaw-runtime"
+  - "refusal-hunt"
+  - "roundup-site"
+  - "wezterm"
+
+# websites — deployed sites (prefix-matched).
+websites:
+  - "websites/arlockworks/app"
+  - "websites/arlockworks/main"
+  - "websites/effusionlabs/main"
+  - "websites/effusionlabs/tickets"
+
+# nim — nvidia-NIM provider/router cluster (prefix-matched: nim-repos/*).
+nim:
+  - "nim-inkling-api-research"
+  - "nim-omnibus"
+  # nim-repos/* members ride the nim prefix (whitelisted below)
+
+# prefixes — whitelist only; nested members must be audited before riding.
+prefixes:
+  nim: ["nim-repos/", "nim-"]
+  websites: ["websites/"]
