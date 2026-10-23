@@ -53,164 +53,51 @@ for (const name of GREEK_PRODUCTS) {
 
 let olympusReadme = readFileSync(OLYMPUS_README, "utf8");
 
-// Find the pantheon table by scanning from "## The pantheon" header
-const pantheonIdx = olympusReadme.indexOf("## The pantheon");
-if (pantheonIdx === -1) {
-  console.error("Could not find '## The pantheon' section in olympus/README.md");
+// Verify table has GitHub Repo column (it should already — we wrote it cleanly)
+if (!olympusReadme.includes("GitHub Repo")) {
+  console.error("olympus/README.md missing GitHub Repo column — run ./pensctl generate-all to fix");
   process.exit(1);
 }
 
-// Extract the table: all consecutive | lines after the section header
-const afterHeader = olympusReadme.slice(pantheonIdx);
-const tableLines: string[] = [];
-let tableStart = -1;
-for (const line of afterHeader.split("\n")) {
-  if (tableStart === -1) {
-    if (line.trim().startsWith("|")) {
-      tableStart = tableLines.length;
-    }
-  }
-  if (line.trim().startsWith("|")) {
-    tableLines.push(line);
-  } else if (tableStart !== -1) {
-    break;
+// Regenerate olympus-pantheon.md from the pantheon table in olympus/README.md
+const pantheonLines: string[] = [];
+let collecting = false;
+for (const line of olympusReadme.split("\n")) {
+  if (line.includes("## The pantheon")) { collecting = true; continue; }
+  if (collecting) {
+    if (line.startsWith("|") && line.includes("## ")) break;
+    if (line.startsWith("|")) pantheonLines.push(line);
+    else if (pantheonLines.length > 0) break;
   }
 }
 
-if (tableLines.length < 4) {
-  console.error("Pantheon table too short in olympus/README.md");
-  process.exit(1);
-}
-
-const headerRow = tableLines[0];
-const sepRow = tableLines[1];
-const dataRows = tableLines.slice(2).join("\n");
-
-// Add "GitHub Repo" column before "Status" column
-// Count real (non-empty) header body columns (between first and last |)
-const rawHeaderCells = headerRow.split("|");
-const hBodyCells = rawHeaderCells.slice(1, -1);
-let statusInBody = -1;
-for (let i = 0; i < hBodyCells.length; i++) {
-  if (hBodyCells[i].toLowerCase().includes("status")) {
-    statusInBody = i;
-    break;
-  }
-}
-const ghBodyIdx = statusInBody >= 0 ? statusInBody : hBodyCells.length - 1;
-
-// Build new header with GitHub Repo column
-const newHBody = [...hBodyCells];
-newHBody.splice(ghBodyIdx, 0, "GitHub Repo");
-const newHeader = "|" + newHBody.map(c => " " + c.trim() + " ").join("|") + "|";
-
-// Sep row
-const rawSepCells = sepRow.split("|");
-const sBodyCells = rawSepCells.slice(1, -1);
-const newSBody = [...sBodyCells];
-newSBody.splice(ghBodyIdx, 0, "-------");
-const newSep = "|" + newSBody.join("|") + "|";
-
-// Data rows — insert GitHub Repo link before Status column
-const newRows = dataRows
-  .split("\n")
-  .filter(row => row.trim().startsWith("|"))
-  .map(row => {
-    const rawC = row.split("|");
-    const bodyCols = rawC.slice(1, -1);
-    // Codename: extract from Greek root cell (bodyCols[1]) which has "(codename)" format
-    const greekRoot = bodyCols[1]?.trim() || "";
-    const parenMatch = greekRoot.match(/\(([^)]+)\)/);
-    const codename = parenMatch ? parenMatch[1].toLowerCase().trim() : (bodyCols[0]?.trim().replace(/[^a-zA-Z0-9-]/g, "") || "");
-    const url = `https://github.com/toxicwind/${codename}`;
-    const slug = codename;
-    const link = `[${slug}](${url})`;
-    const newBody = [...bodyCols];
-    newBody.splice(ghBodyIdx, 0, link);
-    return "|" + newBody.join("|") + "|";
-  });
-
-// Rebuild the entire table
-const fullTable = [newHeader, newSep, ...newRows].join("\n");
-// Replace the old table block with the new one
-const oldTableBlock = headerRow + "\n" + sepRow + "\n" + dataRows;
-olympusReadme = olympusReadme.replace(oldTableBlock, fullTable);
-writeFileSync(OLYMPUS_README, olympusReadme);
-console.log("Updated olympus/README.md with GitHub Repo column");
-
-// ── 3. Generate olympus-pantheon.md ──────────────────────────────────────
-
+// Generate olympus-pantheon.md with deep GitHub links
 let pantheonMd = "# Olympus Pantheon — Greek-Coded Products\n\n";
 pantheonMd += "Deep GitHub links + local paths for every Greek-coded product.\n\n";
 pantheonMd += "| Codename | Meaning | GitHub Repo | Local Path |\n";
 pantheonMd += "| --- | --- | --- | --- |\n";
 
-for (const name of GREEK_PRODUCTS) {
-  const url = repoMap.get(name)!;
-  const slug = url.replace(/^https?:\/\/github\.com\//, "").replace(/\/$/, "");
-  const meaning = getMeaning(name);
-  pantheonMd += `| **${name}** | ${meaning} | [${slug}](${url}) | \`olympus/products/${name}\` |\n`;
+for (const entry of pantheonLines.slice(2)) {
+  // Extract codename from first cell
+  const cells = entry.split("|");
+  const codenameCell = cells[1]?.trim() || "";
+  const codename = codenameCell.replace(/[^a-zA-Z0-9-]/g, "").split(/\s+/)[0] || "";
+  const meaning = cells[3]?.trim() || codename;
+  // Extract GitHub repo link from column before Status
+  const ghCell = cells[5]?.trim() || "";
+  const linkMatch = ghCell.match(/\[([^\]]+)\]\(([^)]+)\)/);
+  const repoLink = linkMatch ? `[${linkMatch[1]}](${linkMatch[2]})` : ghCell;
+  // Extract local path
+  const pathCell = cells[cells.length - 1]?.trim() || "";
+  const pathMatch = pathCell.match(/`([^`]+)`/);
+  const localPath = pathMatch ? pathMatch[1] : "";
+  pantheonMd += `| **${codename}** | ${meaning} | ${repoLink} | \`${localPath}\` |\n`;
 }
 
 writeFileSync(join(PENS_ROOT, "olympus-pantheon.md"), pantheonMd);
 console.log("Generated olympus-pantheon.md");
 
-// ── 4. Generate pens.yaml ────────────────────────────────────────────────
 
-// Read ranch .meta.yaml
-const metaRaw = readFileSync(RANCH_META, "utf8");
-const meta = parseYaml(metaRaw);
-
-const PENS_URLS: Record<string, string> = {
-  estate: "https://github.com/toxicwind/estate",
-  pens: "https://github.com/toxicwind/pens",
-  olympus: "https://github.com/toxicwind/olympus",
-  ranch: "https://github.com/toxicwind/ranch",
-};
-
-let yaml = "# pens.yaml — AUTO-GENERATED by toolkit/generate-manifest.ts\n";
-yaml += "# Do not edit by hand. Regenerate: bun toolkit/generate-manifest.ts\n\n";
-yaml += "pens:\n";
-for (const [name, url] of Object.entries(PENS_URLS)) {
-  yaml += `  ${name}:\n    local: ${join(PENS_ROOT, name)}\n    repo: ${url}\n`;
-}
-yaml += `  archive:\n    local: ${join(PENS_ROOT, "archive")}\n    repo: local-dir\n`;
-
-yaml += "\nolympus_pantheon:\n";
-for (const name of GREEK_PRODUCTS) {
-  const url = repoMap.get(name)!;
-  const slug = url.replace(/^https?:\/\/github\.com\//, "").replace(/\/$/, "");
-  const meaning = getMeaning(name);
-  yaml += `  ${name}:\n    root: olympus/products/${name}\n    meaning: "${meaning}"\n    local: ${join(PENS_ROOT, "olympus", "products", name)}\n    repo: ${url}\n`;
-}
-
-yaml += "\nranch_holders:\n";
-const holderKeys = Object.keys(meta);
-for (const holder of holderKeys) {
-  const entries = meta[holder] as Record<string, { repo?: string }>;
-  const repoUrls = new Set<string>();
-  let total = 0;
-  if (entries) {
-    for (const [k, v] of Object.entries(entries)) {
-      total++;
-      if (v?.repo) {
-        const url = v.repo.replace(/\.git$/, "").replace(/^https?:\/\//, "https://");
-        if (url.startsWith("https://github.com/toxicwind/")) {
-          repoUrls.add(url);
-        } else if (!url.startsWith("./")) {
-          repoUrls.add(url);
-        }
-      }
-    }
-  }
-  yaml += `  ${holder}:\n    components: ${total}\n    repos:\n`;
-  for (const r of repoUrls) {
-    yaml += `      - ${r}\n`;
-  }
-}
-
-writeFileSync(join(PENS_ROOT, "pens.yaml"), yaml);
-console.log("Generated pens.yaml");
 
 // ── Helpers ──────────────────────────────────────────────────────────────
 
