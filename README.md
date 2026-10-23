@@ -43,26 +43,26 @@ The **pens** organization — a pointer superproject that tracks the four planes
 
 | Codename | Greek Root | Meaning | Stack / Lang | GitHub Repo | Local Path |
 | --- | --- | --- | --- | --- | --- |
-| **tau** | tau | Greek letter | ⚡ `Bun` | [toxicwind/tau](https://github.com/toxicwind/tau) | `olympus/products/tau` |
-| **kappa** | kappa | Greek letter | 📖 `Docs/Data` | [toxicwind/kilo](https://github.com/toxicwind/kilo) | `olympus/products/kappa` |
-| **skopos** | skopos | watcher / lookout / scout | ⚡ `Bun` | [toxicwind/skopos](https://github.com/toxicwind/skopos) | `olympus/products/skopos` |
-| **kilo** | kilo | thousand | ⚡ `Bun` | [toxicwind/kilo-code](https://github.com/toxicwind/kilo-code) | `olympus/products/kilo` |
-| **muse** | muse | the muse (inspiration) | 🐍 `Python` | [toxicwind/muse-cli](https://github.com/toxicwind/muse-cli) | `olympus/products/muse` |
-| **keryx** | keryx | herald | 📖 `Docs/Data` | [toxicwind/keryx](https://github.com/toxicwind/keryx) | `olympus/products/keryx` |
-| **hodos** | hodos | way / road | 📁 `Workspace` | [toxicwind/hodos](https://github.com/toxicwind/hodos) | `olympus/products/hodos` |
-| **kairos** | kairos | the opportune moment | 🔷 `TypeScript` | [toxicwind/kairos](https://github.com/toxicwind/kairos) | `olympus/products/kairos` |
-| **kryptos** | kryptos | hidden | 🐍 `Python` | [toxicwind/kryptos](https://github.com/toxicwind/kryptos) | `olympus/products/kryptos` |
-| **agele** | agele | herd (of cattle) | 🐹 `Go` | [toxicwind/herd](https://github.com/toxicwind/herd) | `olympus/products/agele` |
-| **pinax** | pinax | tablet / catalog | 🔷 `TypeScript` | [toxicwind/pinax](https://github.com/toxicwind/pinax) | `olympus/products/pinax` |
-| **agon** | agon | contest / race | 🐍 `Python` | [toxicwind/agon](https://github.com/toxicwind/agon) | `olympus/products/agon` |
-| **antilogos** | antilogos | counter-argument / debate | 📖 `Docs/Data` | [toxicwind/antilogos](https://github.com/toxicwind/antilogos) | `olympus/products/antilogos` |
-| **pylae** | pylae | gates | 🔷 `TypeScript` | [toxicwind/flocksync](https://github.com/toxicwind/flocksync) | `olympus/products/pylae` |
-| **propylon** | propylon | monumental gateway | 🐍 `Python` | [toxicwind/olympus](https://github.com/toxicwind/olympus) | `olympus/products/propylon` |
-| **opsis** | opsis | sight / appearance | 📖 `Docs/Data` | [toxicwind/opsis](https://github.com/toxicwind/opsis) | `olympus/products/opsis` |
-| **didymos** | didymos | twin | 📖 `Docs/Data` | [toxicwind/didymos](https://github.com/toxicwind/didymos) | `olympus/products/didymos` |
-| **chronos-forge** | chronos-forge | time | 🔷 `TypeScript` | [toxicwind/chronos-forge](https://github.com/toxicwind/chronos-forge) | `olympus/products/chronos-forge` |
+| **tau** | τ | Greek letter | ⚡ `Bun` | [toxicwind/tau](https://github.com/toxicwind/tau) | `olympus/products/tau` |
+| **kappa** | κ | Greek letter | 📖 `Docs/Data` | [toxicwind/kappa-code](https://github.com/toxicwind/kappa-code) | `olympus/products/kappa` |
+| **skopos** | σκοπός | watcher / lookout / scout | ⚡ `Bun` | [toxicwind/skopos](https://github.com/toxicwind/skopos) | `olympus/products/skopos` |
+| **kilo** | χίλιοι | thousand | ⚡ `Bun` | [toxicwind/kilo](https://github.com/toxicwind/kilo) | `olympus/products/kilo` |
+| **muse** | μοῦσα | the muse (inspiration) | 🐍 `Python` | [toxicwind/muse-cli](https://github.com/toxicwind/muse-cli) | `olympus/products/muse` |
+| **keryx** | κῆρυξ | herald | 📖 `Docs/Data` | [toxicwind/keryx](https://github.com/toxicwind/keryx) | `olympus/products/keryx` |
+| **hodos** | ὁδός | way / road | 📁 `Workspace` | [toxicwind/hodos](https://github.com/toxicwind/hodos) | `olympus/products/hodos` |
+| **kairos** | καιρός | the opportune moment | 🔷 `TypeScript` | [toxicwind/kairos](https://github.com/toxicwind/kairos) | `olympus/products/kairos` |
+| **kryptos** | κρυπτός | hidden | 🐍 `Python` | [toxicwind/kryptos](https://github.com/toxicwind/kryptos) | `olympus/products/kryptos` |
+| **agele** | ἀγέλη | herd (of cattle) | 🐹 `Go` | [toxicwind/agele](https://github.com/toxicwind/agele) | `olympus/products/agele` |
+| **pinax** | πίναξ | tablet / catalog | 🔷 `TypeScript` | [toxicwind/pinax](https://github.com/toxicwind/pinax) | `olympus/products/pinax` |
+| **agon** | ἀγών | contest / race | 🐍 `Python` | [toxicwind/agon](https://github.com/toxicwind/agon) | `olympus/products/agon` |
+| **antilogos** | ἀντίλογος | counter-argument / debate | 📖 `Docs/Data` | [toxicwind/antilogos](https://github.com/toxicwind/antilogos) | `olympus/products/antilogos` |
+| **pylae** | πύλαι | gates | 🔷 `TypeScript` | [toxicwind/pylae](https://github.com/toxicwind/pylae) | `olympus/products/pylae` |
+| **propylon** | πρόπυλον | monumental gateway | 🐍 `Python` | [toxicwind/propylon](https://github.com/toxicwind/propylon) | `olympus/products/propylon` |
+| **opsis** | ὄψις | sight / appearance | 📖 `Docs/Data` | [toxicwind/opsis](https://github.com/toxicwind/opsis) | `olympus/products/opsis` |
+| **didymos** | δίδυμος | twin | 📖 `Docs/Data` | [toxicwind/didymos](https://github.com/toxicwind/didymos) | `olympus/products/didymos` |
+| **chronos-forge** | χρόνος | time | 🔷 `TypeScript` | [toxicwind/chronos-forge](https://github.com/toxicwind/chronos-forge) | `olympus/products/chronos-forge` |
 
-## 📊 Monorepo Statistics (generated 10/22/2026, 9:47:45 PM)
+## 📊 Monorepo Statistics (generated 10/22/2026, 9:49:39 PM)
 
 | Metric | Value |
 | --- | --- |

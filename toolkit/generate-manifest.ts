@@ -28,7 +28,52 @@ const GREEK_PRODUCTS = [
   "pylae", "propylon", "opsis", "didymos", "chronos-forge",
 ];
 
+const CANONICAL_GREEK_REPOS: Record<string, string> = {
+  tau: "https://github.com/toxicwind/tau",
+  kappa: "https://github.com/toxicwind/kappa-code",
+  skopos: "https://github.com/toxicwind/skopos",
+  kilo: "https://github.com/toxicwind/kilo",
+  muse: "https://github.com/toxicwind/muse-cli",
+  keryx: "https://github.com/toxicwind/keryx",
+  hodos: "https://github.com/toxicwind/hodos",
+  kairos: "https://github.com/toxicwind/kairos",
+  kryptos: "https://github.com/toxicwind/kryptos",
+  agele: "https://github.com/toxicwind/agele",
+  pinax: "https://github.com/toxicwind/pinax",
+  agon: "https://github.com/toxicwind/agon",
+  antilogos: "https://github.com/toxicwind/antilogos",
+  pylae: "https://github.com/toxicwind/pylae",
+  propylon: "https://github.com/toxicwind/propylon",
+  opsis: "https://github.com/toxicwind/opsis",
+  didymos: "https://github.com/toxicwind/didymos",
+  "chronos-forge": "https://github.com/toxicwind/chronos-forge",
+};
+
+const GREEK_ROOTS: Record<string, string> = {
+  tau: "τ",
+  kappa: "κ",
+  skopos: "σκοπός",
+  kilo: "χίλιοι",
+  muse: "μοῦσα",
+  keryx: "κῆρυξ",
+  hodos: "ὁδός",
+  kairos: "καιρός",
+  kryptos: "κρυπτός",
+  agele: "ἀγέλη",
+  pinax: "πίναξ",
+  agon: "ἀγών",
+  antilogos: "ἀντίλογος",
+  pylae: "πύλαι",
+  propylon: "πρόπυλον",
+  opsis: "ὄψις",
+  didymos: "δίδυμος",
+  "chronos-forge": "χρόνος",
+};
+
+
 function resolveRepoUrl(name: string): string {
+  const canonical = CANONICAL_GREEK_REPOS[name];
+  if (canonical) return canonical;
   const prodDir = join(OLYMPUS_PRODUCTS, name);
   const url = sh("git remote get-url origin", prodDir);
   if (url) {
@@ -49,17 +94,50 @@ for (const name of GREEK_PRODUCTS) {
   repoMap.set(name, resolveRepoUrl(name));
 }
 
-// ── 2. Update olympus/README.md — add GitHub Repo column ─────────────────
+// ── 2. Generate clean 18-row pantheon table in olympus/README.md ─────────
 
-let olympusReadme = readFileSync(OLYMPUS_README, "utf8");
-
-// Verify table has GitHub Repo column (it should already — we wrote it cleanly)
-if (!olympusReadme.includes("GitHub Repo")) {
-  console.error("olympus/README.md missing GitHub Repo column — run ./pensctl generate-all to fix");
-  process.exit(1);
+// Build pantheon rows
+const pantheonRows: string[] = [];
+for (const name of GREEK_PRODUCTS) {
+  const repoUrl = CANONICAL_GREEK_REPOS[name] ?? `https://github.com/toxicwind/${name}`;
+  const cleanUrl = repoUrl.replace(/\.git$/, "");
+  const slug = cleanUrl.replace(/^https?:\/\/(www\.)?github\.com\//, "").replace(/\/$/, "");
+  const link = `[${slug}](${cleanUrl})`;
+  const root = GREEK_ROOTS[name] || name;
+  const meaning = getMeaning(name);
+  pantheonRows.push(`| **${name}** | ${root} | ${meaning} | ${name} | ${link} | live | \`pens/olympus/products/${name}\` |`);
 }
 
-// Regenerate olympus-pantheon.md from the pantheon table in olympus/README.md
+// Build the complete olympus/README.md from scratch
+let olympusReadme = `# olympus — the home of the Greek-coded products
+
+> olympus is the registry that HOLDS the estate's Greek-coded product lineage —
+> the pantheon of named components: τ tau, κ kappa, skopos, kilo, muse, keryx,
+> hodos, and their kin. Like \`estate-brain\` holds the persona fleet, olympus
+> holds the Greek codename family as one authoritative, categorized whole.
+
+"Where the gods reside."
+
+## The pantheon (the Greek-coded products)
+
+| Codename | Greek root | Meaning | Product | GitHub Repo | Status | Where it lives (Greek pen, Olympus products) |
+| --- | --- | --- | --- | --- | --- | --- |
+`;
+for (const row of pantheonRows) {
+  olympusReadme += row + "\n";
+}
+olympusReadme += `
+> **Which is the "Greek pen"?** \`pens/olympus/\` is the Greek pen — it now HOLDS
+> the physical Greek-coded products under \`olympus/products/\` (tau, kappa, skopos,
+> kilo, muse, keryx, hodos, kairos, kryptos, agele, pinax, agon, antilogos,
+> pylae, propylon, opsis, didymos, chronos-forge). The pantheon above maps each
+> codename to its authoritative GitHub repo.
+`;
+
+writeFileSync(OLYMPUS_README, olympusReadme);
+console.log("Generated olympus/README.md with 18-product pantheon table");
+
+// Regenerate olympus-pantheon.md from the pantheon data
 const pantheonLines: string[] = [];
 let collecting = false;
 for (const line of olympusReadme.split("\n")) {
@@ -74,24 +152,17 @@ for (const line of olympusReadme.split("\n")) {
 // Generate olympus-pantheon.md with deep GitHub links
 let pantheonMd = "# Olympus Pantheon — Greek-Coded Products\n\n";
 pantheonMd += "Deep GitHub links + local paths for every Greek-coded product.\n\n";
-pantheonMd += "| Codename | Meaning | GitHub Repo | Local Path |\n";
-pantheonMd += "| --- | --- | --- | --- |\n";
+pantheonMd += "| Codename | Greek root | Meaning | GitHub Repo | Local Path |\n";
+pantheonMd += "| --- | --- | --- | --- | --- |\n";
 
-for (const entry of pantheonLines.slice(2)) {
-  // Extract codename from first cell
-  const cells = entry.split("|");
-  const codenameCell = cells[1]?.trim() || "";
-  const codename = codenameCell.replace(/[^a-zA-Z0-9-]/g, "").split(/\s+/)[0] || "";
-  const meaning = cells[3]?.trim() || codename;
-  // Extract GitHub repo link from column before Status
-  const ghCell = cells[5]?.trim() || "";
-  const linkMatch = ghCell.match(/\[([^\]]+)\]\(([^)]+)\)/);
-  const repoLink = linkMatch ? `[${linkMatch[1]}](${linkMatch[2]})` : ghCell;
-  // Extract local path
-  const pathCell = cells[cells.length - 1]?.trim() || "";
-  const pathMatch = pathCell.match(/`([^`]+)`/);
-  const localPath = pathMatch ? pathMatch[1] : "";
-  pantheonMd += `| **${codename}** | ${meaning} | ${repoLink} | \`${localPath}\` |\n`;
+for (const name of GREEK_PRODUCTS) {
+  const repoUrl = CANONICAL_GREEK_REPOS[name] ?? `https://github.com/toxicwind/${name}`;
+  const cleanUrl = repoUrl.replace(/\.git$/, "");
+  const slug = cleanUrl.replace(/^https?:\/\/(www\.)?github\.com\//, "").replace(/\/$/, "");
+  const link = `[${slug}](${cleanUrl})`;
+  const root = GREEK_ROOTS[name] || name;
+  const meaning = getMeaning(name);
+  pantheonMd += `| **${name}** | ${root} | ${meaning} | ${link} | \`pens/olympus/products/${name}\` |\n`;
 }
 
 writeFileSync(join(PENS_ROOT, "olympus-pantheon.md"), pantheonMd);

@@ -144,6 +144,28 @@ function extToLang(ext: string): string {
 
 // ── Olympus pantheon data ──────────────────────────────────────────────────
 
+
+const GREEK_ROOTS: Record<string, string> = {
+  tau: "τ",
+  kappa: "κ",
+  skopos: "σκοπός",
+  kilo: "χίλιοι",
+  muse: "μοῦσα",
+  keryx: "κῆρυξ",
+  hodos: "ὁδός",
+  kairos: "καιρός",
+  kryptos: "κρυπτός",
+  agele: "ἀγέλη",
+  pinax: "πίναξ",
+  agon: "ἀγών",
+  antilogos: "ἀντίλογος",
+  pylae: "πύλαι",
+  propylon: "πρόπυλον",
+  opsis: "ὄψις",
+  didymos: "δίδυμος",
+  "chronos-forge": "χρόνος",
+};
+
 const GREEK_PRODUCTS = [
   "tau", "kappa", "skopos", "kilo", "muse", "keryx", "hodos",
   "kairos", "kryptos", "agele", "pinax", "agon", "antilogos",
@@ -171,7 +193,30 @@ const GREEK_MEANINGS: Record<string, string> = {
   "chronos-forge": "time",
 };
 
+const CANONICAL_GREEK_REPOS: Record<string, string> = {
+  tau: "https://github.com/toxicwind/tau",
+  kappa: "https://github.com/toxicwind/kappa-code",
+  skopos: "https://github.com/toxicwind/skopos",
+  kilo: "https://github.com/toxicwind/kilo",
+  muse: "https://github.com/toxicwind/muse-cli",
+  keryx: "https://github.com/toxicwind/keryx",
+  hodos: "https://github.com/toxicwind/hodos",
+  kairos: "https://github.com/toxicwind/kairos",
+  kryptos: "https://github.com/toxicwind/kryptos",
+  agele: "https://github.com/toxicwind/agele",
+  pinax: "https://github.com/toxicwind/pinax",
+  agon: "https://github.com/toxicwind/agon",
+  antilogos: "https://github.com/toxicwind/antilogos",
+  pylae: "https://github.com/toxicwind/pylae",
+  propylon: "https://github.com/toxicwind/propylon",
+  opsis: "https://github.com/toxicwind/opsis",
+  didymos: "https://github.com/toxicwind/didymos",
+  "chronos-forge": "https://github.com/toxicwind/chronos-forge",
+};
+
 function resolveRepoUrl(name: string): string {
+  const canonical = CANONICAL_GREEK_REPOS[name];
+  if (canonical) return canonical;
   const prodDir = join(PENS_ROOT, "olympus", "products", name);
   const url = sh("git remote get-url origin", prodDir);
   if (url) return url.replace(/\.git$/, "").replace(/^https?:\/\/github\.com\//, "https://github.com/");
@@ -416,7 +461,8 @@ function buildReadme(): string {
     const link = `[${slug}](${cleanUrl})`;
     const meaning = GREEK_MEANINGS[name] || name;
     const lang = detectLanguage(join("olympus", "products", name), PENS_ROOT);
-    md += `| **${name}** | ${name} | ${meaning} | ${lang} | ${link} | \`olympus/products/${name}\` |\n`;
+    const root = GREEK_ROOTS[name] || name;
+    md += `| **${name}** | ${root} | ${meaning} | ${lang} | ${link} | \`olympus/products/${name}\` |\n`;
   }
   md += `\n`;
 
