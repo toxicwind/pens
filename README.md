@@ -127,7 +127,7 @@ Parsed from `ranch/.meta.yaml` + `.meta-themes.yaml` — all peer repos enriched
 </details>
 
 <details>
-<summary><b>gatehouse-mcp</b> — 15 peer repositories</summary>
+<summary><b>thresher-mcp</b> — 15 peer repositories</summary>
 
 | Component | Stack / Lang | GitHub Repo | Description |
 | --- | --- | --- | --- |
@@ -428,7 +428,7 @@ Flat table of all peer repos: Path · Holder · Stack/Lang · GitHub Repo · Ups
 | `bench-radar` | research | 📁 `Workspace` | [toxicwind/bench-radar](https://github.com/toxicwind/bench-radar) | [toxicwind/bench-radar](https://github.com/toxicwind/bench-radar) | — |
 | `bin` | general | 📁 `Workspace` | `—` | `—` | — |
 | `borrowed` | general | 📁 `Workspace` | `—` | `—` | — |
-| `bridge` | gatehouse-mcp | 📁 `Workspace` | [toxicwind/bridge](https://github.com/toxicwind/bridge) | [toxicwind/bridge](https://github.com/toxicwind/bridge) | — |
+| `bridge` | thresher-mcp | 📁 `Workspace` | [toxicwind/bridge](https://github.com/toxicwind/bridge) | [toxicwind/bridge](https://github.com/toxicwind/bridge) | — |
 | `bugbounty` | research | 📁 `Workspace` | [toxicwind/bugbounty](https://github.com/toxicwind/bugbounty) | [toxicwind/bugbounty](https://github.com/toxicwind/bugbounty) | — |
 | `bun-scaffold` | general | 📁 `Workspace` | `—` | `—` | — |
 | `campfire` | general | 📁 `Workspace` | [toxicwind/campfire](https://github.com/toxicwind/campfire) | [toxicwind/campfire](https://github.com/toxicwind/campfire) | — |
@@ -447,7 +447,7 @@ Flat table of all peer repos: Path · Holder · Stack/Lang · GitHub Repo · Ups
 | `didymos` | olympus | 📁 `Workspace` | [toxicwind/didymos](https://github.com/toxicwind/didymos) | [toxicwind/didymos](https://github.com/toxicwind/didymos) | — |
 | `disparate-latent-experiment` | research | 📁 `Workspace` | [toxicwind/disparate-latent-experiment](https://github.com/toxicwind/disparate-latent-experiment) | [toxicwind/disparate-latent-experiment](https://github.com/toxicwind/disparate-latent-experiment) | — |
 | `docs` | general | 📁 `Workspace` | `—` | `—` | — |
-| `doorbell` | gatehouse-mcp | 📁 `Workspace` | [toxicwind/doorbell](https://github.com/toxicwind/doorbell) | [toxicwind/doorbell](https://github.com/toxicwind/doorbell) | — |
+| `doorbell` | thresher-mcp | 📁 `Workspace` | [toxicwind/doorbell](https://github.com/toxicwind/doorbell) | [toxicwind/doorbell](https://github.com/toxicwind/doorbell) | — |
 | `dots-client` | corral | 📁 `Workspace` | [toxicwind/dots-client](https://github.com/toxicwind/dots-client) | [toxicwind/dots-client](https://github.com/toxicwind/dots-client) | — |
 | `drover` | corral | 📁 `Workspace` | [toxicwind/drover](https://github.com/toxicwind/drover) | [toxicwind/drover](https://github.com/toxicwind/drover) | — |
 | `dualspace-ast-bm25-hybrid` | research | 📁 `Workspace` | [toxicwind/dualspace-ast-bm25-hybrid](https://github.com/toxicwind/dualspace-ast-bm25-hybrid) | [toxicwind/dualspace-ast-bm25-hybrid](https://github.com/toxicwind/dualspace-ast-bm25-hybrid) | — |
@@ -490,7 +490,7 @@ Flat table of all peer repos: Path · Holder · Stack/Lang · GitHub Repo · Ups
 | `herdproof-bun` | ranch-structure | 📁 `Workspace` | [toxicwind/herdproof-bun](https://github.com/toxicwind/herdproof-bun) | [toxicwind/herdproof-bun](https://github.com/toxicwind/herdproof-bun) | — |
 | `hf-model-sync` | herd | 📁 `Workspace` | [toxicwind/hf-model-sync](https://github.com/toxicwind/hf-model-sync) | [toxicwind/hf-model-sync](https://github.com/toxicwind/hf-model-sync) | — |
 | `host-proof` | estate-ops | 📁 `Workspace` | [toxicwind/host-proof](https://github.com/toxicwind/host-proof) | [toxicwind/host-proof](https://github.com/toxicwind/host-proof) | — |
-| `identity-router` | gatehouse-mcp | 📁 `Workspace` | [toxicwind/identity-router](https://github.com/toxicwind/identity-router) | [toxicwind/identity-router](https://github.com/toxicwind/identity-router) | — |
+| `identity-router` | thresher-mcp | 📁 `Workspace` | [toxicwind/identity-router](https://github.com/toxicwind/identity-router) | [toxicwind/identity-router](https://github.com/toxicwind/identity-router) | — |
 | `kairos` | olympus | 📁 `Workspace` | [toxicwind/kairos](https://github.com/toxicwind/kairos) | [toxicwind/kairos](https://github.com/toxicwind/kairos) | — |
 | `kappa` | general | 📁 `Workspace` | `—` | `—` | — |
 | `keep` | security | 📁 `Workspace` | [toxicwind/keep](https://github.com/toxicwind/keep) | [toxicwind/keep](https://github.com/toxicwind/keep) | — |
@@ -508,8 +508,8 @@ Flat table of all peer repos: Path · Holder · Stack/Lang · GitHub Repo · Ups
 | `loom` | general | 📁 `Workspace` | [toxicwind/loom](https://github.com/toxicwind/loom) | [toxicwind/loom](https://github.com/toxicwind/loom) | — |
 | `matter-server` | general | 📁 `Workspace` | [toxicwind/matter-server](https://github.com/toxicwind/matter-server) | [toxicwind/matter-server](https://github.com/toxicwind/matter-server) | — |
 | `maw` | general | 📁 `Workspace` | [toxicwind/maw](https://github.com/toxicwind/maw) | [toxicwind/maw](https://github.com/toxicwind/maw) | — |
-| `mcp` | gatehouse-mcp | 📁 `Workspace` | [toxicwind/mcp](https://github.com/toxicwind/mcp) | [toxicwind/mcp](https://github.com/toxicwind/mcp) | — |
-| `mcpproxy-go` | gatehouse-mcp | 📁 `Workspace` | [toxicwind/mcpproxy-go](https://github.com/toxicwind/mcpproxy-go) | [toxicwind/mcpproxy-go](https://github.com/toxicwind/mcpproxy-go) | — |
+| `mcp` | thresher-mcp | 📁 `Workspace` | [toxicwind/mcp](https://github.com/toxicwind/mcp) | [toxicwind/mcp](https://github.com/toxicwind/mcp) | — |
+| `mcpproxy-go` | thresher-mcp | 📁 `Workspace` | [toxicwind/mcpproxy-go](https://github.com/toxicwind/mcpproxy-go) | [toxicwind/mcpproxy-go](https://github.com/toxicwind/mcpproxy-go) | — |
 | `mesh` | general | 📁 `Workspace` | [toxicwind/mesh](https://github.com/toxicwind/mesh) | [toxicwind/mesh](https://github.com/toxicwind/mesh) | — |
 | `meta-research-toolkit` | research | 📁 `Workspace` | [toxicwind/meta-research-toolkit](https://github.com/toxicwind/meta-research-toolkit) | [toxicwind/meta-research-toolkit](https://github.com/toxicwind/meta-research-toolkit) | — |
 | `metaaivm` | research | 📁 `Workspace` | [toxicwind/metaaivm](https://github.com/toxicwind/metaaivm) | [toxicwind/metaaivm](https://github.com/toxicwind/metaaivm) | — |
@@ -522,13 +522,13 @@ Flat table of all peer repos: Path · Holder · Stack/Lang · GitHub Repo · Ups
 | `naming-audit` | skills | 📁 `Workspace` | [toxicwind/naming-audit](https://github.com/toxicwind/naming-audit) | [toxicwind/naming-audit](https://github.com/toxicwind/naming-audit) | — |
 | `nim-inkling-api-research` | nim | 📁 `Workspace` | [toxicwind/nim-inkling-api-research](https://github.com/toxicwind/nim-inkling-api-research) | [toxicwind/nim-inkling-api-research](https://github.com/toxicwind/nim-inkling-api-research) | — |
 | `nim-omnibus` | nim | 📁 `Workspace` | [toxicwind/nim-omnibus](https://github.com/toxicwind/nim-omnibus) | [toxicwind/nim-omnibus](https://github.com/toxicwind/nim-omnibus) | — |
-| `null-g-proxy` | gatehouse-mcp | 📁 `Workspace` | [toxicwind/null-g-proxy](https://github.com/toxicwind/null-g-proxy) | [toxicwind/null-g-proxy](https://github.com/toxicwind/null-g-proxy) | — |
+| `null-g-proxy` | thresher-mcp | 📁 `Workspace` | [toxicwind/null-g-proxy](https://github.com/toxicwind/null-g-proxy) | [toxicwind/null-g-proxy](https://github.com/toxicwind/null-g-proxy) | — |
 | `nuvio` | general | 📁 `Workspace` | [toxicwind/nuvio](https://github.com/toxicwind/nuvio) | [toxicwind/nuvio](https://github.com/toxicwind/nuvio) | — |
 | `nvidia-alive` | herd | 📁 `Workspace` | [toxicwind/nvidia-alive](https://github.com/toxicwind/nvidia-alive) | [toxicwind/nvidia-alive](https://github.com/toxicwind/nvidia-alive) | — |
 | `nvidia-kernel-guard` | herd | 📁 `Workspace` | [toxicwind/nvidia-kernel-guard](https://github.com/toxicwind/nvidia-kernel-guard) | [toxicwind/nvidia-kernel-guard](https://github.com/toxicwind/nvidia-kernel-guard) | — |
 | `nvidia-nim-model-probe` | herd | 📁 `Workspace` | [toxicwind/nvidia-nim-model-probe](https://github.com/toxicwind/nvidia-nim-model-probe) | [toxicwind/nvidia-nim-model-probe](https://github.com/toxicwind/nvidia-nim-model-probe) | — |
 | `oh-my-pi` | general | 📁 `Workspace` | [toxicwind/oh-my-pi](https://github.com/toxicwind/oh-my-pi) | [toxicwind/oh-my-pi](https://github.com/toxicwind/oh-my-pi) | — |
-| `OmniRoute` | gatehouse-mcp | 📁 `Workspace` | [toxicwind/OmniRoute](https://github.com/toxicwind/OmniRoute) | [toxicwind/OmniRoute](https://github.com/toxicwind/OmniRoute) | — |
+| `OmniRoute` | thresher-mcp | 📁 `Workspace` | [toxicwind/OmniRoute](https://github.com/toxicwind/OmniRoute) | [toxicwind/OmniRoute](https://github.com/toxicwind/OmniRoute) | — |
 | `omp-test-runner-watchdog-OzX7V0` | general | 📁 `Workspace` | `—` | `—` | — |
 | `openfang` | general | 📁 `Workspace` | [toxicwind/openfang](https://github.com/toxicwind/openfang) | [toxicwind/openfang](https://github.com/toxicwind/openfang) | — |
 | `openfang-join` | general | 📁 `Workspace` | [toxicwind/openfang-join](https://github.com/toxicwind/openfang-join) | [toxicwind/openfang-join](https://github.com/toxicwind/openfang-join) | — |
@@ -578,7 +578,7 @@ Flat table of all peer repos: Path · Holder · Stack/Lang · GitHub Repo · Ups
 | `safety-review-gate` | skills | 📁 `Workspace` | [toxicwind/safety-review-gate](https://github.com/toxicwind/safety-review-gate) | [toxicwind/safety-review-gate](https://github.com/toxicwind/safety-review-gate) | — |
 | `saturation-guard` | general | 📁 `Workspace` | `—` | `—` | — |
 | `secretsmith` | security | 📁 `Workspace` | [toxicwind/secretsmith](https://github.com/toxicwind/secretsmith) | [toxicwind/secretsmith](https://github.com/toxicwind/secretsmith) | — |
-| `session-bus-refresh` | gatehouse-mcp | 📁 `Workspace` | [toxicwind/session-bus-refresh](https://github.com/toxicwind/session-bus-refresh) | [toxicwind/session-bus-refresh](https://github.com/toxicwind/session-bus-refresh) | — |
+| `session-bus-refresh` | thresher-mcp | 📁 `Workspace` | [toxicwind/session-bus-refresh](https://github.com/toxicwind/session-bus-refresh) | [toxicwind/session-bus-refresh](https://github.com/toxicwind/session-bus-refresh) | — |
 | `shell` | general | 📁 `Workspace` | `—` | `—` | — |
 | `skillforge` | ranch-structure | 📁 `Workspace` | [toxicwind/skillforge](https://github.com/toxicwind/skillforge) | [toxicwind/skillforge](https://github.com/toxicwind/skillforge) | — |
 | `spark` | general | 📁 `Workspace` | `—` | `—` | — |
@@ -606,9 +606,9 @@ Flat table of all peer repos: Path · Holder · Stack/Lang · GitHub Repo · Ups
 | `tools` | general | 📁 `Workspace` | `—` | `—` | — |
 | `toxicwind-repos` | estate-ops | 📁 `Workspace` | [toxicwind/toxicwind-repos](https://github.com/toxicwind/toxicwind-repos) | [toxicwind/toxicwind-repos](https://github.com/toxicwind/toxicwind-repos) | — |
 | `trading-post` | oracle | 📁 `Workspace` | [toxicwind/trading-post](https://github.com/toxicwind/trading-post) | [toxicwind/trading-post](https://github.com/toxicwind/trading-post) | — |
-| `universal-keypool-bun` | gatehouse-mcp | 📁 `Workspace` | [toxicwind/universal-keypool-bun](https://github.com/toxicwind/universal-keypool-bun) | [toxicwind/universal-keypool-bun](https://github.com/toxicwind/universal-keypool-bun) | — |
-| `universal-keypool-gateway` | gatehouse-mcp | 📁 `Workspace` | [toxicwind/universal-keypool-gateway](https://github.com/toxicwind/universal-keypool-gateway) | [toxicwind/universal-keypool-gateway](https://github.com/toxicwind/universal-keypool-gateway) | — |
-| `VansRouter` | gatehouse-mcp | 📁 `Workspace` | [toxicwind/VansRouter](https://github.com/toxicwind/VansRouter) | [toxicwind/VansRouter](https://github.com/toxicwind/VansRouter) | — |
+| `universal-keypool-bun` | thresher-mcp | 📁 `Workspace` | [toxicwind/universal-keypool-bun](https://github.com/toxicwind/universal-keypool-bun) | [toxicwind/universal-keypool-bun](https://github.com/toxicwind/universal-keypool-bun) | — |
+| `universal-keypool-gateway` | thresher-mcp | 📁 `Workspace` | [toxicwind/universal-keypool-gateway](https://github.com/toxicwind/universal-keypool-gateway) | [toxicwind/universal-keypool-gateway](https://github.com/toxicwind/universal-keypool-gateway) | — |
+| `VansRouter` | thresher-mcp | 📁 `Workspace` | [toxicwind/VansRouter](https://github.com/toxicwind/VansRouter) | [toxicwind/VansRouter](https://github.com/toxicwind/VansRouter) | — |
 | `vendor` | general | 📁 `Workspace` | `—` | `—` | — |
 | `websites` | general | 📁 `Workspace` | `—` | `—` | — |
 | `windmill` | general | 📁 `Workspace` | `—` | `—` | — |

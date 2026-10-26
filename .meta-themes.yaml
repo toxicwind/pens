@@ -50,8 +50,8 @@ ranch-structure:
   - "herdproof-bun"
   - "skillforge"
 
-# gatehouse-mcp — connectivity (MCP gateways, routers, drop-ins).
-gatehouse-mcp:
+# thresher-mcp — connectivity (MCP gateways, routers, drop-ins).
+thresher-mcp:
   - "OmniRoute"
   - "VansRouter"
   - "bridge"

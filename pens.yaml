@@ -148,7 +148,7 @@ ranch_holders:
       - https://github.com/toxicwind/herd
       - https://github.com/toxicwind/herdproof-bun
       - https://github.com/toxicwind/skillforge
-  gatehouse-mcp:
+  thresher-mcp:
     components: 15
     repos:
       - https://github.com/toxicwind/bridge

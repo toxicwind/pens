@@ -81,7 +81,7 @@ ranch-structure:
   "skillforge":
     repo: https://github.com/toxicwind/skillforge.git
 
-gatehouse-mcp:
+thresher-mcp:
   "bridge":
     repo: https://github.com/toxicwind/bridge.git
   "doorbell":
