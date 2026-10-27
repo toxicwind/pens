@@ -24,6 +24,11 @@ olympus_pantheon:
     meaning: "Greek letter"
     local: /home/toxic/pens/olympus/products/tau
     repo: https://github.com/toxicwind/tau
+  theta:
+    root: olympus/products/theta
+    meaning: "Greek letter"
+    local: /home/toxic/pens/olympus/products/theta
+    repo: https://github.com/toxicwind/theta
   kappa:
     root: olympus/products/kappa
     meaning: "Greek letter"
