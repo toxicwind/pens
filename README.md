@@ -22,6 +22,14 @@
 - **Products own their entrypoints; bins merely point at them.** `~/.local/bin`
   is the one PATH surface; every link resolves into a pen. A copied binary in
   the bin surface is a bug.
+- **Five-shape scaffold** (enforced 2026-10-29): product pens (`barn`,
+  `ranch`, `geode`, `olympus`) hold ALL products under `products/<name>/`;
+  litter archives to `archive/`. The **estate pen is exempt** — it is the
+  control plane: its root dirs (`stack/`, `bridge/`, `tools/`, `config/`,
+  `services/`, `pitchfork.toml` stanzas) are live daemon homes referenced by
+  absolute pens paths; reorganizing them kills daemons. `reorganize-pen.ts`
+  refuses control-plane pens (exit 3). Scaffold tooling lives in
+  `pens/toolkit/scaffold/` — never inside a product it reorganizes.
 - **Resident-rig law** (2026-10-28): every pen ships with a rig persona
   (`estate/agents/<name>/`), registered in the rig runtime, on an hourly
   day-cycle cron, present on `#village` (IRC :25241) and the squawk bus
