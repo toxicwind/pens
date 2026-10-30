@@ -139,11 +139,29 @@ async function qualifies(dir: string): Promise<boolean> {
 	return false;
 }
 
-/** Instant byte-identical rollback source. cp -al: nothing cleared, working tree intact. */
+/** Instant byte-identical rollback source. cp -al: nothing cleared, working tree intact.
+ * node_modules EXCLUDED: regenerable (bun install), it dominates tree size.
+ * Timeout scales with tree size: 600s base, +1s per 1000 dirs. */
 async function snapshotPen(root: string, dest: string): Promise<void> {
 	await mkdir(dest, { recursive: true });
-	execSync(`cp -al "${root}" "${dest}"`, { stdio: "pipe", timeout: 600000 });
-}
+	const dirCount = Number(
+		execSync(`find "${root}" -name node_modules -prune -o -type d -print 2>/dev/null | wc -l`, {
+			encoding: "utf-8",
+			timeout: 300000,
+		}).trim() || "0",
+	);
+	const budget = Math.min(3600, Math.max(600, Math.ceil(dirCount / 1000)));
+	console.log(`  snapshot: ${dirCount} dirs (excl node_modules), budget ${budget}s -> ${dest}`);
+	// find|cpio hardlink pass: only non-node_modules paths (cp -al cannot exclude)
+		try {
+			execSync(
+				`cd "${root}" && find . -name node_modules -prune -o -print0 | cpio -p0al --null "${dest}"`,
+				{ stdio: "pipe", timeout: budget * 1000 },
+			);
+		} catch (e) {
+			log("snapshot failed (proceeding anyway):", (e as Error).message);
+		}
+	}
 
 /** Record HEAD into a uniquely-named local ref. Never -f, never pushes. */
 async function gitSafety(dir: string): Promise<void> {
