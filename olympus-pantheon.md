@@ -24,4 +24,4 @@ Deep GitHub links + local paths for every Greek-coded product.
 | **chronos-forge** | χρόνος | time | [toxicwind/chronos-forge](https://github.com/toxicwind/chronos-forge) | `pens/olympus/products/chronos-forge` |
 | **kleio** | κλειώ | the muse of history | [toxicwind/kleio](https://github.com/toxicwind/kleio) | `pens/olympus/products/kleio` |
 | **mneme** | μνήμη | memory | [toxicwind/mneme](https://github.com/toxicwind/mneme) | `pens/olympus/products/mneme` |
-| **hephaestos** | ἥφαιστος | the forge god — shapes reports from raw evidence | [toxicwind/hephaestos](https://github.com/toxicwind/hephaestos) | `pens/olympus/products/hephaestos` |
+
