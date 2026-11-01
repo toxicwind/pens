@@ -9,6 +9,7 @@
 #   pensctl generate-yaml           regenerate pens.yaml from the live pen dirs + olympus registry
 #   pensctl generate-pantheon       regenerate olympus-pantheon.md from local olympus/README.md
 #   pensctl generate-readme         regenerate README.md at pens root via generate-readme.ts
+#   pensctl generate-pen-readmes    regenerate every product pen's README via toolkit/readme-gen.ts
 #   pensctl doctor                  health: pens root git-less per-dir, no stray tracked content
 set -u
 PENS_ROOT="${PENS_ROOT:-/home/toxic/pens}"
@@ -57,6 +58,11 @@ generate_readme() {
   echo "generated $PENS_ROOT/README.md"
 }
 
+# --- regenerate every product pen's README (kernel README generator) ---
+generate_pen_readmes() {
+  bun "$PENS_ROOT/toolkit/readme-gen.ts" --all
+}
+
 list_pens() {
   echo "pens in $PENS_ROOT:"
   for p in $(pens); do
@@ -72,10 +78,11 @@ case "${1:-list}" in
   generate-yaml) generate_yaml ;;
   generate-pantheon) generate_pantheon ;;
   generate-readme) generate_readme ;;
+  generate-pen-readmes) generate_pen_readmes ;;
   generate-all) generate_ignore; bun "$PENS_ROOT/toolkit/generate-manifest.ts"; bun "$PENS_ROOT/toolkit/generate-readme.ts" --update; bun "$PENS_ROOT/toolkit/generate-readme.ts" --update --ranch ;;
   doctor)
     [ -d "$PENS_ROOT/.git" ] && echo "pens root IS a git repo (pointer superproject, expected)."
     echo "tracked files ($(cd "$PENS_ROOT" && git ls-files 2>/dev/null | wc -l)):"; (cd "$PENS_ROOT" && git ls-files 2>/dev/null) | sed 's/^/  /'
     list_pens ;;
-  *) echo "usage: pensctl (list|add <pen>|generate-ignore|generate-yaml|generate-pantheon|generate-readme|generate-all|doctor)"; exit 2;;
+  *) echo "usage: pensctl (list|add <pen>|generate-ignore|generate-yaml|generate-pantheon|generate-readme|generate-pen-readmes|generate-all|doctor)"; exit 2;;
 esac
