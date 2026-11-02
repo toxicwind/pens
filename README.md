@@ -6,6 +6,20 @@
 > who owns the pen's lane and cycles through the [rig](https://github.com/toxicwind/rig)
 > runtime hourly.
 
+## The fabric & master docs
+
+- **Master docs of all pens:** [`docs/`](docs/) — the fabric-level index linking
+  every pen's `docs/`.
+- **Fabric plan** (stigmergy-framed connective-tissue decisions, 2026-11-01):
+  `estate/docs/fabric-plan.md` (mirrored in the estate repo).
+- **Service catalog:** `toolkit/fabric.json` (minted by `toolkit/gen-fabric.ts`)
+  is the primary shared-environment trace — every pen's products with live git
+  HEAD + dirty.
+- **Ports SSOT:** the conventional `toolkit/ports.json` (product-keyed, aliases +
+  owner) replaces the old ALL-CAPS `ports.env` KEYS convention.
+- **Query surface:** `docs-mcp` (indexes every `*.md` incl. this tree) and
+  `dedicated-mcp` (universal per-pen MCP, federates all pens).
+
 ## The pens
 
 | Pen | Repo | Resident rig | Owns |
