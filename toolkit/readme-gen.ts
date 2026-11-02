@@ -40,6 +40,9 @@ import { execSync } from "node:child_process";
 const TOOLKIT_DIR = dirname(fileURLToPath(import.meta.url));
 const PENS_ROOT = process.env.PENS_ROOT || join(TOOLKIT_DIR, ".."); // pens/
 const PORTS_ENV = process.env.PORTS_ENV || join(PENS_ROOT, "estate", "config", "ports.env");
+// Conventional port SSOT (replaces the ALL-CAPS ports.env KEYS convention) —
+// product-keyed JSON minted by gen-ports.ts, carrying aliases + owner.
+const PORTS_JSON = process.env.PORTS_JSON || join(TOOLKIT_DIR, "ports.json");
 
 // ── CLI ──────────────────────────────────────────────────────────────────
 const argv = process.argv.slice(2);
@@ -167,15 +170,31 @@ function productRole(dir: string): string {
   return "";
 }
 
-/** Parse ports.env into { productName -> port[] }.
- *  Attribution two ways, both strictly scoped (no carry-over):
- *   1. `# owner: <product>` comment that IMMEDIATELY precedes a port line
- *      (i.e. no intervening port line after the comment started).
- *   2. key-derived product name (KEY_PORT -> key-dash), e.g. RHODOCHROSITE_PORT -> rhodochrosite.
- *  By-key map is kept too (KEY_PORT -> value) for callers that want the plain SSOT. */
+/** Read the conventional ports.json registry into { productName -> port[] }.
+ *  Source of truth is `toolkit/ports.json` (minted by gen-ports.ts from the
+ *  legacy ports.env); the product key maps directly to byOwner, and legacy
+ *  ALL-CAPS keys survive in aliases -> byKey for backward-compatible callers. */
 function loadPortMap(): { byKey: Record<string, string>; byOwner: Record<string, string[]> } {
   const byKey: Record<string, string> = {};
   const byOwner: Record<string, string[]> = {};
+  if (existsSync(PORTS_JSON)) {
+    try {
+      const reg = JSON.parse(readFileSync(PORTS_JSON, "utf8")) as {
+        ports?: Record<string, { port: string | number; owner?: string; aliases?: string[] }>;
+      };
+      for (const [ownerFromKey, info] of Object.entries(reg.ports ?? {})) {
+        const owner = (info.owner || ownerFromKey).toLowerCase().replace(/\s+/g, "-");
+        const port = String(info.port);
+        if (!byOwner[owner]) byOwner[owner] = [];
+        if (!byOwner[owner].includes(port)) byOwner[owner].push(port);
+        byKey[ownerFromKey] = port;
+        for (const alias of info.aliases ?? []) byKey[alias] = port;
+      }
+      return { byKey, byOwner };
+    } catch {
+      // malformed ports.json — fall back to the legacy env parse below
+    }
+  }
   if (!existsSync(PORTS_ENV)) return { byKey, byOwner };
 
   const add = (owner: string, port: string) => {
