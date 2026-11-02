@@ -1,0 +1,1438 @@
+{
+  "minted_at": "2026-11-02T00:52:39.111Z",
+  "pens": [
+    {
+      "pen": "agentic-moment",
+      "products": [
+        {
+          "name": "argos",
+          "head": "eb4a4b3",
+          "dirty": 2
+        },
+        {
+          "name": "audit",
+          "head": "9f16376",
+          "dirty": 1
+        },
+        {
+          "name": "log-helper"
+        },
+        {
+          "name": "site"
+        }
+      ]
+    },
+    {
+      "pen": "barn",
+      "products": [
+        {
+          "name": "archguard",
+          "head": "f2f4e25",
+          "dirty": 2
+        },
+        {
+          "name": "chute",
+          "head": "5403d3a",
+          "dirty": 2
+        },
+        {
+          "name": "estate-mesh",
+          "head": "7084013",
+          "dirty": 0
+        },
+        {
+          "name": "estate-ops",
+          "head": "bac122a",
+          "dirty": 2
+        },
+        {
+          "name": "estate-tailscale"
+        },
+        {
+          "name": "fanout",
+          "head": "435b08a",
+          "dirty": 0
+        },
+        {
+          "name": "flatbread"
+        },
+        {
+          "name": "forge",
+          "head": "f499fca",
+          "dirty": 53
+        },
+        {
+          "name": "gatehouse"
+        },
+        {
+          "name": "gatehouse-staging"
+        },
+        {
+          "name": "gem-dredge",
+          "head": "2c9ac38",
+          "dirty": 2
+        },
+        {
+          "name": "gemini-mcp"
+        },
+        {
+          "name": "lookout"
+        },
+        {
+          "name": "nativelink",
+          "head": "28e0e006",
+          "dirty": 0
+        },
+        {
+          "name": "pens-index",
+          "head": "88e8cef",
+          "dirty": 0
+        },
+        {
+          "name": "rosec"
+        },
+        {
+          "name": "secretsmith"
+        },
+        {
+          "name": "thresher",
+          "head": "c2859a4",
+          "dirty": 47
+        },
+        {
+          "name": "weave",
+          "head": "3388fba",
+          "dirty": 0
+        },
+        {
+          "name": "weave-sub"
+        },
+        {
+          "name": "xerj"
+        }
+      ]
+    },
+    {
+      "pen": "bench",
+      "products": [
+        {
+          "name": "spinel"
+        }
+      ]
+    },
+    {
+      "pen": "dedicated",
+      "products": [
+        {
+          "name": "dedicated-mcp",
+          "head": "9458489",
+          "dirty": 0
+        },
+        {
+          "name": "dedicated-server-ops",
+          "head": "08f9ade66",
+          "dirty": 0
+        },
+        {
+          "name": "effusion-labs"
+        }
+      ]
+    },
+    {
+      "pen": "ergasterion",
+      "products": []
+    },
+    {
+      "pen": "fathom",
+      "products": [
+        {
+          "name": "fathom-docs"
+        },
+        {
+          "name": "linux-serum-synth",
+          "head": "0f9cc0a",
+          "dirty": 0
+        },
+        {
+          "name": "m3u-toolkit",
+          "head": "161dfd8",
+          "dirty": 0
+        },
+        {
+          "name": "plumb",
+          "head": "4b448b1",
+          "dirty": 0
+        },
+        {
+          "name": "strudel-dev-vite",
+          "head": "aadf500e",
+          "dirty": 0
+        },
+        {
+          "name": "strudel-mcp",
+          "head": "b36e92d",
+          "dirty": 0
+        },
+        {
+          "name": "strudel-sampler-server-vite",
+          "head": "f3432ec",
+          "dirty": 0
+        },
+        {
+          "name": "trench",
+          "head": "0aea925",
+          "dirty": 0
+        }
+      ]
+    },
+    {
+      "pen": "forge",
+      "products": [
+        {
+          "name": "agentic-completions",
+          "head": "d3d4402",
+          "dirty": 0
+        },
+        {
+          "name": "anvil"
+        },
+        {
+          "name": "codeflux-patchling",
+          "head": "d13697e",
+          "dirty": 1
+        },
+        {
+          "name": "codeflux-rig",
+          "head": "01508ea",
+          "dirty": 0
+        },
+        {
+          "name": "pens-fleet-site",
+          "head": "d151532",
+          "dirty": 0
+        },
+        {
+          "name": "router"
+        }
+      ]
+    },
+    {
+      "pen": "geode",
+      "products": [
+        {
+          "name": "azurite",
+          "head": "756ce90",
+          "dirty": 135
+        },
+        {
+          "name": "bornite",
+          "head": "94e342a",
+          "dirty": 0
+        },
+        {
+          "name": "chalcopyrite",
+          "head": "03783dc",
+          "dirty": 0
+        },
+        {
+          "name": "cleavage",
+          "head": "b0bd2a8",
+          "dirty": 0
+        },
+        {
+          "name": "coreelec-mcp",
+          "head": "f487af3",
+          "dirty": 0
+        },
+        {
+          "name": "estate-skills"
+        },
+        {
+          "name": "faceter",
+          "head": "b2462d0",
+          "dirty": 34
+        },
+        {
+          "name": "forensia",
+          "head": "bbabd42",
+          "dirty": 0
+        },
+        {
+          "name": "infusion"
+        },
+        {
+          "name": "lapidary",
+          "head": "a3d4671",
+          "dirty": 0
+        },
+        {
+          "name": "malachite",
+          "head": "c8c65a2",
+          "dirty": 0
+        },
+        {
+          "name": "mimetite",
+          "head": "7906782",
+          "dirty": 1
+        },
+        {
+          "name": "opal",
+          "head": "32cf658",
+          "dirty": 0
+        },
+        {
+          "name": "pairs"
+        },
+        {
+          "name": "pens-completions",
+          "head": "0645bb8",
+          "dirty": 0
+        },
+        {
+          "name": "perthite",
+          "head": "f2410bd",
+          "dirty": 0
+        },
+        {
+          "name": "pi-skills",
+          "head": "509d34a",
+          "dirty": 0
+        },
+        {
+          "name": "pseudobrookite",
+          "head": "a764f0e",
+          "dirty": 0
+        },
+        {
+          "name": "pylae",
+          "head": "4e6e3e4f92",
+          "dirty": 2
+        },
+        {
+          "name": "rhodochrosite",
+          "head": "861dc7d",
+          "dirty": 6
+        },
+        {
+          "name": "scintillator"
+        },
+        {
+          "name": "selenite",
+          "head": "7940a25",
+          "dirty": 1
+        },
+        {
+          "name": "spine",
+          "head": "fb10f64",
+          "dirty": 0
+        },
+        {
+          "name": "trio",
+          "head": "21c703d",
+          "dirty": 0
+        },
+        {
+          "name": "triphylite"
+        }
+      ]
+    },
+    {
+      "pen": "mesh",
+      "products": []
+    },
+    {
+      "pen": "nomenclator",
+      "products": []
+    },
+    {
+      "pen": "olympus",
+      "products": [
+        {
+          "name": "agon",
+          "head": "6e3dd58",
+          "dirty": 12
+        },
+        {
+          "name": "antilogos",
+          "head": "8a788ff",
+          "dirty": 6
+        },
+        {
+          "name": "chronos-forge",
+          "head": "02dbd38",
+          "dirty": 0
+        },
+        {
+          "name": "didymos",
+          "head": "b5e879a",
+          "dirty": 1
+        },
+        {
+          "name": "ergane",
+          "head": "df577ce4",
+          "dirty": 3
+        },
+        {
+          "name": "forge"
+        },
+        {
+          "name": "haos"
+        },
+        {
+          "name": "hestia",
+          "head": "87f4cc8",
+          "dirty": 0
+        },
+        {
+          "name": "hodos"
+        },
+        {
+          "name": "kairos",
+          "head": "2567e64",
+          "dirty": 13
+        },
+        {
+          "name": "kappa",
+          "head": "c4181ef",
+          "dirty": 1
+        },
+        {
+          "name": "keryx",
+          "head": "9111908",
+          "dirty": 0
+        },
+        {
+          "name": "kilo",
+          "head": "34e82feb3f",
+          "dirty": 1
+        },
+        {
+          "name": "kleio",
+          "head": "a314e64",
+          "dirty": 0
+        },
+        {
+          "name": "kryptos",
+          "head": "2ae46b4",
+          "dirty": 0
+        },
+        {
+          "name": "lambda",
+          "head": "bdb245d",
+          "dirty": 1
+        },
+        {
+          "name": "mneme",
+          "head": "54654f7",
+          "dirty": 0
+        },
+        {
+          "name": "morphe",
+          "head": "c0176bb",
+          "dirty": 0
+        },
+        {
+          "name": "muse",
+          "head": "0b46db7",
+          "dirty": 0
+        },
+        {
+          "name": "opentui",
+          "head": "8df63ba9",
+          "dirty": 0
+        },
+        {
+          "name": "opsis",
+          "head": "6b39716",
+          "dirty": 1
+        },
+        {
+          "name": "pinax",
+          "head": "3266962",
+          "dirty": 0
+        },
+        {
+          "name": "primitives"
+        },
+        {
+          "name": "propylon"
+        },
+        {
+          "name": "pylae"
+        },
+        {
+          "name": "rig-citizen",
+          "head": "bd11e68",
+          "dirty": 0
+        },
+        {
+          "name": "sigma",
+          "head": "30d21332",
+          "dirty": 0
+        },
+        {
+          "name": "skopos",
+          "head": "cb828a7",
+          "dirty": 2
+        },
+        {
+          "name": "tarachos",
+          "head": "a4f19a1",
+          "dirty": 0
+        },
+        {
+          "name": "tau",
+          "head": "f0bfd034e7",
+          "dirty": 6
+        },
+        {
+          "name": "ts-blank-space",
+          "head": "ba04b4e",
+          "dirty": 0
+        },
+        {
+          "name": "typescript-go",
+          "head": "89d5d5b2",
+          "dirty": 0
+        }
+      ]
+    },
+    {
+      "pen": "ranch",
+      "products": [
+        {
+          "name": "AgentForensics",
+          "head": "803f3f0",
+          "dirty": 0
+        },
+        {
+          "name": "agentic-completions",
+          "head": "6ba859a",
+          "dirty": 0
+        },
+        {
+          "name": "ai-merge-resolve",
+          "head": "2d31fa8",
+          "dirty": 0
+        },
+        {
+          "name": "android-fleet"
+        },
+        {
+          "name": "apk-autopsy",
+          "head": "d2a02a6",
+          "dirty": 0
+        },
+        {
+          "name": "arroyo",
+          "head": "5bcb3df",
+          "dirty": 0
+        },
+        {
+          "name": "arxiv-mcp-vendored",
+          "head": "e16191b",
+          "dirty": 0
+        },
+        {
+          "name": "ast-grep-rules",
+          "head": "bd75695",
+          "dirty": 0
+        },
+        {
+          "name": "ast-tools"
+        },
+        {
+          "name": "audits"
+        },
+        {
+          "name": "auto1m",
+          "head": "1e5e2c8",
+          "dirty": 1
+        },
+        {
+          "name": "awesome-free-ai-coding",
+          "head": "7bd7c1de",
+          "dirty": 0
+        },
+        {
+          "name": "barn"
+        },
+        {
+          "name": "bench-radar",
+          "head": "7e3bad0",
+          "dirty": 1
+        },
+        {
+          "name": "borrowed"
+        },
+        {
+          "name": "bridge",
+          "head": "16c384f",
+          "dirty": 8
+        },
+        {
+          "name": "bugbounty",
+          "head": "4168021",
+          "dirty": 4
+        },
+        {
+          "name": "campfire",
+          "head": "6f71ee5",
+          "dirty": 0
+        },
+        {
+          "name": "cell-mirror"
+        },
+        {
+          "name": "classifier",
+          "head": "9001502",
+          "dirty": 0
+        },
+        {
+          "name": "classifier-preflight",
+          "head": "20789a9",
+          "dirty": 0
+        },
+        {
+          "name": "claude-night-market",
+          "head": "5847f53",
+          "dirty": 0
+        },
+        {
+          "name": "codebase-memory",
+          "head": "584d2ec",
+          "dirty": 0
+        },
+        {
+          "name": "computer-use-linux",
+          "head": "a1a88c6",
+          "dirty": 0
+        },
+        {
+          "name": "connectors"
+        },
+        {
+          "name": "cookie-vault",
+          "head": "c074029",
+          "dirty": 0
+        },
+        {
+          "name": "corral",
+          "head": "d541f1d",
+          "dirty": 0
+        },
+        {
+          "name": "cron-trust",
+          "head": "09fef76",
+          "dirty": 0
+        },
+        {
+          "name": "cs3-velvet",
+          "head": "527f615",
+          "dirty": 0
+        },
+        {
+          "name": "dashboard",
+          "head": "dcd53d1",
+          "dirty": 1
+        },
+        {
+          "name": "data"
+        },
+        {
+          "name": "devloop",
+          "head": "00467d3",
+          "dirty": 0
+        },
+        {
+          "name": "disparate-latent-experiment",
+          "head": "ba8ab09",
+          "dirty": 0
+        },
+        {
+          "name": "doorbell",
+          "head": "9eaaba7",
+          "dirty": 14
+        },
+        {
+          "name": "dots-client",
+          "head": "e4ef10b",
+          "dirty": 0
+        },
+        {
+          "name": "drover",
+          "head": "d1fa8d8",
+          "dirty": 0
+        },
+        {
+          "name": "dualspace-ast-bm25-hybrid",
+          "head": "6c3adb4",
+          "dirty": 0
+        },
+        {
+          "name": "ego-lite",
+          "head": "ece0aaa",
+          "dirty": 0
+        },
+        {
+          "name": "emergent",
+          "head": "981116d",
+          "dirty": 2
+        },
+        {
+          "name": "estate-brain"
+        },
+        {
+          "name": "estate-chat",
+          "head": "390d31e",
+          "dirty": 0
+        },
+        {
+          "name": "estate-dispersal-monolith",
+          "head": "3ae6aad",
+          "dirty": 0
+        },
+        {
+          "name": "estate-monitor"
+        },
+        {
+          "name": "estate-whoa-breakthrough"
+        },
+        {
+          "name": "examples",
+          "head": "ad14b87",
+          "dirty": 0
+        },
+        {
+          "name": "extensions",
+          "head": "9722274",
+          "dirty": 0
+        },
+        {
+          "name": "fast-race",
+          "head": "8775978",
+          "dirty": 2
+        },
+        {
+          "name": "feedlot-mcp",
+          "head": "1ccff31",
+          "dirty": 0
+        },
+        {
+          "name": "ferret-den",
+          "head": "479dfff",
+          "dirty": 0
+        },
+        {
+          "name": "ffs-diff",
+          "head": "b531972",
+          "dirty": 0
+        },
+        {
+          "name": "fleet",
+          "head": "7ab4315",
+          "dirty": 3
+        },
+        {
+          "name": "flicker",
+          "head": "5ae5290c6",
+          "dirty": 1
+        },
+        {
+          "name": "forge-mcp",
+          "head": "4e22ffb",
+          "dirty": 0
+        },
+        {
+          "name": "freebuffet",
+          "head": "365ed04",
+          "dirty": 0
+        },
+        {
+          "name": "gavel",
+          "head": "cf4fdec",
+          "dirty": 8
+        },
+        {
+          "name": "gayxxx-estate",
+          "head": "dfc5463",
+          "dirty": 0
+        },
+        {
+          "name": "geode-rig"
+        },
+        {
+          "name": "gguf-read"
+        },
+        {
+          "name": "ghq",
+          "head": "a54a3ae",
+          "dirty": 0
+        },
+        {
+          "name": "gibber-mcp",
+          "head": "c341b4ddc",
+          "dirty": 2
+        },
+        {
+          "name": "github-search",
+          "head": "c7d6e6d",
+          "dirty": 1
+        },
+        {
+          "name": "gito",
+          "head": "0c9d18d",
+          "dirty": 0
+        },
+        {
+          "name": "godzilla-llama.cpp",
+          "head": "4463f0a05",
+          "dirty": 0
+        },
+        {
+          "name": "hatch"
+        },
+        {
+          "name": "hatch-decode",
+          "head": "7452e34",
+          "dirty": 1
+        },
+        {
+          "name": "herd"
+        },
+        {
+          "name": "herdproof-bun",
+          "head": "23a1716",
+          "dirty": 0
+        },
+        {
+          "name": "hf-model-sync",
+          "head": "a5fc813",
+          "dirty": 1
+        },
+        {
+          "name": "homelessbrian-NuvioTV",
+          "head": "50e713e33",
+          "dirty": 0
+        },
+        {
+          "name": "host-proof",
+          "head": "a54b2b6",
+          "dirty": 0
+        },
+        {
+          "name": "identity-router",
+          "head": "d674293",
+          "dirty": 0
+        },
+        {
+          "name": "IPTV-BRIDGE",
+          "head": "b3a22fbf7",
+          "dirty": 0
+        },
+        {
+          "name": "keep",
+          "head": "f239b48",
+          "dirty": 0
+        },
+        {
+          "name": "keeper",
+          "head": "f3a84a2",
+          "dirty": 0
+        },
+        {
+          "name": "kerloys-iptv-webos",
+          "head": "0e07b20",
+          "dirty": 0
+        },
+        {
+          "name": "kimi-auto",
+          "head": "c15dc07",
+          "dirty": 0
+        },
+        {
+          "name": "kimi-claw",
+          "head": "b5d787ea",
+          "dirty": 4
+        },
+        {
+          "name": "kvm-bun",
+          "head": "081defb",
+          "dirty": 0
+        },
+        {
+          "name": "lasso",
+          "head": "e04ecb4",
+          "dirty": 1
+        },
+        {
+          "name": "leakfix-src",
+          "head": "4b3464c",
+          "dirty": 0
+        },
+        {
+          "name": "ledger",
+          "head": "2e206b4",
+          "dirty": 0
+        },
+        {
+          "name": "loom",
+          "head": "467f2a7e3",
+          "dirty": 0
+        },
+        {
+          "name": "m3u-toolkit",
+          "head": "161dfd8",
+          "dirty": 0
+        },
+        {
+          "name": "matter-server",
+          "head": "59bfdec",
+          "dirty": 0
+        },
+        {
+          "name": "maw",
+          "head": "c4195f9",
+          "dirty": 0
+        },
+        {
+          "name": "mcp",
+          "head": "60daf86",
+          "dirty": 0
+        },
+        {
+          "name": "mesh",
+          "head": "8ea1808",
+          "dirty": 1
+        },
+        {
+          "name": "meta-research-toolkit",
+          "head": "e55c0c0",
+          "dirty": 0
+        },
+        {
+          "name": "metaaivm",
+          "head": "1135ab1",
+          "dirty": 4
+        },
+        {
+          "name": "metaaivm-profile",
+          "head": "e6a954d",
+          "dirty": 4
+        },
+        {
+          "name": "metaclaw-runtime",
+          "head": "84a631f",
+          "dirty": 0
+        },
+        {
+          "name": "mission-control",
+          "head": "acaca94",
+          "dirty": 1
+        },
+        {
+          "name": "ml-serve",
+          "head": "a46e44f",
+          "dirty": 2
+        },
+        {
+          "name": "model-max",
+          "head": "1b932f8",
+          "dirty": 2
+        },
+        {
+          "name": "models"
+        },
+        {
+          "name": "monad-forge",
+          "head": "29cbc2f",
+          "dirty": 0
+        },
+        {
+          "name": "mr-boxington-cache",
+          "head": "7f9f555",
+          "dirty": 0
+        },
+        {
+          "name": "muse-web-bundle-decode",
+          "head": "aab19ac",
+          "dirty": 7
+        },
+        {
+          "name": "namespace-concealment-explorer"
+        },
+        {
+          "name": "naming-audit",
+          "head": "ef3cb38",
+          "dirty": 1
+        },
+        {
+          "name": "nightly-canary"
+        },
+        {
+          "name": "nim-inkling-api-research",
+          "head": "0cb9085",
+          "dirty": 0
+        },
+        {
+          "name": "nim-omnibus",
+          "head": "35fe53f",
+          "dirty": 1
+        },
+        {
+          "name": "nim-repos",
+          "head": "6b6c1f8",
+          "dirty": 3
+        },
+        {
+          "name": "null-g-proxy",
+          "head": "e8f381d",
+          "dirty": 1
+        },
+        {
+          "name": "nuvio",
+          "head": "965d5f1",
+          "dirty": 0
+        },
+        {
+          "name": "nuvio-default",
+          "head": "ba98be6",
+          "dirty": 3
+        },
+        {
+          "name": "nuviotv-bun",
+          "head": "2bfd71fa8",
+          "dirty": 0
+        },
+        {
+          "name": "nuviotv-webos",
+          "head": "cadd294f",
+          "dirty": 1
+        },
+        {
+          "name": "NuvioTVSmart",
+          "head": "350869cb",
+          "dirty": 0
+        },
+        {
+          "name": "NuvioTVWebOS",
+          "head": "cd590d0",
+          "dirty": 0
+        },
+        {
+          "name": "nuvioweb",
+          "head": "a7dd33d1",
+          "dirty": 0
+        },
+        {
+          "name": "nvidia-alive",
+          "head": "6e1604c",
+          "dirty": 0
+        },
+        {
+          "name": "nvidia-kernel-guard",
+          "head": "19e7218",
+          "dirty": 0
+        },
+        {
+          "name": "nvidia-nim-model-probe",
+          "head": "163c8be",
+          "dirty": 0
+        },
+        {
+          "name": "oh-my-pi",
+          "head": "9e90839ac9",
+          "dirty": 0
+        },
+        {
+          "name": "omp-test-runner-watchdog-OzX7V0",
+          "head": "06d0da9",
+          "dirty": 0
+        },
+        {
+          "name": "openbox",
+          "head": "6c0813e",
+          "dirty": 1
+        },
+        {
+          "name": "openfang",
+          "head": "32c8e5b",
+          "dirty": 0
+        },
+        {
+          "name": "openfang-join",
+          "head": "abf7b88",
+          "dirty": 0
+        },
+        {
+          "name": "openrouter-probe",
+          "head": "62402d4",
+          "dirty": 17
+        },
+        {
+          "name": "ops",
+          "head": "565e9d8",
+          "dirty": 73
+        },
+        {
+          "name": "outlier-toolkit",
+          "head": "3bdb09c",
+          "dirty": 0
+        },
+        {
+          "name": "outsource",
+          "head": "d1c7d75",
+          "dirty": 0
+        },
+        {
+          "name": "pack-fix",
+          "head": "22a648a",
+          "dirty": 1
+        },
+        {
+          "name": "paper-poller",
+          "head": "6f19bac",
+          "dirty": 1
+        },
+        {
+          "name": "pdfshield",
+          "head": "cd977f5",
+          "dirty": 0
+        },
+        {
+          "name": "pearlctl",
+          "head": "a0e775c",
+          "dirty": 0
+        },
+        {
+          "name": "phone-lane",
+          "head": "3460084",
+          "dirty": 2
+        },
+        {
+          "name": "phone-ocr-sweep",
+          "head": "c71214a",
+          "dirty": 0
+        },
+        {
+          "name": "phone-sentinel",
+          "head": "c11dce3",
+          "dirty": 0
+        },
+        {
+          "name": "pj-fast",
+          "head": "86a473e",
+          "dirty": 0
+        },
+        {
+          "name": "plugin-ecosystem",
+          "head": "3f43ee4",
+          "dirty": 0
+        },
+        {
+          "name": "plugins",
+          "head": "d0c93b1",
+          "dirty": 0
+        },
+        {
+          "name": "pollinations-proxy"
+        },
+        {
+          "name": "projects"
+        },
+        {
+          "name": "provider-fuzz"
+        },
+        {
+          "name": "providers.d"
+        },
+        {
+          "name": "proxy"
+        },
+        {
+          "name": "qed"
+        },
+        {
+          "name": "ralph-dashboard",
+          "head": "c0aeedc",
+          "dirty": 0
+        },
+        {
+          "name": "ranch-analyze"
+        },
+        {
+          "name": "range",
+          "head": "7210fa2",
+          "dirty": 1
+        },
+        {
+          "name": "rankings",
+          "head": "6c0c709",
+          "dirty": 0
+        },
+        {
+          "name": "rawhide",
+          "head": "466a764",
+          "dirty": 0
+        },
+        {
+          "name": "refusal-hunt",
+          "head": "fba3404",
+          "dirty": 0
+        },
+        {
+          "name": "rename-roundup",
+          "head": "575450e",
+          "dirty": 0
+        },
+        {
+          "name": "repo-first-class",
+          "head": "37c2f27",
+          "dirty": 0
+        },
+        {
+          "name": "research"
+        },
+        {
+          "name": "rig",
+          "head": "84d1063",
+          "dirty": 0
+        },
+        {
+          "name": "ring",
+          "head": "ecea35d",
+          "dirty": 0
+        },
+        {
+          "name": "rodeo"
+        },
+        {
+          "name": "roundup"
+        },
+        {
+          "name": "roundup-site"
+        },
+        {
+          "name": "routing"
+        },
+        {
+          "name": "routing-score"
+        },
+        {
+          "name": "rust-algo-web",
+          "head": "de42f30",
+          "dirty": 0
+        },
+        {
+          "name": "rust-wrappers",
+          "head": "9e6a42f",
+          "dirty": 0
+        },
+        {
+          "name": "rustdesk-server"
+        },
+        {
+          "name": "ryzen-sm86-hybrid",
+          "head": "c576ac1",
+          "dirty": 0
+        },
+        {
+          "name": "ryzen3090-whoa"
+        },
+        {
+          "name": "safety-review-gate",
+          "head": "66add35",
+          "dirty": 0
+        },
+        {
+          "name": "saturation-guard"
+        },
+        {
+          "name": "shell",
+          "head": "9334a77",
+          "dirty": 1
+        },
+        {
+          "name": "skillforge",
+          "head": "d08706a",
+          "dirty": 0
+        },
+        {
+          "name": "spark"
+        },
+        {
+          "name": "spark-harvest",
+          "head": "2944edc",
+          "dirty": 0
+        },
+        {
+          "name": "squawk",
+          "head": "177cdc6",
+          "dirty": 38
+        },
+        {
+          "name": "squawk-watchdog"
+        },
+        {
+          "name": "squawk-ws"
+        },
+        {
+          "name": "stable",
+          "head": "8b76f11",
+          "dirty": 0
+        },
+        {
+          "name": "standalone"
+        },
+        {
+          "name": "stash-guard"
+        },
+        {
+          "name": "stealthprint",
+          "head": "36b46c0",
+          "dirty": 0
+        },
+        {
+          "name": "stream-broker",
+          "head": "efe0493",
+          "dirty": 0
+        },
+        {
+          "name": "strudel-dev-vite",
+          "head": "8366d25",
+          "dirty": 0
+        },
+        {
+          "name": "strudel-sampler-server-vite",
+          "head": "f3432ec",
+          "dirty": 0
+        },
+        {
+          "name": "submodules"
+        },
+        {
+          "name": "super-board",
+          "head": "643f6e7",
+          "dirty": 0
+        },
+        {
+          "name": "switchboard",
+          "head": "82e35c6",
+          "dirty": 0
+        },
+        {
+          "name": "task-launch",
+          "head": "a8e7071",
+          "dirty": 0
+        },
+        {
+          "name": "tau-extensions",
+          "head": "897b2b9",
+          "dirty": 0
+        },
+        {
+          "name": "tau-verify",
+          "head": "08d64749",
+          "dirty": 17
+        },
+        {
+          "name": "tok",
+          "head": "eb947f3",
+          "dirty": 1
+        },
+        {
+          "name": "toolcall-agent"
+        },
+        {
+          "name": "toolkit"
+        },
+        {
+          "name": "toxicwind-repos",
+          "head": "2497a1a",
+          "dirty": 0
+        },
+        {
+          "name": "trading-post",
+          "head": "eecec4f6",
+          "dirty": 0
+        },
+        {
+          "name": "typo-kit",
+          "head": "5aaaa8d",
+          "dirty": 0
+        },
+        {
+          "name": "universal-keypool-bun",
+          "head": "93e3663",
+          "dirty": 0
+        },
+        {
+          "name": "universal-keypool-gateway",
+          "head": "639e4ea",
+          "dirty": 0
+        },
+        {
+          "name": "village-irc"
+        },
+        {
+          "name": "vision-kit",
+          "head": "bd6e69e",
+          "dirty": 0
+        },
+        {
+          "name": "websites"
+        },
+        {
+          "name": "wezterm-agent-mcp",
+          "head": "50fc06c",
+          "dirty": 0
+        },
+        {
+          "name": "windmill",
+          "head": "18fbf3e",
+          "dirty": 0
+        },
+        {
+          "name": "workmux",
+          "head": "a9f2b798",
+          "dirty": 1
+        },
+        {
+          "name": "wtf-filetrace"
+        },
+        {
+          "name": "wtf-orch"
+        },
+        {
+          "name": "wtf-orthogonal-seed"
+        },
+        {
+          "name": "yote",
+          "head": "2d08c79",
+          "dirty": 0
+        },
+        {
+          "name": "yote-maximal"
+        },
+        {
+          "name": "zed-android-port",
+          "head": "3db8579552",
+          "dirty": 0
+        },
+        {
+          "name": "zero-transport"
+        }
+      ]
+    },
+    {
+      "pen": "recon",
+      "products": [
+        {
+          "name": "recon-gallery",
+          "head": "22a8309ce",
+          "dirty": 0
+        }
+      ]
+    }
+  ]
+}
