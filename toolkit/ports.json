@@ -1,0 +1,651 @@
+{
+  "minted_at": "2026-11-02T00:56:42.956Z",
+  "ports": {
+    "bornite": {
+      "port": "25100",
+      "owner": "bornite",
+      "aliases": [
+        "HERD_PORT"
+      ]
+    },
+    "rust-web": {
+      "port": "25201",
+      "owner": "rust-web",
+      "aliases": [
+        "ESTATE_WEB_PORT",
+        "RUST_WEB_BACKEND_PORT"
+      ]
+    },
+    "model-guard": {
+      "port": "25101",
+      "owner": "model-guard",
+      "aliases": []
+    },
+    "yote-relay": {
+      "port": "25102",
+      "owner": "yote-relay",
+      "aliases": [
+        "YOTE_PORT"
+      ]
+    },
+    "rig-front": {
+      "port": "25103",
+      "owner": "rig-front",
+      "aliases": [
+        "RIG_PORT"
+      ]
+    },
+    "yote-core": {
+      "port": "25143",
+      "owner": "yote-core",
+      "aliases": [
+        "COYOTE_PORT"
+      ]
+    },
+    "prometheus": {
+      "port": "25105",
+      "owner": "prometheus",
+      "aliases": []
+    },
+    "feedlot-mcp": {
+      "port": "25226",
+      "owner": "feedlot-mcp",
+      "aliases": [
+        "HF_DOWNLOADER_PORT"
+      ]
+    },
+    "estate-web-watchdog": {
+      "port": "25108",
+      "owner": "estate_web",
+      "aliases": [
+        "WATCHDOG_PORT"
+      ]
+    },
+    "grafana": {
+      "port": "25110",
+      "owner": "grafana",
+      "aliases": []
+    },
+    "ghas-api": {
+      "port": "25112",
+      "owner": "ghas-api",
+      "aliases": []
+    },
+    "ghas-mcp": {
+      "port": "25113",
+      "owner": "ghas-mcp",
+      "aliases": []
+    },
+    "ghas-frontend": {
+      "port": "25114",
+      "owner": "next-server",
+      "aliases": []
+    },
+    "mesh-hub": {
+      "port": "25115",
+      "owner": "mesh-hub",
+      "aliases": []
+    },
+    "kimi-audit-dash": {
+      "port": "25116",
+      "owner": "kimi-audit-dash",
+      "aliases": []
+    },
+    "estate-chat": {
+      "port": "25120",
+      "owner": "chat.ts",
+      "aliases": []
+    },
+    "feedlot": {
+      "port": "25121",
+      "owner": "feedlot",
+      "aliases": []
+    },
+    "redis": {
+      "port": "25203",
+      "owner": "valkey-server",
+      "aliases": []
+    },
+    "prometheus-backend": {
+      "port": "25205",
+      "owner": "prometheus-backend",
+      "aliases": []
+    },
+    "hf-downloader-backend": {
+      "port": "25206",
+      "owner": "hf-downloader-backend",
+      "aliases": []
+    },
+    "grafana-backend": {
+      "port": "25210",
+      "owner": "grafana-backend",
+      "aliases": []
+    },
+    "qdrant": {
+      "port": "25133",
+      "owner": "qdrant",
+      "aliases": [
+        "QDRANT_HTTP_PORT"
+      ]
+    },
+    "qdrant-grpc": {
+      "port": "25134",
+      "owner": "qdrant-grpc",
+      "aliases": []
+    },
+    "ik-llama": {
+      "port": "25123",
+      "owner": "ik-llama",
+      "aliases": []
+    },
+    "turbo": {
+      "port": "25124",
+      "owner": "turbo",
+      "aliases": []
+    },
+    "pi-agent": {
+      "port": "25125",
+      "owner": "pi-agent",
+      "aliases": []
+    },
+    "kimi-code": {
+      "port": "25126",
+      "owner": "kimi-code",
+      "aliases": []
+    },
+    "tau-code": {
+      "port": "25145",
+      "owner": "tau-code",
+      "aliases": []
+    },
+    "kafka": {
+      "port": "25144",
+      "owner": "kafka",
+      "aliases": []
+    },
+    "thresher": {
+      "port": "25127",
+      "owner": "gatehouse",
+      "aliases": [
+        "MCPPROXY_GO_PORT"
+      ]
+    },
+    "antigravity-gateway": {
+      "port": "25128",
+      "owner": "antigravity",
+      "aliases": []
+    },
+    "zed": {
+      "port": "25129",
+      "owner": "zed",
+      "aliases": []
+    },
+    "keeper-browserless": {
+      "port": "25130",
+      "owner": "keeper-browserless",
+      "aliases": [
+        "BROWSERLESS_PORT"
+      ]
+    },
+    "zedra-host": {
+      "port": "25214",
+      "owner": "zedra-host",
+      "aliases": []
+    },
+    "sov-ghas": {
+      "port": "25131",
+      "owner": "sov-ghas",
+      "aliases": []
+    },
+    "sys-monitor": {
+      "port": "25132",
+      "owner": "sys-monitor",
+      "aliases": []
+    },
+    "squawk-feed": {
+      "port": "25135",
+      "owner": "squawk_feed.py",
+      "aliases": []
+    },
+    "fleet-feed": {
+      "port": "25158",
+      "owner": "fleet-feed",
+      "aliases": []
+    },
+    "mise": {
+      "port": "25139",
+      "owner": "mise",
+      "aliases": []
+    },
+    "antigravity-cli": {
+      "port": "25140",
+      "owner": "antigravity-cli",
+      "aliases": []
+    },
+    "mbx-cache": {
+      "port": "25148",
+      "owner": "mbx-cache",
+      "aliases": []
+    },
+    "nativelink-frontend": {
+      "port": "25155",
+      "owner": "nativelink-frontend",
+      "aliases": []
+    },
+    "nativelink-worker": {
+      "port": "25157",
+      "owner": "nativelink-worker",
+      "aliases": []
+    },
+    "oracle-core": {
+      "port": "25151",
+      "owner": "oracle",
+      "aliases": []
+    },
+    "bun-runtime": {
+      "port": "25141",
+      "owner": "bun-runtime",
+      "aliases": []
+    },
+    "bun-dev": {
+      "port": "25142",
+      "owner": "bun-dev",
+      "aliases": []
+    },
+    "fleet-power-interval": {
+      "port": "5000",
+      "owner": "fleet-power-interval",
+      "aliases": []
+    },
+    "nim-queue": {
+      "port": "25189",
+      "owner": "nim-queue",
+      "aliases": []
+    },
+    "reasoning-router": {
+      "port": "25190",
+      "owner": "reasoning-router",
+      "aliases": []
+    },
+    "nim-validation": {
+      "port": "25191",
+      "owner": "nim-validation",
+      "aliases": []
+    },
+    "sshx": {
+      "port": "25138",
+      "owner": "sshx",
+      "aliases": []
+    },
+    "fleet-ui": {
+      "port": "25136",
+      "owner": "fleet-ui",
+      "aliases": []
+    },
+    "ttyd": {
+      "port": "25216",
+      "owner": "ttyd",
+      "aliases": []
+    },
+    "hindsight-api": {
+      "port": "25117",
+      "owner": "hindsight-api",
+      "aliases": []
+    },
+    "nginx": {
+      "port": "25208",
+      "owner": "nginx",
+      "aliases": []
+    },
+    "rhodochrosite": {
+      "port": "25193",
+      "owner": "rhodochrosite",
+      "aliases": []
+    },
+    "matter-server": {
+      "port": "25209",
+      "owner": "matter-server",
+      "aliases": []
+    },
+    "hindsight-cp": {
+      "port": "25118",
+      "owner": "hindsight-cp",
+      "aliases": []
+    },
+    "estate-router": {
+      "port": "25104",
+      "owner": "estate-router",
+      "aliases": []
+    },
+    "stream-broker": {
+      "port": "25215",
+      "owner": "stream-broker",
+      "aliases": []
+    },
+    "tau-chute": {
+      "port": "25111",
+      "owner": "tau-chute",
+      "aliases": []
+    },
+    "gemini-mcp": {
+      "port": "25227",
+      "owner": "gemini-mcp",
+      "aliases": []
+    },
+    "whatsapp-mcp": {
+      "port": "25146",
+      "owner": "server.py",
+      "aliases": []
+    },
+    "awr-mcp": {
+      "port": "25198",
+      "owner": "awrawr_mcp.py",
+      "aliases": []
+    },
+    "exec-ws": {
+      "port": "25204",
+      "owner": "awrawr_ws_exec.py",
+      "aliases": [
+        "WS_EXEC_PORT"
+      ]
+    },
+    "null-g-proxy": {
+      "port": "25107",
+      "owner": "null-g-proxy",
+      "aliases": [
+        "NULL_G_PORT"
+      ]
+    },
+    "bench-radar": {
+      "port": "25181",
+      "owner": "bench-radar",
+      "aliases": []
+    },
+    "toolcall": {
+      "port": "25152",
+      "owner": "llama-server",
+      "aliases": []
+    },
+    "squawk-history": {
+      "port": "25229",
+      "owner": "squawk-history",
+      "aliases": []
+    },
+    "custom-auto-shim": {
+      "port": "25153",
+      "owner": "custom-auto-shim",
+      "aliases": []
+    },
+    "keypool": {
+      "port": "25109",
+      "owner": "keypool",
+      "aliases": []
+    },
+    "nim-kimi-sidecar": {
+      "port": "25163",
+      "owner": "nim-kimi-sidecar",
+      "aliases": []
+    },
+    "squawk-ws": {
+      "port": "25147",
+      "owner": "squawk-ws",
+      "aliases": []
+    },
+    "paper-poller": {
+      "port": "25149",
+      "owner": "paper-poller",
+      "aliases": []
+    },
+    "paper-poller-watchdog": {
+      "port": "25150",
+      "owner": "paper-poller-watchdog",
+      "aliases": []
+    },
+    "forensics-srv": {
+      "port": "25160",
+      "owner": "forensics-srv",
+      "aliases": []
+    },
+    "bornite-race": {
+      "port": "25161",
+      "owner": "bornite-race",
+      "aliases": []
+    },
+    "ml-serve": {
+      "port": "25180",
+      "owner": "ml-serve",
+      "aliases": []
+    },
+    "gibber-mcp": {
+      "port": "25106",
+      "owner": "gibber-mcp",
+      "aliases": []
+    },
+    "kitty-mcp": {
+      "port": "25211",
+      "owner": "kitty-mcp",
+      "aliases": []
+    },
+    "phone-sentinel": {
+      "port": "25178",
+      "owner": "phone-sentinel",
+      "aliases": []
+    },
+    "browser-keeper-cdp": {
+      "port": "25233",
+      "owner": "browser-keeper",
+      "aliases": []
+    },
+    "ralph-dash": {
+      "port": "25194",
+      "owner": "ralph-dashboard",
+      "aliases": []
+    },
+    "delendai-web": {
+      "port": "25197",
+      "owner": "boundless",
+      "aliases": [
+        "BOUNDLESS_PORT"
+      ]
+    },
+    "codebase-memory": {
+      "port": "25195",
+      "owner": "codebase-memory-mcp",
+      "aliases": []
+    },
+    "rig-kernel": {
+      "port": "25196",
+      "owner": "openfang",
+      "aliases": []
+    },
+    "mesh-landing": {
+      "port": "25207",
+      "owner": "mesh",
+      "aliases": []
+    },
+    "node-exporter": {
+      "port": "25231",
+      "owner": "node_exporter",
+      "aliases": []
+    },
+    "cockpit": {
+      "port": "25212",
+      "owner": "cockpit",
+      "aliases": []
+    },
+    "windmill": {
+      "port": "25219",
+      "owner": "windmill",
+      "aliases": []
+    },
+    "chalcopyrite": {
+      "port": "25200",
+      "owner": "chalcopyrite",
+      "aliases": []
+    },
+    "vansrouter": {
+      "port": "25237",
+      "owner": "source-owned",
+      "aliases": []
+    },
+    "agent-display": {
+      "port": "5900",
+      "owner": "agent-display",
+      "aliases": []
+    },
+    "agent-viewer": {
+      "port": "6080",
+      "owner": "agent-viewer",
+      "aliases": []
+    },
+    "files": {
+      "port": "34567",
+      "owner": "files",
+      "aliases": []
+    },
+    "bedrock-ui": {
+      "port": "25137",
+      "owner": "bedrock",
+      "aliases": []
+    },
+    "estate-exporter": {
+      "port": "25213",
+      "owner": "estate-exporter",
+      "aliases": []
+    },
+    "delendai-control-plane": {
+      "port": "25218",
+      "owner": "ranch-ui",
+      "aliases": [
+        "RANCH_UI_PORT"
+      ]
+    },
+    "rustdesk-hbbs": {
+      "port": "25221",
+      "owner": "rustdesk-hbbs",
+      "aliases": []
+    },
+    "rustdesk-hbbs-nat": {
+      "port": "25220",
+      "owner": "rustdesk-hbbs-nat",
+      "aliases": []
+    },
+    "rustdesk-hbbs-ws": {
+      "port": "25223",
+      "owner": "rustdesk-hbbs-ws",
+      "aliases": []
+    },
+    "rustdesk-hbbr": {
+      "port": "25222",
+      "owner": "rustdesk-hbbr",
+      "aliases": []
+    },
+    "rustdesk-hbbr-ws": {
+      "port": "25224",
+      "owner": "rustdesk-hbbr-ws",
+      "aliases": []
+    },
+    "doorbell-oauth-edge": {
+      "port": "25217",
+      "owner": "ranch",
+      "aliases": []
+    },
+    "feedlot-mcp-internal": {
+      "port": "25225",
+      "owner": "feedlot-mcp",
+      "aliases": []
+    },
+    "range-ui": {
+      "port": "25156",
+      "owner": "range-ui",
+      "aliases": [
+        "DELENDAI_CONTROL_PORT"
+      ]
+    },
+    "delendai-control-api": {
+      "port": "25162",
+      "owner": "delendai-control-api",
+      "aliases": []
+    },
+    "kappa-acp": {
+      "port": "25159",
+      "owner": "kappa-acp",
+      "aliases": []
+    },
+    "smithers-gateway": {
+      "port": "25280",
+      "owner": "smithers-gateway",
+      "aliases": []
+    },
+    "village-irc": {
+      "port": "25241",
+      "owner": "village-irc",
+      "aliases": []
+    },
+    "eidolon": {
+      "port": "25244",
+      "owner": "eidolon",
+      "aliases": []
+    },
+    "taas": {
+      "port": "25243",
+      "owner": "taas",
+      "aliases": []
+    },
+    "flotilla-mcp": {
+      "port": "25245",
+      "owner": "flotilla-mcp",
+      "aliases": []
+    },
+    "forge-web": {
+      "port": "25164",
+      "owner": "forge-web",
+      "aliases": []
+    },
+    "forge-docs": {
+      "port": "25165",
+      "owner": "forge-docs",
+      "aliases": []
+    },
+    "skopos-keeper": {
+      "port": "25236",
+      "owner": "skopos",
+      "aliases": []
+    },
+    "forge-flicker": {
+      "port": "20128",
+      "owner": "forge",
+      "aliases": []
+    },
+    "pens-ui": {
+      "port": "25232",
+      "owner": "pens-ui",
+      "aliases": []
+    },
+    "pens-completions": {
+      "port": "25252",
+      "owner": "geode",
+      "aliases": []
+    },
+    "vision-kit": {
+      "port": "25228",
+      "owner": "vision-kit",
+      "aliases": []
+    },
+    "selenite": {
+      "port": "25260",
+      "owner": "selenite",
+      "aliases": []
+    },
+    "abyss": {
+      "port": "25261",
+      "owner": "abyss",
+      "aliases": []
+    },
+    "strudel-sampler": {
+      "port": "55432",
+      "owner": "strudel-sampler",
+      "aliases": []
+    }
+  }
+}
