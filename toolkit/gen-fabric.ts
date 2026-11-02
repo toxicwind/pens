@@ -19,8 +19,10 @@ interface ProductEntry { name: string; repo?: string; head?: string; dirty?: num
 interface PenEntry { pen: string; products: ProductEntry[]; }
 
 export function listPens(root: string = PENS_ROOT, skip: Set<string> = SKIP): string[] {
+  let entries: string[] = [];
+  try { entries = readdirSync(root); } catch { return []; }
   const out: string[] = [];
-  for (const name of readdirSync(root)) {
+  for (const name of entries) {
     if (name.startsWith(".") || skip.has(name)) continue;
     const p = join(root, name);
     try {
@@ -82,10 +84,11 @@ export function buildFabric(root: string = PENS_ROOT): { minted_at: string; pens
   return { minted_at: new Date().toISOString(), pens: listPens(root).map((pen) => ({ pen, products: readProducts(pen, root) })) };
 }
 
-const arg = process.argv.slice(2);
-const outFlag = arg.indexOf("--out");
-const outPath = outFlag >= 0 ? arg[outFlag + 1] : join(PENS_ROOT, "toolkit", "fabric.json");
-
-const fabric = buildFabric();
-writeFileSync(outPath, JSON.stringify(fabric, null, 2));
-console.log(`wrote ${outPath} (${fabric.pens.length} pens, ${fabric.pens.reduce((n, p) => n + p.products.length, 0)} products)`);
+if (import.meta.main) {
+  const arg = process.argv.slice(2);
+  const outFlag = arg.indexOf("--out");
+  const outPath = outFlag >= 0 ? arg[outFlag + 1] : join(PENS_ROOT, "toolkit", "fabric.json");
+  const fabric = buildFabric();
+  writeFileSync(outPath, JSON.stringify(fabric, null, 2));
+  console.log(`wrote ${outPath} (${fabric.pens.length} pens, ${fabric.pens.reduce((n, p) => n + p.products.length, 0)} products)`);
+}
