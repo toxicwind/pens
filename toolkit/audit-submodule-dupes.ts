@@ -10,7 +10,7 @@ import { readFileSync, existsSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { execSync } from "node:child_process";
 
-const RANCH_ROOT = "/home/toxic/estate/ranch";
+const RANCH_ROOT = "/home/toxic/pens/estate/ranch";
 const GITMODULES_PATH = join(RANCH_ROOT, ".gitmodules");
 
 interface SubmoduleEntry {

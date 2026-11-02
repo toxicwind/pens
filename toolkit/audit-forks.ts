@@ -27,7 +27,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 // Portable paths: derive the repo root from the script's own location so the
-// toolkit runs on yote (/home/toxic/estate/ranch), on GitHub Actions runners
+// toolkit runs on yote (/home/toxic/pens/estate/ranch), on GitHub Actions runners
 // (checked out anywhere), and anywhere else — no machine-specific paths.
 const TOOLKIT_DIR = dirname(fileURLToPath(import.meta.url));
 const RANCH_ROOT = dirname(TOOLKIT_DIR);

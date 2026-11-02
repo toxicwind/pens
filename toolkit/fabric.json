@@ -1,5 +1,5 @@
 {
-  "minted_at": "2026-11-02T00:52:39.111Z",
+  "minted_at": "2026-11-02T01:14:51.869Z",
   "pens": [
     {
       "pen": "agentic-moment",
@@ -125,12 +125,12 @@
       "products": [
         {
           "name": "dedicated-mcp",
-          "head": "9458489",
+          "head": "ef4522f",
           "dirty": 0
         },
         {
           "name": "dedicated-server-ops",
-          "head": "08f9ade66",
+          "head": "4bee85f",
           "dirty": 0
         },
         {
@@ -221,7 +221,7 @@
       "products": [
         {
           "name": "azurite",
-          "head": "756ce90",
+          "head": "56c00a2",
           "dirty": 135
         },
         {
@@ -1430,6 +1430,16 @@
         {
           "name": "recon-gallery",
           "head": "22a8309ce",
+          "dirty": 0
+        }
+      ]
+    },
+    {
+      "pen": "toolkit",
+      "products": [
+        {
+          "name": "docs-mcp",
+          "head": "445235d",
           "dirty": 0
         }
       ]
