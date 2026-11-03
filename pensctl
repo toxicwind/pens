@@ -6,11 +6,12 @@
 #   pensctl list                    list pens + git/local status
 #   pensctl add <pen>               create a new pen (dir) + regenerate ignore
 #   pensctl generate-ignore         regenerate .gitignore (* ignores every pen)
-#   pensctl generate-yaml           regenerate pens.yaml from the live pen dirs + olympus registry
+#   pensctl generate-yaml           regenerate pens.yaml from live pen dirs + remotes + abyss (REAL generator)
 #   pensctl generate-pantheon       regenerate olympus-pantheon.md from local olympus/README.md
 #   pensctl generate-readme         regenerate README.md at pens root via generate-readme.ts
 #   pensctl generate-pen-readmes    regenerate every product pen's README via toolkit/readme-gen.ts
 #   pensctl doctor                  health: pens root git-less per-dir, no stray tracked content
+#   pensctl doctor --check          drift-guard: fails if pens.yaml is stale vs live pen dirs
 set -u
 PENS_ROOT="${PENS_ROOT:-/home/toxic/pens}"
 PENS_CTL="$PENS_ROOT/pensctl"
@@ -29,6 +30,7 @@ generate_ignore() {
     echo "!pens.yaml"
     echo "!olympus-pantheon.md"
     echo "!README.md"
+    echo "!AGENTS.md"
     echo "!FORKS.md"
     echo "!FORKS-report.json"
     echo "!FORKS-report.md"
@@ -40,9 +42,9 @@ generate_ignore() {
   echo "regenerated $PENS_ROOT/.gitignore"
 }
 
-# --- generate pens.yaml from live pen dirs (auto) ---
+# --- generate pens.yaml from live pen dirs + remotes + abyss (auto, real generator) ---
 generate_yaml() {
-  bun "$PENS_ROOT/toolkit/generate-manifest.ts"
+  bun "$PENS_ROOT/toolkit/generate-pens-yaml.ts"
   echo "generated $PENS_ROOT/pens.yaml"
 }
 
@@ -79,10 +81,18 @@ case "${1:-list}" in
   generate-pantheon) generate_pantheon ;;
   generate-readme) generate_readme ;;
   generate-pen-readmes) generate_pen_readmes ;;
-  generate-all) generate_ignore; bun "$PENS_ROOT/toolkit/generate-manifest.ts"; bun "$PENS_ROOT/toolkit/generate-readme.ts" --update; bun "$PENS_ROOT/toolkit/generate-readme.ts" --update --ranch ;;
+  generate-all) generate_ignore; bun "$PENS_ROOT/toolkit/generate-pens-yaml.ts"; bun "$PENS_ROOT/toolkit/generate-manifest.ts"; bun "$PENS_ROOT/toolkit/generate-readme.ts" --update; bun "$PENS_ROOT/toolkit/generate-readme.ts" --update --ranch ;;
   doctor)
     [ -d "$PENS_ROOT/.git" ] && echo "pens root IS a git repo (pointer superproject, expected)."
     echo "tracked files ($(cd "$PENS_ROOT" && git ls-files 2>/dev/null | wc -l)):"; (cd "$PENS_ROOT" && git ls-files 2>/dev/null) | sed 's/^/  /'
+    if [[ "${2:-}" == "--check" ]]; then
+      bun "$PENS_ROOT/toolkit/generate-pens-yaml.ts" --check
+      local drift=$?
+      if [ $drift -ne 0 ]; then
+        echo "fix: pensctl generate-yaml" >&2
+        exit $drift
+      fi
+    fi
     list_pens ;;
   *) echo "usage: pensctl (list|add <pen>|generate-ignore|generate-yaml|generate-pantheon|generate-readme|generate-pen-readmes|generate-all|doctor)"; exit 2;;
 esac

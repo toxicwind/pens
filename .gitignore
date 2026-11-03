@@ -7,6 +7,7 @@
 !pens.yaml
 !olympus-pantheon.md
 !README.md
+!AGENTS.md
 !FORKS.md
 !FORKS-report.json
 !FORKS-report.md
@@ -14,5 +15,3 @@
 !.meta-themes.yaml
 !toolkit/
 !toolkit/**
-!docs/
-!docs/**
