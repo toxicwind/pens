@@ -15,7 +15,7 @@ import { join } from "node:path";
 const PENS_ROOT = process.env.PENS_ROOT ?? "/home/toxic/pens";
 const SKIP = new Set(["estate", "pens", "backups", "archive", "toolkit", "wip", "tmp"]);
 
-interface ProductEntry { name: string; repo?: string; head?: string; dirty?: number; }
+interface ProductEntry { name: string; repo?: string; head?: string; dirty?: number; aliases?: string[]; }
 interface PenEntry { pen: string; products: ProductEntry[]; }
 
 export function listPens(root: string = PENS_ROOT, skip: Set<string> = SKIP): string[] {
@@ -44,23 +44,43 @@ export function readProducts(pen: string, root: string = PENS_ROOT): ProductEntr
         const enabled = typeof info === "object" && info !== null ? (info as { enabled?: boolean }).enabled : undefined;
         if (enabled === false) continue;
         const repo = typeof info === "object" && info !== null ? (info as { repo?: string }).repo : undefined;
-        seen.set(name, { name, repo });
+        const aliases = typeof info === "object" && info !== null ? (info as { aliases?: string[] }).aliases : undefined;
+        seen.set(name, { name, repo, aliases });
       }
     } catch { /* malformed registry */ }
   }
   const prodDir = join(root, pen, "products");
+  const onDisk = new Set<string>();
   if (existsSync(prodDir)) {
     try {
       for (const n of readdirSync(prodDir)) {
         if (n.startsWith(".")) continue;
+        onDisk.add(n);
         const existing = seen.get(n);
         seen.set(n, existing ?? { name: n });
       }
     } catch { /* unreadable */ }
   }
+  // Flat pens (ergasterion, cherish-style): products sit at pen root, not products/.
+  // Detect standalone git dirs at pen root so registry rows for them are never
+  // mis-marked as aliasOf remnants.
+  try {
+    for (const n of readdirSync(join(root, pen))) {
+      if (n.startsWith(".")) continue;
+      if (onDisk.has(n)) continue;
+      if (existsSync(join(root, pen, n, ".git"))) onDisk.add(n);
+    }
+  } catch { /* unreadable */ }
   const out: ProductEntry[] = [];
   for (const entry of seen.values()) {
-    const gitDir = join(root, pen, "products", entry.name);
+    // Registry remnant without an on-disk checkout = a pure alias row
+    // (e.g. `xerj` -> argos, `pairs` -> lapidary). Resolvable, never a product.
+    if (!onDisk.has(entry.name) && entry.aliases && entry.aliases.length > 0) {
+      entry.aliasOf = entry.aliases[0];
+    }
+    const gitDir = existsSync(join(root, pen, "products", entry.name))
+      ? join(root, pen, "products", entry.name)
+      : join(root, pen, entry.name);
     if (existsSync(join(gitDir, ".git"))) {
       entry.head = headOf(gitDir);
       entry.dirty = dirtyCount(gitDir);

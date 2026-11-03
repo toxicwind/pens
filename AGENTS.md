@@ -17,7 +17,7 @@
 | `pens/barn/` | **ops tooling** | thresher, weave, secretsmith, estate-ops |
 | `pens/ranch/` | **fleet & model components** | squawk, github-search (blackbird), rename-roundup |
 | `pens/olympus/` | **Greek-named products** | tau, kappa, sigma, keryx, muse |
-| `pens/husky/` | **the shell pen** — desktop shell pack (THIN coordinator; husk = shell) | estate-shell (flagship: env doctrine + TS deploy + doctor), quickshell ii dots lineage, DP3/keeper surface |
+| `pens/kelpie/` | **the shell pen** — desktop shell pack (THIN coordinator; husk = shell) | estate-shell (flagship: env doctrine + TS deploy + doctor), quickshell ii dots lineage, DP3/keeper surface |
 
 > husky joined 2026-11-02 (furry-male vibes; the name is the domain: a husk is
 > a shell). Public quickshell rices (Panacea/Serashell/Shizuka) own the visual

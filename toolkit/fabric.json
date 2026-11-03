@@ -1,24 +1,51 @@
 {
-  "minted_at": "2026-11-02T01:14:51.869Z",
+  "minted_at": "2026-11-03T02:51:41.326Z",
   "pens": [
     {
       "pen": "agentic-moment",
       "products": [
         {
           "name": "argos",
-          "head": "eb4a4b3",
-          "dirty": 2
-        },
-        {
-          "name": "audit",
-          "head": "9f16376",
+          "aliases": [
+            "xerj"
+          ],
+          "head": "567e9fe",
           "dirty": 1
         },
         {
-          "name": "log-helper"
+          "name": "audit",
+          "aliases": [],
+          "head": "62ee6ee",
+          "dirty": 2
         },
         {
-          "name": "site"
+          "name": "log-helper",
+          "aliases": []
+        },
+        {
+          "name": "site",
+          "aliases": []
+        },
+        {
+          "name": "xerj",
+          "aliases": [
+            "argos"
+          ],
+          "aliasOf": "argos"
+        }
+      ]
+    },
+    {
+      "pen": "army",
+      "products": [
+        {
+          "name": "arena"
+        },
+        {
+          "name": "gorilla"
+        },
+        {
+          "name": "simian"
         }
       ]
     },
@@ -27,88 +54,127 @@
       "products": [
         {
           "name": "archguard",
-          "head": "f2f4e25",
-          "dirty": 2
+          "aliases": [],
+          "head": "0bf1cec",
+          "dirty": 0
+        },
+        {
+          "name": "blackbird",
+          "dirty": 32
+        },
+        {
+          "name": "bun-control-mcp",
+          "dirty": 4
         },
         {
           "name": "chute",
-          "head": "5403d3a",
-          "dirty": 2
+          "aliases": [],
+          "head": "3949a21",
+          "dirty": 0
         },
         {
           "name": "estate-mesh",
-          "head": "7084013",
+          "aliases": [],
+          "head": "67b6052",
           "dirty": 0
         },
         {
           "name": "estate-ops",
-          "head": "bac122a",
-          "dirty": 2
-        },
-        {
-          "name": "estate-tailscale"
-        },
-        {
-          "name": "fanout",
-          "head": "435b08a",
+          "aliases": [],
+          "head": "975f64d",
           "dirty": 0
         },
         {
-          "name": "flatbread"
+          "name": "estate-tailscale",
+          "aliases": []
+        },
+        {
+          "name": "fanout",
+          "aliases": [],
+          "head": "9fa6f73",
+          "dirty": 0
+        },
+        {
+          "name": "flatbread",
+          "aliases": []
         },
         {
           "name": "forge",
-          "head": "f499fca",
-          "dirty": 53
+          "aliases": [],
+          "head": "d44e4a4",
+          "dirty": 1
         },
         {
-          "name": "gatehouse"
+          "name": "gatehouse",
+          "aliases": []
         },
         {
-          "name": "gatehouse-staging"
+          "name": "gatehouse-staging",
+          "aliases": []
         },
         {
           "name": "gem-dredge",
-          "head": "2c9ac38",
-          "dirty": 2
+          "aliases": [],
+          "head": "8003cc1",
+          "dirty": 0
         },
         {
-          "name": "gemini-mcp"
+          "name": "gemini-mcp",
+          "aliases": []
         },
         {
-          "name": "lookout"
+          "name": "lookout",
+          "aliases": []
+        },
+        {
+          "name": "loom",
+          "head": "37575043a",
+          "dirty": 0
         },
         {
           "name": "nativelink",
+          "aliases": [],
           "head": "28e0e006",
           "dirty": 0
         },
         {
           "name": "pens-index",
-          "head": "88e8cef",
+          "aliases": [],
+          "head": "b2ae9f3",
           "dirty": 0
         },
         {
-          "name": "rosec"
+          "name": "rosec",
+          "aliases": []
         },
         {
-          "name": "secretsmith"
+          "name": "secretsmith",
+          "aliases": []
         },
         {
           "name": "thresher",
-          "head": "c2859a4",
-          "dirty": 47
+          "aliases": [],
+          "head": "27deaee5",
+          "dirty": 6
         },
         {
           "name": "weave",
+          "aliases": [],
           "head": "3388fba",
           "dirty": 0
         },
         {
-          "name": "weave-sub"
+          "name": "weave-sub",
+          "aliases": []
         },
         {
-          "name": "xerj"
+          "name": "wip-to-product",
+          "head": "94e7979",
+          "dirty": 0
+        },
+        {
+          "name": "xerj",
+          "aliases": []
         }
       ]
     },
@@ -126,60 +192,127 @@
         {
           "name": "dedicated-mcp",
           "head": "ef4522f",
-          "dirty": 0
+          "dirty": 1
         },
         {
           "name": "dedicated-server-ops",
           "head": "4bee85f",
-          "dirty": 0
+          "dirty": 1
         },
         {
-          "name": "effusion-labs"
+          "name": "effusion-labs",
+          "head": "a465a7c",
+          "dirty": 1
+        },
+        {
+          "name": "effusion-labs.shadow-keep",
+          "head": "c2a62bf",
+          "dirty": 1
         }
       ]
     },
     {
       "pen": "ergasterion",
-      "products": []
+      "products": [
+        {
+          "name": "bun scaffold",
+          "aliases": [
+            "eidos"
+          ],
+          "aliasOf": "eidos"
+        },
+        {
+          "name": "eidolon",
+          "aliases": [],
+          "head": "48cadd5",
+          "dirty": 0
+        },
+        {
+          "name": "eidos",
+          "aliases": [
+            "bun scaffold",
+            "bun-scaffold",
+            "scaffold"
+          ],
+          "head": "268ba24",
+          "dirty": 0
+        },
+        {
+          "name": "ergane",
+          "aliases": [],
+          "head": "2b04e586",
+          "dirty": 3
+        },
+        {
+          "name": "hephaistos",
+          "aliases": [
+            "hepistos",
+            "hephestos"
+          ],
+          "head": "9e4817a6",
+          "dirty": 0
+        },
+        {
+          "name": "hepistos",
+          "aliases": [
+            "hephaistos"
+          ],
+          "aliasOf": "hephaistos"
+        },
+        {
+          "name": "hestia",
+          "aliases": [],
+          "head": "f71edf3",
+          "dirty": 0
+        }
+      ]
     },
     {
       "pen": "fathom",
       "products": [
         {
-          "name": "fathom-docs"
+          "name": "fathom-docs",
+          "aliases": []
         },
         {
           "name": "linux-serum-synth",
+          "aliases": [],
           "head": "0f9cc0a",
           "dirty": 0
         },
         {
           "name": "m3u-toolkit",
+          "aliases": [],
           "head": "161dfd8",
           "dirty": 0
         },
         {
           "name": "plumb",
+          "aliases": [],
           "head": "4b448b1",
           "dirty": 0
         },
         {
           "name": "strudel-dev-vite",
+          "aliases": [],
           "head": "aadf500e",
           "dirty": 0
         },
         {
           "name": "strudel-mcp",
+          "aliases": [],
           "head": "b36e92d",
           "dirty": 0
         },
         {
           "name": "strudel-sampler-server-vite",
+          "aliases": [],
           "head": "f3432ec",
           "dirty": 0
         },
         {
           "name": "trench",
+          "aliases": [],
           "head": "0aea925",
           "dirty": 0
         }
@@ -194,10 +327,12 @@
           "dirty": 0
         },
         {
-          "name": "anvil"
+          "name": "anvil",
+          "aliases": []
         },
         {
           "name": "codeflux-patchling",
+          "aliases": [],
           "head": "d13697e",
           "dirty": 1
         },
@@ -212,7 +347,8 @@
           "dirty": 0
         },
         {
-          "name": "router"
+          "name": "router",
+          "aliases": []
         }
       ]
     },
@@ -220,125 +356,218 @@
       "pen": "geode",
       "products": [
         {
+          "name": "audit-correlator",
+          "head": "802b73f",
+          "dirty": 0
+        },
+        {
           "name": "azurite",
-          "head": "56c00a2",
-          "dirty": 135
+          "aliases": [],
+          "head": "54892e7",
+          "dirty": 16
+        },
+        {
+          "name": "bge-oracle",
+          "head": "fc78b15",
+          "dirty": 2
         },
         {
           "name": "bornite",
-          "head": "94e342a",
+          "aliases": [],
+          "head": "4f44bab",
           "dirty": 0
         },
         {
           "name": "chalcopyrite",
-          "head": "03783dc",
+          "aliases": [],
+          "head": "b63fd10",
           "dirty": 0
         },
         {
           "name": "cleavage",
-          "head": "b0bd2a8",
+          "aliases": [],
+          "head": "ed0f57e",
           "dirty": 0
         },
         {
           "name": "coreelec-mcp",
-          "head": "f487af3",
+          "aliases": [],
+          "head": "823b782",
           "dirty": 0
         },
         {
-          "name": "estate-skills"
+          "name": "cuprite",
+          "head": "abc2e88",
+          "dirty": 0
+        },
+        {
+          "name": "estate-skills",
+          "aliases": []
         },
         {
           "name": "faceter",
-          "head": "b2462d0",
-          "dirty": 34
-        },
-        {
-          "name": "forensia",
-          "head": "bbabd42",
+          "aliases": [],
+          "head": "1390ae1",
           "dirty": 0
         },
         {
-          "name": "infusion"
+          "name": "forensia",
+          "aliases": [],
+          "head": "21f8ed4",
+          "dirty": 0
+        },
+        {
+          "name": "infusion",
+          "aliases": []
+        },
+        {
+          "name": "injection-detector",
+          "head": "a7a298d",
+          "dirty": 0
         },
         {
           "name": "lapidary",
-          "head": "a3d4671",
+          "aliases": [
+            "pairs",
+            "faceter"
+          ],
+          "head": "23e51bc",
           "dirty": 0
         },
         {
           "name": "malachite",
-          "head": "c8c65a2",
+          "aliases": [],
+          "head": "83ec1bf",
           "dirty": 0
         },
         {
           "name": "mimetite",
-          "head": "7906782",
+          "aliases": [],
+          "head": "9b35844",
           "dirty": 1
         },
         {
           "name": "opal",
-          "head": "32cf658",
+          "aliases": [],
+          "head": "f8073f7",
           "dirty": 0
         },
         {
-          "name": "pairs"
+          "name": "pairs",
+          "aliases": [
+            "lapidary"
+          ],
+          "aliasOf": "lapidary"
         },
         {
           "name": "pens-completions",
-          "head": "0645bb8",
+          "aliases": [],
+          "head": "3ada1e6",
           "dirty": 0
         },
         {
           "name": "perthite",
+          "aliases": [],
           "head": "f2410bd",
           "dirty": 0
         },
         {
           "name": "pi-skills",
-          "head": "509d34a",
+          "aliases": [],
+          "head": "d18683e",
           "dirty": 0
         },
         {
           "name": "pseudobrookite",
-          "head": "a764f0e",
+          "aliases": [],
+          "head": "ff5dcd1",
           "dirty": 0
         },
         {
           "name": "pylae",
+          "aliases": [
+            "pylae",
+            "omniroute"
+          ],
           "head": "4e6e3e4f92",
           "dirty": 2
         },
         {
           "name": "rhodochrosite",
-          "head": "861dc7d",
-          "dirty": 6
+          "aliases": [],
+          "head": "bebc2eb",
+          "dirty": 0
         },
         {
-          "name": "scintillator"
+          "name": "scintillator",
+          "aliases": []
         },
         {
           "name": "selenite",
-          "head": "7940a25",
-          "dirty": 1
+          "head": "bf8cf8a",
+          "dirty": 0
         },
         {
           "name": "spine",
-          "head": "fb10f64",
+          "aliases": [],
+          "head": "a9d1f60",
           "dirty": 0
         },
         {
           "name": "trio",
-          "head": "21c703d",
+          "aliases": [],
+          "head": "f1c0794",
           "dirty": 0
         },
         {
-          "name": "triphylite"
+          "name": "triphylite",
+          "aliases": []
         }
       ]
     },
     {
       "pen": "mesh",
       "products": []
+    },
+    {
+      "pen": "mosaic",
+      "products": [
+        {
+          "name": "daemon-page",
+          "head": "4bc3061",
+          "dirty": 1
+        },
+        {
+          "name": "license-page",
+          "head": "212063f",
+          "dirty": 1
+        },
+        {
+          "name": "mosaic-mcp",
+          "head": "a4bfb65",
+          "dirty": 0
+        }
+      ]
+    },
+    {
+      "pen": "netrace",
+      "products": [
+        {
+          "name": "blamescope",
+          "head": "70297ad",
+          "dirty": 0
+        },
+        {
+          "name": "netrace-cli",
+          "head": "40b3593",
+          "dirty": 0
+        },
+        {
+          "name": "netrace-surface",
+          "head": "207b8bd",
+          "dirty": 0
+        }
+      ]
     },
     {
       "pen": "nomenclator",
@@ -349,151 +578,183 @@
       "products": [
         {
           "name": "agon",
-          "head": "6e3dd58",
-          "dirty": 12
+          "aliases": [],
+          "head": "349c941",
+          "dirty": 0
         },
         {
           "name": "antilogos",
-          "head": "8a788ff",
-          "dirty": 6
+          "aliases": [],
+          "head": "a795794",
+          "dirty": 0
         },
         {
           "name": "chronos-forge",
+          "aliases": [],
           "head": "02dbd38",
           "dirty": 0
         },
         {
           "name": "didymos",
-          "head": "b5e879a",
-          "dirty": 1
-        },
-        {
-          "name": "ergane",
-          "head": "df577ce4",
-          "dirty": 3
-        },
-        {
-          "name": "forge"
-        },
-        {
-          "name": "haos"
-        },
-        {
-          "name": "hestia",
-          "head": "87f4cc8",
+          "aliases": [],
+          "head": "931b846",
           "dirty": 0
         },
         {
-          "name": "hodos"
+          "name": "ergane",
+          "aliases": [],
+          "head": "6ad0d31d",
+          "dirty": 0
+        },
+        {
+          "name": "forge",
+          "aliases": []
+        },
+        {
+          "name": "haos",
+          "aliases": []
+        },
+        {
+          "name": "hestia",
+          "aliases": [],
+          "head": "4c00c49",
+          "dirty": 0
+        },
+        {
+          "name": "hodos",
+          "aliases": []
         },
         {
           "name": "kairos",
-          "head": "2567e64",
-          "dirty": 13
+          "aliases": [],
+          "head": "e6f4ff8",
+          "dirty": 0
         },
         {
           "name": "kappa",
-          "head": "c4181ef",
-          "dirty": 1
+          "aliases": [],
+          "head": "bb0dc76",
+          "dirty": 26
         },
         {
           "name": "keryx",
-          "head": "9111908",
+          "aliases": [],
+          "head": "fbb18df",
           "dirty": 0
         },
         {
           "name": "kilo",
-          "head": "34e82feb3f",
-          "dirty": 1
+          "aliases": [],
+          "head": "3927373c79",
+          "dirty": 0
         },
         {
           "name": "kleio",
-          "head": "a314e64",
+          "aliases": [],
+          "head": "af93fda",
           "dirty": 0
         },
         {
           "name": "kryptos",
-          "head": "2ae46b4",
-          "dirty": 0
+          "aliases": [],
+          "head": "4ae76f8",
+          "dirty": 46
         },
         {
           "name": "lambda",
-          "head": "bdb245d",
+          "aliases": [],
+          "head": "a704b7f",
           "dirty": 1
         },
         {
           "name": "mneme",
+          "aliases": [],
           "head": "54654f7",
-          "dirty": 0
+          "dirty": 1
         },
         {
           "name": "morphe",
-          "head": "c0176bb",
+          "aliases": [],
+          "head": "6c1d468",
           "dirty": 0
         },
         {
           "name": "muse",
-          "head": "0b46db7",
+          "aliases": [],
+          "head": "8b69265",
           "dirty": 0
         },
         {
           "name": "opentui",
+          "aliases": [],
           "head": "8df63ba9",
-          "dirty": 0
-        },
-        {
-          "name": "opsis",
-          "head": "6b39716",
           "dirty": 1
         },
         {
-          "name": "pinax",
-          "head": "3266962",
+          "name": "opsis",
+          "aliases": [],
+          "head": "2f72bf1",
           "dirty": 0
         },
         {
-          "name": "primitives"
+          "name": "pinax",
+          "aliases": [],
+          "head": "3266962",
+          "dirty": 1
         },
         {
-          "name": "propylon"
+          "name": "primitives",
+          "aliases": []
         },
         {
-          "name": "pylae"
+          "name": "propylon",
+          "aliases": []
+        },
+        {
+          "name": "pylae",
+          "aliases": []
         },
         {
           "name": "rig-citizen",
+          "aliases": [],
           "head": "bd11e68",
-          "dirty": 0
+          "dirty": 1
         },
         {
           "name": "sigma",
+          "aliases": [],
           "head": "30d21332",
           "dirty": 0
         },
         {
           "name": "skopos",
-          "head": "cb828a7",
-          "dirty": 2
+          "aliases": [],
+          "head": "43bf7ae",
+          "dirty": 0
         },
         {
           "name": "tarachos",
-          "head": "a4f19a1",
+          "aliases": [],
+          "head": "4fc51d7",
           "dirty": 0
         },
         {
           "name": "tau",
-          "head": "f0bfd034e7",
-          "dirty": 6
+          "aliases": [],
+          "head": "790e00cf64",
+          "dirty": 0
         },
         {
           "name": "ts-blank-space",
+          "aliases": [],
           "head": "ba04b4e",
-          "dirty": 0
+          "dirty": 1
         },
         {
           "name": "typescript-go",
+          "aliases": [],
           "head": "89d5d5b2",
-          "dirty": 0
+          "dirty": 1
         }
       ]
     },
@@ -502,925 +763,1136 @@
       "products": [
         {
           "name": "AgentForensics",
-          "head": "803f3f0",
+          "aliases": [],
+          "head": "0ab0c00",
           "dirty": 0
         },
         {
           "name": "agentic-completions",
-          "head": "6ba859a",
+          "head": "bbf04b2",
           "dirty": 0
         },
         {
           "name": "ai-merge-resolve",
-          "head": "2d31fa8",
+          "aliases": [],
+          "head": "fee0921",
           "dirty": 0
         },
         {
-          "name": "android-fleet"
+          "name": "android-fleet",
+          "aliases": []
         },
         {
           "name": "apk-autopsy",
+          "aliases": [],
           "head": "d2a02a6",
           "dirty": 0
         },
         {
           "name": "arroyo",
-          "head": "5bcb3df",
+          "aliases": [],
+          "head": "4dcae0e",
           "dirty": 0
         },
         {
           "name": "arxiv-mcp-vendored",
-          "head": "e16191b",
+          "head": "40e21ed",
           "dirty": 0
         },
         {
           "name": "ast-grep-rules",
-          "head": "bd75695",
+          "aliases": [],
+          "head": "61ac3a4",
           "dirty": 0
         },
         {
-          "name": "ast-tools"
+          "name": "ast-tools",
+          "aliases": []
         },
         {
-          "name": "audits"
+          "name": "audits",
+          "aliases": []
         },
         {
           "name": "auto1m",
-          "head": "1e5e2c8",
-          "dirty": 1
+          "aliases": [],
+          "head": "3551747",
+          "dirty": 0
         },
         {
           "name": "awesome-free-ai-coding",
-          "head": "7bd7c1de",
+          "aliases": [],
+          "head": "c412d43b",
           "dirty": 0
         },
         {
-          "name": "barn"
+          "name": "barn",
+          "aliases": []
         },
         {
           "name": "bench-radar",
-          "head": "7e3bad0",
-          "dirty": 1
-        },
-        {
-          "name": "borrowed"
-        },
-        {
-          "name": "bridge",
-          "head": "16c384f",
-          "dirty": 8
-        },
-        {
-          "name": "bugbounty",
-          "head": "4168021",
-          "dirty": 4
-        },
-        {
-          "name": "campfire",
-          "head": "6f71ee5",
+          "aliases": [],
+          "head": "e3e4f9d",
           "dirty": 0
         },
         {
-          "name": "cell-mirror"
+          "name": "borrowed",
+          "aliases": []
+        },
+        {
+          "name": "botfather-lib",
+          "head": "34affbf",
+          "dirty": 0
+        },
+        {
+          "name": "bridge",
+          "aliases": [],
+          "head": "8065f63",
+          "dirty": 0
+        },
+        {
+          "name": "bugbounty",
+          "aliases": [],
+          "head": "6a1bdcc",
+          "dirty": 0
+        },
+        {
+          "name": "campfire",
+          "aliases": [],
+          "head": "966b787",
+          "dirty": 0
+        },
+        {
+          "name": "cell-mirror",
+          "aliases": []
         },
         {
           "name": "classifier",
-          "head": "9001502",
+          "aliases": [],
+          "head": "a524e6e",
           "dirty": 0
         },
         {
           "name": "classifier-preflight",
-          "head": "20789a9",
+          "aliases": [],
+          "head": "6f50583",
           "dirty": 0
         },
         {
           "name": "claude-night-market",
+          "aliases": [],
           "head": "5847f53",
           "dirty": 0
         },
         {
           "name": "codebase-memory",
-          "head": "584d2ec",
+          "aliases": [],
+          "head": "209edd2",
           "dirty": 0
         },
         {
           "name": "computer-use-linux",
+          "aliases": [],
           "head": "a1a88c6",
           "dirty": 0
         },
         {
-          "name": "connectors"
+          "name": "connectors",
+          "aliases": []
         },
         {
           "name": "cookie-vault",
-          "head": "c074029",
+          "aliases": [],
+          "head": "f232a7e",
           "dirty": 0
         },
         {
           "name": "corral",
+          "aliases": [],
           "head": "d541f1d",
           "dirty": 0
         },
         {
           "name": "cron-trust",
-          "head": "09fef76",
+          "aliases": [],
+          "head": "f55d4cd",
           "dirty": 0
         },
         {
           "name": "cs3-velvet",
-          "head": "527f615",
+          "aliases": [],
+          "head": "56d64a3",
           "dirty": 0
         },
         {
           "name": "dashboard",
-          "head": "dcd53d1",
-          "dirty": 1
+          "aliases": [],
+          "head": "3790110",
+          "dirty": 0
         },
         {
-          "name": "data"
+          "name": "data",
+          "aliases": []
         },
         {
           "name": "devloop",
-          "head": "00467d3",
+          "aliases": [],
+          "head": "fbf01ff",
           "dirty": 0
         },
         {
           "name": "disparate-latent-experiment",
-          "head": "ba8ab09",
+          "aliases": [],
+          "head": "45960c7",
           "dirty": 0
         },
         {
           "name": "doorbell",
-          "head": "9eaaba7",
-          "dirty": 14
+          "aliases": [],
+          "head": "9a55fdb",
+          "dirty": 0
         },
         {
           "name": "dots-client",
-          "head": "e4ef10b",
+          "aliases": [],
+          "head": "ae92453",
           "dirty": 0
         },
         {
           "name": "drover",
-          "head": "d1fa8d8",
+          "aliases": [],
+          "head": "f18b157",
           "dirty": 0
         },
         {
           "name": "dualspace-ast-bm25-hybrid",
-          "head": "6c3adb4",
+          "aliases": [],
+          "head": "27087ae",
           "dirty": 0
         },
         {
           "name": "ego-lite",
-          "head": "ece0aaa",
+          "aliases": [],
+          "head": "35aecb8",
           "dirty": 0
         },
         {
           "name": "emergent",
-          "head": "981116d",
-          "dirty": 2
+          "aliases": [],
+          "head": "2ba69d3",
+          "dirty": 0
         },
         {
-          "name": "estate-brain"
+          "name": "estate-brain",
+          "aliases": []
         },
         {
           "name": "estate-chat",
-          "head": "390d31e",
+          "aliases": [],
+          "head": "188cfd2",
           "dirty": 0
         },
         {
           "name": "estate-dispersal-monolith",
-          "head": "3ae6aad",
+          "aliases": [],
+          "head": "207750c",
           "dirty": 0
         },
         {
-          "name": "estate-monitor"
+          "name": "estate-monitor",
+          "aliases": []
         },
         {
-          "name": "estate-whoa-breakthrough"
+          "name": "estate-whoa-breakthrough",
+          "aliases": []
         },
         {
           "name": "examples",
-          "head": "ad14b87",
+          "aliases": [],
+          "head": "dadd036",
           "dirty": 0
         },
         {
           "name": "extensions",
-          "head": "9722274",
+          "aliases": [],
+          "head": "446a714",
           "dirty": 0
         },
         {
           "name": "fast-race",
-          "head": "8775978",
-          "dirty": 2
+          "aliases": [],
+          "head": "2a26c51",
+          "dirty": 0
         },
         {
           "name": "feedlot-mcp",
-          "head": "1ccff31",
+          "aliases": [],
+          "head": "609bc10",
           "dirty": 0
         },
         {
           "name": "ferret-den",
+          "aliases": [],
           "head": "479dfff",
           "dirty": 0
         },
         {
           "name": "ffs-diff",
+          "aliases": [],
           "head": "b531972",
           "dirty": 0
         },
         {
           "name": "fleet",
-          "head": "7ab4315",
-          "dirty": 3
+          "aliases": [],
+          "head": "e6717ad",
+          "dirty": 0
         },
         {
           "name": "flicker",
-          "head": "5ae5290c6",
-          "dirty": 1
+          "aliases": [],
+          "head": "8594ac9a2",
+          "dirty": 0
         },
         {
           "name": "forge-mcp",
-          "head": "4e22ffb",
+          "aliases": [],
+          "head": "e1dd0a1",
           "dirty": 0
         },
         {
           "name": "freebuffet",
-          "head": "365ed04",
+          "aliases": [],
+          "head": "8de3821",
           "dirty": 0
         },
         {
           "name": "gavel",
-          "head": "cf4fdec",
-          "dirty": 8
-        },
-        {
-          "name": "gayxxx-estate",
-          "head": "dfc5463",
+          "aliases": [],
+          "head": "aa207ed",
           "dirty": 0
         },
         {
-          "name": "geode-rig"
+          "name": "gayxxx-estate",
+          "aliases": [],
+          "head": "08cdd67",
+          "dirty": 0
         },
         {
-          "name": "gguf-read"
+          "name": "geode-rig",
+          "aliases": []
+        },
+        {
+          "name": "gguf-read",
+          "aliases": []
         },
         {
           "name": "ghq",
+          "aliases": [],
           "head": "a54a3ae",
           "dirty": 0
         },
         {
           "name": "gibber-mcp",
-          "head": "c341b4ddc",
+          "aliases": [],
+          "head": "ead318fc0",
           "dirty": 2
         },
         {
           "name": "github-search",
-          "head": "c7d6e6d",
-          "dirty": 1
+          "aliases": [],
+          "head": "12f68ef",
+          "dirty": 0
         },
         {
           "name": "gito",
-          "head": "0c9d18d",
+          "aliases": [],
+          "head": "0142283",
           "dirty": 0
         },
         {
           "name": "godzilla-llama.cpp",
-          "head": "4463f0a05",
+          "aliases": [],
+          "head": "7e6ef95e7",
           "dirty": 0
         },
         {
-          "name": "hatch"
+          "name": "hatch",
+          "aliases": []
         },
         {
           "name": "hatch-decode",
-          "head": "7452e34",
-          "dirty": 1
+          "aliases": [],
+          "head": "914525d",
+          "dirty": 0
         },
         {
-          "name": "herd"
+          "name": "herd",
+          "aliases": []
         },
         {
           "name": "herdproof-bun",
-          "head": "23a1716",
+          "aliases": [],
+          "head": "8f119b8",
           "dirty": 0
         },
         {
           "name": "hf-model-sync",
-          "head": "a5fc813",
-          "dirty": 1
+          "aliases": [],
+          "head": "4dc6b50",
+          "dirty": 0
         },
         {
           "name": "homelessbrian-NuvioTV",
-          "head": "50e713e33",
+          "aliases": [],
+          "head": "60907f0bf",
           "dirty": 0
         },
         {
           "name": "host-proof",
-          "head": "a54b2b6",
+          "aliases": [],
+          "head": "2c5fa66",
           "dirty": 0
         },
         {
           "name": "identity-router",
-          "head": "d674293",
+          "aliases": [],
+          "head": "94e5d06",
           "dirty": 0
         },
         {
           "name": "IPTV-BRIDGE",
-          "head": "b3a22fbf7",
+          "aliases": [],
+          "head": "75dd4e92a",
           "dirty": 0
         },
         {
           "name": "keep",
-          "head": "f239b48",
+          "aliases": [],
+          "head": "24f07ee",
           "dirty": 0
         },
         {
           "name": "keeper",
-          "head": "f3a84a2",
+          "aliases": [],
+          "head": "b5edb69",
           "dirty": 0
         },
         {
           "name": "kerloys-iptv-webos",
-          "head": "0e07b20",
+          "aliases": [],
+          "head": "0ce6327",
           "dirty": 0
         },
         {
           "name": "kimi-auto",
-          "head": "c15dc07",
+          "aliases": [],
+          "head": "40a077e",
           "dirty": 0
         },
         {
           "name": "kimi-claw",
-          "head": "b5d787ea",
-          "dirty": 4
+          "aliases": [],
+          "head": "926b07e7",
+          "dirty": 0
         },
         {
           "name": "kvm-bun",
-          "head": "081defb",
+          "aliases": [],
+          "head": "7b44d51",
           "dirty": 0
         },
         {
           "name": "lasso",
-          "head": "e04ecb4",
-          "dirty": 1
+          "aliases": [],
+          "head": "092cdf4",
+          "dirty": 0
         },
         {
           "name": "leakfix-src",
-          "head": "4b3464c",
+          "aliases": [],
+          "head": "65ade39",
           "dirty": 0
         },
         {
           "name": "ledger",
-          "head": "2e206b4",
+          "aliases": [],
+          "head": "240bb4b",
           "dirty": 0
         },
         {
           "name": "loom",
+          "aliases": [],
           "head": "467f2a7e3",
           "dirty": 0
         },
         {
           "name": "m3u-toolkit",
+          "aliases": [],
           "head": "161dfd8",
           "dirty": 0
         },
         {
+          "name": "marquee",
+          "dirty": 5
+        },
+        {
           "name": "matter-server",
-          "head": "59bfdec",
+          "aliases": [],
+          "head": "80eb9db",
           "dirty": 0
         },
         {
           "name": "maw",
+          "aliases": [],
           "head": "c4195f9",
           "dirty": 0
         },
         {
           "name": "mcp",
-          "head": "60daf86",
+          "aliases": [],
+          "head": "200f886",
           "dirty": 0
         },
         {
           "name": "mesh",
-          "head": "8ea1808",
-          "dirty": 1
+          "aliases": [],
+          "head": "1836685",
+          "dirty": 0
         },
         {
           "name": "meta-research-toolkit",
-          "head": "e55c0c0",
+          "aliases": [],
+          "head": "39bd87e",
           "dirty": 0
         },
         {
           "name": "metaaivm",
-          "head": "1135ab1",
-          "dirty": 4
+          "aliases": [],
+          "head": "1a1a05b",
+          "dirty": 0
         },
         {
           "name": "metaaivm-profile",
-          "head": "e6a954d",
-          "dirty": 4
+          "aliases": [],
+          "head": "bd6ea88",
+          "dirty": 0
         },
         {
           "name": "metaclaw-runtime",
-          "head": "84a631f",
+          "aliases": [],
+          "head": "dca027c",
           "dirty": 0
         },
         {
           "name": "mission-control",
-          "head": "acaca94",
-          "dirty": 1
+          "aliases": [],
+          "head": "a5fe3ed",
+          "dirty": 0
         },
         {
           "name": "ml-serve",
-          "head": "a46e44f",
-          "dirty": 2
+          "aliases": [],
+          "head": "1ccd9d2",
+          "dirty": 0
         },
         {
           "name": "model-max",
-          "head": "1b932f8",
-          "dirty": 2
+          "aliases": [],
+          "head": "2dd7bfe",
+          "dirty": 0
         },
         {
-          "name": "models"
+          "name": "models",
+          "aliases": []
         },
         {
           "name": "monad-forge",
-          "head": "29cbc2f",
+          "aliases": [],
+          "head": "05ec745",
           "dirty": 0
         },
         {
           "name": "mr-boxington-cache",
+          "aliases": [],
           "head": "7f9f555",
           "dirty": 0
         },
         {
           "name": "muse-web-bundle-decode",
-          "head": "aab19ac",
-          "dirty": 7
+          "aliases": [],
+          "head": "51d633c",
+          "dirty": 0
         },
         {
-          "name": "namespace-concealment-explorer"
+          "name": "namespace-concealment-explorer",
+          "aliases": []
         },
         {
           "name": "naming-audit",
-          "head": "ef3cb38",
-          "dirty": 1
+          "aliases": [],
+          "head": "3bab7c4",
+          "dirty": 0
         },
         {
-          "name": "nightly-canary"
+          "name": "nightly-canary",
+          "aliases": []
         },
         {
           "name": "nim-inkling-api-research",
-          "head": "0cb9085",
+          "aliases": [],
+          "head": "aefe81c",
           "dirty": 0
         },
         {
           "name": "nim-omnibus",
-          "head": "35fe53f",
-          "dirty": 1
+          "aliases": [],
+          "head": "e134a9a",
+          "dirty": 0
         },
         {
           "name": "nim-repos",
-          "head": "6b6c1f8",
-          "dirty": 3
+          "aliases": [],
+          "head": "c64f405",
+          "dirty": 0
         },
         {
           "name": "null-g-proxy",
-          "head": "e8f381d",
-          "dirty": 1
+          "aliases": [],
+          "head": "1c21ff1",
+          "dirty": 0
         },
         {
           "name": "nuvio",
-          "head": "965d5f1",
+          "aliases": [],
+          "head": "ada7d3b",
           "dirty": 0
         },
         {
           "name": "nuvio-default",
-          "head": "ba98be6",
-          "dirty": 3
+          "head": "f51f60b",
+          "dirty": 0
         },
         {
           "name": "nuviotv-bun",
-          "head": "2bfd71fa8",
+          "aliases": [],
+          "head": "216ce6837",
           "dirty": 0
         },
         {
           "name": "nuviotv-webos",
-          "head": "cadd294f",
-          "dirty": 1
+          "aliases": [],
+          "head": "cc009b5d",
+          "dirty": 0
         },
         {
           "name": "NuvioTVSmart",
+          "aliases": [],
           "head": "350869cb",
           "dirty": 0
         },
         {
           "name": "NuvioTVWebOS",
-          "head": "cd590d0",
+          "aliases": [],
+          "head": "458819d",
           "dirty": 0
         },
         {
           "name": "nuvioweb",
+          "aliases": [],
           "head": "a7dd33d1",
           "dirty": 0
         },
         {
           "name": "nvidia-alive",
-          "head": "6e1604c",
+          "aliases": [],
+          "head": "be1d8fa",
           "dirty": 0
         },
         {
           "name": "nvidia-kernel-guard",
-          "head": "19e7218",
+          "aliases": [],
+          "head": "796d269",
           "dirty": 0
         },
         {
           "name": "nvidia-nim-model-probe",
-          "head": "163c8be",
+          "aliases": [],
+          "head": "1b90239",
           "dirty": 0
         },
         {
           "name": "oh-my-pi",
-          "head": "9e90839ac9",
+          "aliases": [],
+          "head": "fbbe95925b",
           "dirty": 0
         },
         {
           "name": "omp-test-runner-watchdog-OzX7V0",
-          "head": "06d0da9",
+          "aliases": [],
+          "head": "52cf33e",
           "dirty": 0
         },
         {
           "name": "openbox",
-          "head": "6c0813e",
-          "dirty": 1
+          "aliases": [],
+          "head": "9ba511b",
+          "dirty": 0
         },
         {
           "name": "openfang",
-          "head": "32c8e5b",
+          "aliases": [],
+          "head": "f34e9f0",
           "dirty": 0
         },
         {
           "name": "openfang-join",
-          "head": "abf7b88",
+          "aliases": [],
+          "head": "e56ef92",
           "dirty": 0
         },
         {
           "name": "openrouter-probe",
-          "head": "62402d4",
-          "dirty": 17
+          "aliases": [],
+          "head": "c925bf8",
+          "dirty": 0
         },
         {
           "name": "ops",
-          "head": "565e9d8",
-          "dirty": 73
+          "aliases": [],
+          "head": "66cee92",
+          "dirty": 0
         },
         {
           "name": "outlier-toolkit",
-          "head": "3bdb09c",
+          "aliases": [],
+          "head": "cb8ee82",
           "dirty": 0
         },
         {
           "name": "outsource",
+          "aliases": [],
           "head": "d1c7d75",
           "dirty": 0
         },
         {
           "name": "pack-fix",
-          "head": "22a648a",
-          "dirty": 1
+          "aliases": [],
+          "head": "be9608c",
+          "dirty": 0
         },
         {
           "name": "paper-poller",
-          "head": "6f19bac",
-          "dirty": 1
+          "aliases": [],
+          "head": "495f406",
+          "dirty": 0
         },
         {
           "name": "pdfshield",
-          "head": "cd977f5",
+          "aliases": [],
+          "head": "fa6b451",
           "dirty": 0
         },
         {
           "name": "pearlctl",
+          "aliases": [],
           "head": "a0e775c",
           "dirty": 0
         },
         {
           "name": "phone-lane",
-          "head": "3460084",
+          "aliases": [],
+          "head": "498181d",
           "dirty": 2
         },
         {
           "name": "phone-ocr-sweep",
-          "head": "c71214a",
+          "aliases": [],
+          "head": "487ca79",
           "dirty": 0
         },
         {
           "name": "phone-sentinel",
-          "head": "c11dce3",
+          "aliases": [],
+          "head": "f9afcfd",
           "dirty": 0
         },
         {
           "name": "pj-fast",
-          "head": "86a473e",
+          "aliases": [],
+          "head": "bc60760",
           "dirty": 0
         },
         {
           "name": "plugin-ecosystem",
-          "head": "3f43ee4",
+          "aliases": [],
+          "head": "5add6d8",
           "dirty": 0
         },
         {
           "name": "plugins",
-          "head": "d0c93b1",
+          "aliases": [],
+          "head": "7dc0777",
           "dirty": 0
         },
         {
-          "name": "pollinations-proxy"
+          "name": "pollinations-proxy",
+          "aliases": []
         },
         {
-          "name": "projects"
+          "name": "projects",
+          "aliases": []
         },
         {
-          "name": "provider-fuzz"
+          "name": "provider-fuzz",
+          "aliases": []
         },
         {
-          "name": "providers.d"
+          "name": "providers.d",
+          "aliases": []
         },
         {
-          "name": "proxy"
+          "name": "proxy",
+          "aliases": []
         },
         {
-          "name": "qed"
+          "name": "qed",
+          "aliases": []
         },
         {
           "name": "ralph-dashboard",
-          "head": "c0aeedc",
+          "aliases": [],
+          "head": "3df1931",
           "dirty": 0
         },
         {
-          "name": "ranch-analyze"
+          "name": "ranch-analyze",
+          "aliases": []
         },
         {
           "name": "range",
-          "head": "7210fa2",
-          "dirty": 1
+          "aliases": [],
+          "head": "a6c0b3b",
+          "dirty": 0
         },
         {
           "name": "rankings",
-          "head": "6c0c709",
+          "aliases": [],
+          "head": "1b17d13",
           "dirty": 0
         },
         {
           "name": "rawhide",
-          "head": "466a764",
+          "aliases": [],
+          "head": "b587aa0",
           "dirty": 0
         },
         {
           "name": "refusal-hunt",
-          "head": "fba3404",
+          "aliases": [],
+          "head": "533f273",
           "dirty": 0
         },
         {
           "name": "rename-roundup",
-          "head": "575450e",
+          "aliases": [],
+          "head": "c4cc674",
           "dirty": 0
         },
         {
           "name": "repo-first-class",
-          "head": "37c2f27",
+          "aliases": [],
+          "head": "960c051",
           "dirty": 0
         },
         {
-          "name": "research"
+          "name": "research",
+          "aliases": []
         },
         {
           "name": "rig",
+          "aliases": [],
           "head": "84d1063",
           "dirty": 0
         },
         {
           "name": "ring",
-          "head": "ecea35d",
+          "aliases": [],
+          "head": "fd265a6",
           "dirty": 0
         },
         {
-          "name": "rodeo"
+          "name": "rodeo",
+          "aliases": []
         },
         {
-          "name": "roundup"
+          "name": "roundup",
+          "aliases": []
         },
         {
-          "name": "roundup-site"
+          "name": "roundup-site",
+          "aliases": [],
+          "head": "b8f043c",
+          "dirty": 0
         },
         {
-          "name": "routing"
+          "name": "routing",
+          "aliases": []
         },
         {
-          "name": "routing-score"
+          "name": "routing-score",
+          "aliases": []
         },
         {
           "name": "rust-algo-web",
-          "head": "de42f30",
+          "aliases": [],
+          "head": "c63ad26",
           "dirty": 0
         },
         {
           "name": "rust-wrappers",
-          "head": "9e6a42f",
+          "aliases": [],
+          "head": "da1a9ca",
           "dirty": 0
         },
         {
-          "name": "rustdesk-server"
+          "name": "rustdesk-server",
+          "aliases": []
         },
         {
           "name": "ryzen-sm86-hybrid",
-          "head": "c576ac1",
+          "head": "30d5d98",
           "dirty": 0
         },
         {
-          "name": "ryzen3090-whoa"
+          "name": "ryzen3090-whoa",
+          "aliases": []
         },
         {
           "name": "safety-review-gate",
-          "head": "66add35",
+          "aliases": [],
+          "head": "84c5cf5",
           "dirty": 0
         },
         {
-          "name": "saturation-guard"
+          "name": "saturation-guard",
+          "aliases": []
         },
         {
           "name": "shell",
-          "head": "9334a77",
+          "aliases": [],
+          "head": "320bab6",
           "dirty": 1
         },
         {
           "name": "skillforge",
-          "head": "d08706a",
+          "aliases": [],
+          "head": "ab26a41",
           "dirty": 0
         },
         {
-          "name": "spark"
+          "name": "spark",
+          "aliases": []
         },
         {
           "name": "spark-harvest",
-          "head": "2944edc",
+          "aliases": [],
+          "head": "4c849eb",
           "dirty": 0
         },
         {
           "name": "squawk",
-          "head": "177cdc6",
-          "dirty": 38
+          "aliases": [],
+          "head": "3319f4d",
+          "dirty": 2
         },
         {
-          "name": "squawk-watchdog"
+          "name": "squawk-watchdog",
+          "aliases": []
         },
         {
-          "name": "squawk-ws"
+          "name": "squawk-ws",
+          "aliases": []
         },
         {
           "name": "stable",
-          "head": "8b76f11",
+          "aliases": [],
+          "head": "a5b170d",
           "dirty": 0
         },
         {
-          "name": "standalone"
+          "name": "standalone",
+          "aliases": []
         },
         {
-          "name": "stash-guard"
+          "name": "stash-guard",
+          "aliases": []
         },
         {
           "name": "stealthprint",
-          "head": "36b46c0",
+          "aliases": [],
+          "head": "35c9dea",
           "dirty": 0
         },
         {
           "name": "stream-broker",
-          "head": "efe0493",
+          "aliases": [],
+          "head": "21336f1",
           "dirty": 0
         },
         {
           "name": "strudel-dev-vite",
-          "head": "8366d25",
+          "aliases": [],
+          "head": "a73454e",
           "dirty": 0
         },
         {
           "name": "strudel-sampler-server-vite",
-          "head": "f3432ec",
+          "aliases": [],
+          "head": "5ffcacd",
           "dirty": 0
         },
         {
-          "name": "submodules"
+          "name": "submodules",
+          "aliases": []
         },
         {
           "name": "super-board",
-          "head": "643f6e7",
+          "aliases": [],
+          "head": "9d4f0f3",
           "dirty": 0
         },
         {
           "name": "switchboard",
-          "head": "82e35c6",
+          "aliases": [],
+          "head": "9d01e93",
           "dirty": 0
         },
         {
           "name": "task-launch",
-          "head": "a8e7071",
+          "aliases": [],
+          "head": "76a5b91",
           "dirty": 0
         },
         {
           "name": "tau-extensions",
-          "head": "897b2b9",
+          "aliases": [],
+          "head": "3c8fa95",
           "dirty": 0
         },
         {
           "name": "tau-verify",
-          "head": "08d64749",
-          "dirty": 17
+          "aliases": [],
+          "head": "328ab26d",
+          "dirty": 0
         },
         {
           "name": "tok",
-          "head": "eb947f3",
-          "dirty": 1
+          "aliases": [],
+          "head": "61231f5",
+          "dirty": 0
         },
         {
-          "name": "toolcall-agent"
+          "name": "toolcall-agent",
+          "aliases": []
         },
         {
-          "name": "toolkit"
+          "name": "toolkit",
+          "aliases": []
         },
         {
           "name": "toxicwind-repos",
-          "head": "2497a1a",
+          "aliases": [],
+          "head": "66cc418",
           "dirty": 0
         },
         {
           "name": "trading-post",
+          "aliases": [],
           "head": "eecec4f6",
           "dirty": 0
         },
         {
           "name": "typo-kit",
-          "head": "5aaaa8d",
+          "aliases": [],
+          "head": "10907f8",
           "dirty": 0
         },
         {
           "name": "universal-keypool-bun",
-          "head": "93e3663",
+          "aliases": [],
+          "head": "2f43a80",
           "dirty": 0
         },
         {
           "name": "universal-keypool-gateway",
-          "head": "639e4ea",
+          "aliases": [],
+          "head": "9bd7e89",
           "dirty": 0
         },
         {
-          "name": "village-irc"
+          "name": "village-irc",
+          "aliases": []
         },
         {
           "name": "vision-kit",
-          "head": "bd6e69e",
+          "aliases": [],
+          "head": "d3ea555",
           "dirty": 0
         },
         {
-          "name": "websites"
+          "name": "websites",
+          "aliases": []
         },
         {
           "name": "wezterm-agent-mcp",
-          "head": "50fc06c",
+          "aliases": [],
+          "head": "13b6d7a",
           "dirty": 0
         },
         {
           "name": "windmill",
-          "head": "18fbf3e",
+          "aliases": [],
+          "head": "0ec387b",
           "dirty": 0
         },
         {
           "name": "workmux",
-          "head": "a9f2b798",
-          "dirty": 1
+          "aliases": [],
+          "head": "7e08452c",
+          "dirty": 0
         },
         {
-          "name": "wtf-filetrace"
+          "name": "wtf-filetrace",
+          "aliases": []
         },
         {
-          "name": "wtf-orch"
+          "name": "wtf-orch",
+          "aliases": []
         },
         {
-          "name": "wtf-orthogonal-seed"
+          "name": "wtf-orthogonal-seed",
+          "aliases": []
         },
         {
           "name": "yote",
-          "head": "2d08c79",
+          "aliases": [],
+          "head": "1bce499",
           "dirty": 0
         },
         {
-          "name": "yote-maximal"
+          "name": "yote-maximal",
+          "aliases": []
         },
         {
           "name": "zed-android-port",
-          "head": "3db8579552",
+          "aliases": [],
+          "head": "ac387a709e",
           "dirty": 0
         },
         {
-          "name": "zero-transport"
+          "name": "zero-transport",
+          "aliases": []
         }
       ]
     },
@@ -1429,17 +1901,7 @@
       "products": [
         {
           "name": "recon-gallery",
-          "head": "22a8309ce",
-          "dirty": 0
-        }
-      ]
-    },
-    {
-      "pen": "toolkit",
-      "products": [
-        {
-          "name": "docs-mcp",
-          "head": "445235d",
+          "head": "cfc506376",
           "dirty": 0
         }
       ]

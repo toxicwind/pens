@@ -22,6 +22,3 @@ Deep GitHub links + local paths for every Greek-coded product.
 | **opsis** | ὄψις | sight / appearance | [toxicwind/opsis](https://github.com/toxicwind/opsis) | `pens/olympus/products/opsis` |
 | **didymos** | δίδυμος | twin | [toxicwind/didymos](https://github.com/toxicwind/didymos) | `pens/olympus/products/didymos` |
 | **chronos-forge** | χρόνος | time | [toxicwind/chronos-forge](https://github.com/toxicwind/chronos-forge) | `pens/olympus/products/chronos-forge` |
-| **kleio** | κλειώ | the muse of history | [toxicwind/kleio](https://github.com/toxicwind/kleio) | `pens/olympus/products/kleio` |
-| **mneme** | μνήμη | memory | [toxicwind/mneme](https://github.com/toxicwind/mneme) | `pens/olympus/products/mneme` |
-

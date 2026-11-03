@@ -132,6 +132,35 @@ describe("readProducts — registry + on-disk union", () => {
     product("p", "alpha");
     expect(readProducts("p", root).map((p) => p.name)).toEqual(["alpha", "zeta"]);
   });
+
+  test("carries aliases from registry (rename-remnant contract)", () => {
+    const reg = { products: { lapidary: { aliases: ["pairs", "faceter"] } } };
+    mkdirSync(pen("p"), { recursive: true });
+    writeFileSync(join(pen("p"), "products.registry.json"), JSON.stringify(reg));
+    expect(readProducts("p", root).find((p) => p.name === "lapidary")?.aliases).toEqual(["pairs", "faceter"]);
+  });
+
+  test("marks registry-only remnant rows as aliasOf (never a product)", () => {
+    // `pairs` was renamed to `lapidary`: registry keeps a remnant row with aliases,
+    // no on-disk checkout — the fabric must expose it as resolvable alias, not a product.
+    const reg = { products: { pairs: { aliases: ["lapidary"] } } };
+    mkdirSync(pen("p"), { recursive: true });
+    writeFileSync(join(pen("p"), "products.registry.json"), JSON.stringify(reg));
+    const rows = readProducts("p", root);
+    expect(rows.find((p) => p.name === "pairs")?.aliasOf).toBe("lapidary");
+    expect(rows.every((p) => p.name !== "pairs" || p.aliasOf)).toBe(true);
+  });
+
+  test("does not mark a real on-disk product with aliases as aliasOf", () => {
+    // xerj -> argos: argos exists on disk AND has xerj in its aliases — real product.
+    const reg = { products: { argos: { aliases: ["xerj"] } } };
+    product("p", "argos");
+    mkdirSync(pen("p"), { recursive: true });
+    writeFileSync(join(pen("p"), "products.registry.json"), JSON.stringify(reg));
+    const rows = readProducts("p", root);
+    expect(rows.find((p) => p.name === "argos")?.aliases).toEqual(["xerj"]);
+    expect(rows.find((p) => p.name === "argos")?.aliasOf).toBeUndefined();
+  });
 });
 
 describe("readProducts — live git enrichment (kernel truth)", () => {

@@ -53,9 +53,9 @@ pens:
     local: /home/toxic/pens/hatch-kite-cli
     repo: https://github.com/toxicwind/kite-cli
     abyss: nest
-  husky:
-    local: /home/toxic/pens/husky
-    repo: https://github.com/toxicwind/husky
+  kelpie:
+    local: /home/toxic/pens/kelpie
+    repo: https://github.com/toxicwind/kelpie
     abyss: vault
   mesh:
     local: /home/toxic/pens/mesh
