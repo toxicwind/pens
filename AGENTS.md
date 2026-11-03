@@ -17,12 +17,16 @@
 | `pens/barn/` | **ops tooling** | thresher, weave, secretsmith, estate-ops |
 | `pens/ranch/` | **fleet & model components** | squawk, github-search (blackbird), rename-roundup |
 | `pens/olympus/` | **Greek-named products** | tau, kappa, sigma, keryx, muse |
-| `pens/kelpie/` | **the shell pen** — desktop shell pack (THIN coordinator; husk = shell) | estate-shell (flagship: env doctrine + TS deploy + doctor), quickshell ii dots lineage, DP3/keeper surface |
+| `pens/kelpie/` | **the shell pen** — desktop shell pack (THIN coordinator; husk = shell) | whistle (engine: env doctrine + muster deploy + scent doctor), ww — Working Wuff (visual shell, ex estate-end4/sovereign-end4), cuprite (browser-keeper :99 lane, DP-2 surface) |
 
-> husky joined 2026-11-02 (furry-male vibes; the name is the domain: a husk is
-> a shell). Public quickshell rices (Panacea/Serashell/Shizuka) own the visual
-> axis; husky owns the platform axis — no public rice has the env doctrine,
-> deploy engine, or doctor that estate-shell ships.
+> kelpie joined 2026-11-02 (Australian kelpie mascot; handle **ww = Working
+> Wuff** — the shell, following upstream's illogical-impulse→ii initials
+> pattern; the engine tools whistle/muster/scent carry the herding vocabulary).
+> Public quickshell rices (Panacea/Serashell/Shizuka) own the visual
+> axis only; kelpie owns BOTH — ww ships the rice, whistle ships the env
+> doctrine + deploy engine + doctor no public rice has, cuprite keeps the
+> browser lane. Divergence doctrine: `products/ww/DIVERGENCE.md` (omp-wtf
+> three-way: canary/diverged/ours).
 
 ## The three commands every product answers to
 
