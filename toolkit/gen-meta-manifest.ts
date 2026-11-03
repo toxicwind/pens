@@ -137,7 +137,7 @@ const NON_PEER_PATH_PREFIXES = [
   "/kitty-mcp-server/",
   "/wezterm/",
   "/wezterm-agent-mcp/",
-  "/hodos/",
+  "/rhodochrosite/",
   "shell/ii/",
   "/android-fleet/nuvio/",
 ];

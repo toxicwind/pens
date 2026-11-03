@@ -23,7 +23,7 @@ function sh(cmd: string, cwd?: string): string {
 // ── 1. Resolve GitHub repo URLs for every Greek product ──────────────────
 
 const GREEK_PRODUCTS = [
-  "tau", "kappa", "skopos", "kilo", "muse", "keryx", "hodos",
+  "tau", "kappa", "skopos", "kilo", "muse", "keryx", "rhodochrosite",
   "kairos", "kryptos", "agele", "pinax", "agon", "antilogos",
   "pylae", "propylon", "opsis", "didymos", "chronos-forge",
 ];
@@ -35,7 +35,7 @@ const CANONICAL_GREEK_REPOS: Record<string, string> = {
   kilo: "https://github.com/toxicwind/kilo",
   muse: "https://github.com/toxicwind/muse-cli",
   keryx: "https://github.com/toxicwind/keryx",
-  hodos: "https://github.com/toxicwind/hodos",
+  rhodochrosite: "https://github.com/toxicwind/rhodochrosite",
   kairos: "https://github.com/toxicwind/kairos",
   kryptos: "https://github.com/toxicwind/kryptos",
   agele: "https://github.com/toxicwind/agele",
@@ -56,7 +56,7 @@ const GREEK_ROOTS: Record<string, string> = {
   kilo: "χίλιοι",
   muse: "μοῦσα",
   keryx: "κῆρυξ",
-  hodos: "ὁδός",
+  rhodochrosite: "ὁδός",
   kairos: "καιρός",
   kryptos: "κρυπτός",
   agele: "ἀγέλη",
@@ -113,7 +113,7 @@ let olympusReadme = `# olympus — the home of the Greek-coded products
 
 > olympus is the registry that HOLDS the estate's Greek-coded product lineage —
 > the pantheon of named components: τ tau, κ kappa, skopos, kilo, muse, keryx,
-> hodos, and their kin. Like \`estate-brain\` holds the persona fleet, olympus
+> rhodochrosite, and their kin. Like \`estate-brain\` holds the persona fleet, olympus
 > holds the Greek codename family as one authoritative, categorized whole.
 
 "Where the gods reside."
@@ -129,7 +129,7 @@ for (const row of pantheonRows) {
 olympusReadme += `
 > **Which is the "Greek pen"?** \`pens/olympus/\` is the Greek pen — it now HOLDS
 > the physical Greek-coded products under \`olympus/products/\` (tau, kappa, skopos,
-> kilo, muse, keryx, hodos, kairos, kryptos, agele, pinax, agon, antilogos,
+> kilo, muse, keryx, rhodochrosite, kairos, kryptos, agele, pinax, agon, antilogos,
 > pylae, propylon, opsis, didymos, chronos-forge). The pantheon above maps each
 > codename to its authoritative GitHub repo.
 `;
@@ -180,7 +180,7 @@ function getMeaning(name: string): string {
     "kilo": "thousand",
     "muse": "the muse (inspiration)",
     "keryx": "herald",
-    "hodos": "way / road",
+    "rhodochrosite": "way / road",
     "kairos": "the opportune moment",
     "kryptos": "hidden",
     "agele": "herd (of cattle)",

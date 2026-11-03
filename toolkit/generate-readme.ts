@@ -152,7 +152,7 @@ const GREEK_ROOTS: Record<string, string> = {
   kilo: "χίλιοι",
   muse: "μοῦσα",
   keryx: "κῆρυξ",
-  hodos: "ὁδός",
+  rhodochrosite: "ὁδός",
   kairos: "καιρός",
   kryptos: "κρυπτός",
   agele: "ἀγέλη",
@@ -167,7 +167,7 @@ const GREEK_ROOTS: Record<string, string> = {
 };
 
 const GREEK_PRODUCTS = [
-  "tau", "kappa", "skopos", "kilo", "muse", "keryx", "hodos",
+  "tau", "kappa", "skopos", "kilo", "muse", "keryx", "rhodochrosite",
   "kairos", "kryptos", "agele", "pinax", "agon", "antilogos",
   "pylae", "propylon", "opsis", "didymos", "chronos-forge",
 ];
@@ -179,7 +179,7 @@ const GREEK_MEANINGS: Record<string, string> = {
   "kilo": "thousand",
   "muse": "the muse (inspiration)",
   "keryx": "herald",
-  "hodos": "way / road",
+  "rhodochrosite": "way / road",
   "kairos": "the opportune moment",
   "kryptos": "hidden",
   "agele": "herd (of cattle)",
@@ -200,7 +200,7 @@ const CANONICAL_GREEK_REPOS: Record<string, string> = {
   kilo: "https://github.com/toxicwind/kilo",
   muse: "https://github.com/toxicwind/muse-cli",
   keryx: "https://github.com/toxicwind/keryx",
-  hodos: "https://github.com/toxicwind/hodos",
+  rhodochrosite: "https://github.com/toxicwind/rhodochrosite",
   kairos: "https://github.com/toxicwind/kairos",
   kryptos: "https://github.com/toxicwind/kryptos",
   agele: "https://github.com/toxicwind/agele",

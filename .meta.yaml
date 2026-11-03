@@ -22,8 +22,8 @@ olympus:
     repo: https://github.com/toxicwind/chronos-forge.git
   "didymos":
     repo: https://github.com/toxicwind/didymos.git
-  "hodos":
-    repo: https://github.com/toxicwind/hodos.git
+  "rhodochrosite":
+    repo: https://github.com/toxicwind/rhodochrosite.git
   "kairos":
     repo: https://github.com/toxicwind/kairos.git
   "keryx":

@@ -1,5 +1,5 @@
 {
-  "minted_at": "2026-11-03T02:51:41.326Z",
+  "minted_at": "2026-11-03T19:08:03.568Z",
   "pens": [
     {
       "pen": "agentic-moment",
@@ -10,13 +10,13 @@
             "xerj"
           ],
           "head": "567e9fe",
-          "dirty": 1
+          "dirty": 2
         },
         {
           "name": "audit",
           "aliases": [],
           "head": "62ee6ee",
-          "dirty": 2
+          "dirty": 3
         },
         {
           "name": "log-helper",
@@ -39,13 +39,19 @@
       "pen": "army",
       "products": [
         {
-          "name": "arena"
+          "name": "arena",
+          "head": "90658ee",
+          "dirty": 0
         },
         {
-          "name": "gorilla"
+          "name": "gorilla",
+          "head": "97eacec",
+          "dirty": 0
         },
         {
-          "name": "simian"
+          "name": "simian",
+          "head": "c227757",
+          "dirty": 0
         }
       ]
     },
@@ -60,7 +66,8 @@
         },
         {
           "name": "blackbird",
-          "dirty": 32
+          "head": "61b7262",
+          "dirty": 31
         },
         {
           "name": "bun-control-mcp",
@@ -82,7 +89,7 @@
           "name": "estate-ops",
           "aliases": [],
           "head": "975f64d",
-          "dirty": 0
+          "dirty": 1
         },
         {
           "name": "estate-tailscale",
@@ -154,13 +161,13 @@
         {
           "name": "thresher",
           "aliases": [],
-          "head": "27deaee5",
-          "dirty": 6
+          "head": "f019deae",
+          "dirty": 0
         },
         {
           "name": "weave",
           "aliases": [],
-          "head": "3388fba",
+          "head": "964a9e0",
           "dirty": 0
         },
         {
@@ -356,6 +363,11 @@
       "pen": "geode",
       "products": [
         {
+          "name": "absurd-ttst",
+          "head": "3b3ad69",
+          "dirty": 0
+        },
+        {
           "name": "audit-correlator",
           "head": "802b73f",
           "dirty": 0
@@ -363,8 +375,8 @@
         {
           "name": "azurite",
           "aliases": [],
-          "head": "54892e7",
-          "dirty": 16
+          "head": "55b4e17",
+          "dirty": 46
         },
         {
           "name": "bge-oracle",
@@ -393,11 +405,6 @@
           "name": "coreelec-mcp",
           "aliases": [],
           "head": "823b782",
-          "dirty": 0
-        },
-        {
-          "name": "cuprite",
-          "head": "abc2e88",
           "dirty": 0
         },
         {
@@ -432,7 +439,7 @@
             "faceter"
           ],
           "head": "23e51bc",
-          "dirty": 0
+          "dirty": 1
         },
         {
           "name": "malachite",
@@ -445,6 +452,11 @@
           "aliases": [],
           "head": "9b35844",
           "dirty": 1
+        },
+        {
+          "name": "onyx",
+          "head": "d177c68",
+          "dirty": 0
         },
         {
           "name": "opal",
@@ -495,7 +507,7 @@
         {
           "name": "rhodochrosite",
           "aliases": [],
-          "head": "bebc2eb",
+          "head": "ac5a14b",
           "dirty": 0
         },
         {
@@ -522,6 +534,41 @@
         {
           "name": "triphylite",
           "aliases": []
+        }
+      ]
+    },
+    {
+      "pen": "kelpie",
+      "products": [
+        {
+          "name": "coat",
+          "head": "f4e7e4d",
+          "dirty": 0
+        },
+        {
+          "name": "fetch",
+          "head": "a602edc",
+          "dirty": 0
+        },
+        {
+          "name": "kennel",
+          "head": "e9a9f0a",
+          "dirty": 0
+        },
+        {
+          "name": "waterbowl",
+          "head": "771e6fb",
+          "dirty": 0
+        },
+        {
+          "name": "whistle",
+          "head": "de4a5d4",
+          "dirty": 0
+        },
+        {
+          "name": "ww",
+          "head": "cd319762e",
+          "dirty": 0
         }
       ]
     },
@@ -627,14 +674,14 @@
         {
           "name": "kairos",
           "aliases": [],
-          "head": "e6f4ff8",
+          "head": "fd479f6",
           "dirty": 0
         },
         {
           "name": "kappa",
           "aliases": [],
-          "head": "bb0dc76",
-          "dirty": 26
+          "head": "a865b57",
+          "dirty": 0
         },
         {
           "name": "keryx",
@@ -657,8 +704,8 @@
         {
           "name": "kryptos",
           "aliases": [],
-          "head": "4ae76f8",
-          "dirty": 46
+          "head": "ec8e7d8",
+          "dirty": 0
         },
         {
           "name": "lambda",
@@ -741,8 +788,8 @@
         {
           "name": "tau",
           "aliases": [],
-          "head": "790e00cf64",
-          "dirty": 0
+          "head": "9e8fcfc7d6",
+          "dirty": 264
         },
         {
           "name": "ts-blank-space",
@@ -836,10 +883,6 @@
           "dirty": 0
         },
         {
-          "name": "borrowed",
-          "aliases": []
-        },
-        {
           "name": "botfather-lib",
           "head": "34affbf",
           "dirty": 0
@@ -899,12 +942,6 @@
         {
           "name": "connectors",
           "aliases": []
-        },
-        {
-          "name": "cookie-vault",
-          "aliases": [],
-          "head": "f232a7e",
-          "dirty": 0
         },
         {
           "name": "corral",
@@ -1095,8 +1132,8 @@
         {
           "name": "gibber-mcp",
           "aliases": [],
-          "head": "ead318fc0",
-          "dirty": 2
+          "head": "dc4eb708f",
+          "dirty": 1
         },
         {
           "name": "github-search",
@@ -1174,9 +1211,7 @@
         },
         {
           "name": "keeper",
-          "aliases": [],
-          "head": "b5edb69",
-          "dirty": 0
+          "aliases": []
         },
         {
           "name": "kerloys-iptv-webos",
@@ -1222,7 +1257,6 @@
         },
         {
           "name": "loom",
-          "aliases": [],
           "head": "467f2a7e3",
           "dirty": 0
         },
@@ -1425,7 +1459,7 @@
           "name": "oh-my-pi",
           "aliases": [],
           "head": "fbbe95925b",
-          "dirty": 0
+          "dirty": 1
         },
         {
           "name": "omp-test-runner-watchdog-OzX7V0",
@@ -1680,9 +1714,7 @@
         },
         {
           "name": "shell",
-          "aliases": [],
-          "head": "320bab6",
-          "dirty": 1
+          "aliases": []
         },
         {
           "name": "skillforge",
@@ -1703,8 +1735,8 @@
         {
           "name": "squawk",
           "aliases": [],
-          "head": "3319f4d",
-          "dirty": 2
+          "head": "b8eb9ef",
+          "dirty": 6
         },
         {
           "name": "squawk-watchdog",
@@ -1903,6 +1935,14 @@
           "name": "recon-gallery",
           "head": "cfc506376",
           "dirty": 0
+        },
+        {
+          "name": "tau-wtf"
+        },
+        {
+          "name": "wtf",
+          "head": "59ac39b",
+          "dirty": 1
         }
       ]
     }

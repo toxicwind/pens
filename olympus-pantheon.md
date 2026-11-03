@@ -10,7 +10,7 @@ Deep GitHub links + local paths for every Greek-coded product.
 | **kilo** | χίλιοι | thousand | [toxicwind/kilo](https://github.com/toxicwind/kilo) | `pens/olympus/products/kilo` |
 | **muse** | μοῦσα | the muse (inspiration) | [toxicwind/muse-cli](https://github.com/toxicwind/muse-cli) | `pens/olympus/products/muse` |
 | **keryx** | κῆρυξ | herald | [toxicwind/keryx](https://github.com/toxicwind/keryx) | `pens/olympus/products/keryx` |
-| **hodos** | ὁδός | way / road | [toxicwind/hodos](https://github.com/toxicwind/hodos) | `pens/olympus/products/hodos` |
+| **rhodochrosite** | ὁδός | way / road | [toxicwind/rhodochrosite](https://github.com/toxicwind/rhodochrosite) | `pens/olympus/products/rhodochrosite` |
 | **kairos** | καιρός | the opportune moment | [toxicwind/kairos](https://github.com/toxicwind/kairos) | `pens/olympus/products/kairos` |
 | **kryptos** | κρυπτός | hidden | [toxicwind/kryptos](https://github.com/toxicwind/kryptos) | `pens/olympus/products/kryptos` |
 | **agele** | ἀγέλη | herd (of cattle) | [toxicwind/agele](https://github.com/toxicwind/agele) | `pens/olympus/products/agele` |

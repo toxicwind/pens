@@ -129,11 +129,11 @@ olympus_pantheon:
     meaning: "herald"
     local: /home/toxic/pens/olympus/products/keryx
     repo: https://github.com/toxicwind/keryx
-  hodos:
+  rhodochrosite:
     root: ὁδός
     meaning: "way / road"
-    local: /home/toxic/pens/olympus/products/hodos
-    repo: https://github.com/toxicwind/hodos
+    local: /home/toxic/pens/olympus/products/rhodochrosite
+    repo: https://github.com/toxicwind/rhodochrosite
   kairos:
     root: καιρός
     meaning: "the opportune moment"

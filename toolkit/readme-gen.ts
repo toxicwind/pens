@@ -62,7 +62,7 @@ const GREEK_REPOS: Record<string, string> = {
   kilo: "https://github.com/toxicwind/kilo",
   muse: "https://github.com/toxicwind/muse-cli",
   keryx: "https://github.com/toxicwind/keryx",
-  hodos: "https://github.com/toxicwind/hodos",
+  rhodochrosite: "https://github.com/toxicwind/rhodochrosite",
   kairos: "https://github.com/toxicwind/kairos",
   kryptos: "https://github.com/toxicwind/kryptos",
   agele: "https://github.com/toxicwind/agele",
@@ -328,7 +328,7 @@ function titleCase(pen: string): string {
     .join(" ");
 }
 
-function existingBlurb(root: string, pen: string): string {
+function existingBlurb(root: string): string {
   const p = join(root, "README.md");
   if (!existsSync(p)) return "";
   try {
