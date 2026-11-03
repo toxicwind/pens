@@ -1,6 +1,6 @@
 # PENS — the hyper master concept (one contract above all products)
 
-> **pens IS the estate's master idea**: five uniform pens, one shape. Every
+> **pens IS the estate's master idea**: uniform pens, one shape. Every
 > product — tau, kappa, mimetite, thresher, pseudobrookite — is a **peer
 > standalone checkout** under the pen whose *theme* it serves, referenced
 > never owned, symlinked into `~/.local/bin` by the estate-ops manifest.
@@ -8,7 +8,7 @@
 > file. Guides are **added as we go** (append a `## Guides` row, never fork a
 > second truth).
 
-## The five pens (placement rule = theme, verified in `geode/PLAN.md` §0)
+## The pens (placement rule = theme, verified in `geode/PLAN.md` §0)
 
 | Pen | Theme | Examples |
 |---|---|---|
@@ -17,6 +17,12 @@
 | `pens/barn/` | **ops tooling** | thresher, weave, secretsmith, estate-ops |
 | `pens/ranch/` | **fleet & model components** | squawk, github-search (blackbird), rename-roundup |
 | `pens/olympus/` | **Greek-named products** | tau, kappa, sigma, keryx, muse |
+| `pens/husky/` | **the shell pen** — desktop shell pack (THIN coordinator; husk = shell) | estate-shell (flagship: env doctrine + TS deploy + doctor), quickshell ii dots lineage, DP3/keeper surface |
+
+> husky joined 2026-11-02 (furry-male vibes; the name is the domain: a husk is
+> a shell). Public quickshell rices (Panacea/Serashell/Shizuka) own the visual
+> axis; husky owns the platform axis — no public rice has the env doctrine,
+> deploy engine, or doctor that estate-shell ships.
 
 ## The three commands every product answers to
 
