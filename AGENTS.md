@@ -14,7 +14,7 @@
 |---|---|---|
 | `pens/estate/` | **control plane** — config, pitchfork, services, state, docs | pitchfork.toml, config/ports.env, docs/ |
 | `pens/geode/` | **inference plane** — catalog, routers, engines, auditors | mimetite, rhodochrosite, bornite, chalcopyrite, azurite, pseudobrookite |
-| `pens/barn/` | **ops tooling** | thresher, weave, secretsmith, estate-ops |
+| `pens/barn/` | **ops tooling** | thresher, weave, estate-ops (kryptos is the secrets SSOT, olympus) |
 | `pens/ranch/` | **fleet & model components** | squawk, github-search (blackbird), rename-roundup |
 | `pens/olympus/` | **Greek-named products** | tau, kappa, sigma, keryx, muse |
 | `pens/kelpie/` | **the shell pen** — desktop shell pack (THIN coordinator; husk = shell) | whistle (engine: env doctrine + muster deploy + scent doctor), ww — Working Wuff (visual shell, ex estate-end4/sovereign-end4), cuprite (browser-keeper :99 lane, DP-2 surface) |
@@ -63,7 +63,9 @@
 
 - Products own their entrypoints; `~/.local/bin` links point into pens. Never
   a second copy. `bin-verify.sh` FAILs a broken link.
-- Secrets: secretsmith keyring only, never committed.
+- Secrets: **kryptos** keyring only, never committed. (kryptos is the
+  SSOT since 2026-11-02; secretsmith is the retired predecessor — do not
+  add new secretsmith references.)
 - No `git submodule add`, no gitlinks; the pen's kitchen-sink `.gitignore`
   auto-ignores product checkouts.
 - The desktop is live: additive-only on user-facing surfaces; never disrupt
