@@ -90,21 +90,27 @@ function scanPens(root: string): { name: string; local: string; repo: string; gi
   return out;
 }
 
-/** Live olympus pantheon: parse olympus/README.md pantheon rows (codename → repo). */
+/** Live pantheon: parse olympus-pantheon.md rows (codename → repo + REAL local path).
+ * Reads the dedicated pantheon file (SSOT since kairos moved to ergasterion —
+ * the olympus README table is registry-derived and only covers olympus products).
+ * The 5th column (Local Path) is authoritative — never hardcode pens/olympus/products/<name>,
+ * which silently lied for any product living outside olympus. */
 function scanPantheon(root: string): Record<string, { root: string; meaning: string; local: string; repo: string }> {
   const out: Record<string, { root: string; meaning: string; local: string; repo: string }> = {};
-  let readme = "";
+  let table = "";
   try {
-    readme = readFileSync(join(root, "olympus", "README.md"), "utf8");
+    table = readFileSync(join(root, "olympus-pantheon.md"), "utf8");
   } catch {
     return out;
   }
-  for (const line of readme.split("\n")) {
-    const m = line.match(/^\|\s*\*\*([\w-]+)\*\*\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|/);
+  for (const line of table.split("\n")) {
+    const m = line.match(/^\|\s*\*\*([\w-]+)\*\*\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|/);
     if (!m) continue;
-    const [_, name, rootWord, meaning] = m;
-    const local = join(root, "olympus", "products", name);
-    const repo = statSync(join(local, ".git"), { throwIfNoEntry: false }) ? repoOf(local) : `https://github.com/toxicwind/${name}`;
+    const [_, name, rootWord, meaning, repoCell, localCell] = m;
+    const localMatch = localCell.match(/`?([\w/.-]+\/products\/[\w.-]+|pens\/[\w/.-]+)`?/);
+    const local = localMatch ? join(root, localMatch[1].replace(/^pens\//, "")) : join(root, "olympus", "products", name);
+    const repoMatch = repoCell.match(/https:\/\/github\.com\/[\w.-]+\/[\w.-]+/);
+    const repo = repoMatch ? repoMatch[0] : statSync(join(local, ".git"), { throwIfNoEntry: false }) ? repoOf(local) : `https://github.com/toxicwind/${name}`;
     out[name] = { root: rootWord.trim(), meaning: meaning.trim(), local, repo };
   }
   return out;
