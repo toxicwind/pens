@@ -20,6 +20,10 @@ pens:
     local: /home/toxic/pens/bench
     repo: local-dir
     abyss: vault
+  codeflux:
+    local: /home/toxic/pens/codeflux
+    repo: local-dir
+    abyss: vault
   dedicated:
     local: /home/toxic/pens/dedicated
     repo: local-dir
