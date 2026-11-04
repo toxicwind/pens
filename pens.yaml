@@ -103,93 +103,163 @@ pens:
     abyss: vault
 
 olympus_pantheon:
-  tau:
-    root: τ
-    meaning: "Greek letter"
-    local: /home/toxic/pens/olympus/products/tau
-    repo: https://github.com/toxicwind/tau
-  kappa:
-    root: κ
-    meaning: "Greek letter"
-    local: /home/toxic/pens/olympus/products/kappa
-    repo: https://github.com/toxicwind/kappa
-  skopos:
-    root: σκοπός
-    meaning: "watcher / lookout / scout"
-    local: /home/toxic/pens/olympus/products/skopos
-    repo: https://github.com/toxicwind/skopos
-  kilo:
-    root: χίλιοι
-    meaning: "thousand"
-    local: /home/toxic/pens/olympus/products/kilo
-    repo: https://github.com/toxicwind/kilo-code
-  muse:
-    root: μοῦσα
-    meaning: "the muse (inspiration)"
-    local: /home/toxic/pens/olympus/products/muse
-    repo: https://github.com/toxicwind/muse-cli
-  keryx:
-    root: κῆρυξ
-    meaning: "herald"
-    local: /home/toxic/pens/olympus/products/keryx
-    repo: https://github.com/toxicwind/keryx
-  rhodochrosite:
-    root: ὁδός
-    meaning: "way / road"
-    local: /home/toxic/pens/olympus/products/rhodochrosite
-    repo: https://github.com/toxicwind/rhodochrosite
-  kairos:
-    root: καιρός
-    meaning: "the opportune moment"
-    local: /home/toxic/pens/olympus/products/kairos
-    repo: https://github.com/toxicwind/kairos
-  kryptos:
-    root: κρυπτός
-    meaning: "hidden"
-    local: /home/toxic/pens/olympus/products/kryptos
-    repo: https://github.com/toxicwind/kryptos
-  agele:
-    root: ἀγέλη
-    meaning: "herd (of cattle)"
-    local: /home/toxic/pens/olympus/products/agele
-    repo: https://github.com/toxicwind/agele
-  pinax:
-    root: πίναξ
-    meaning: "tablet / catalog"
-    local: /home/toxic/pens/olympus/products/pinax
-    repo: https://github.com/toxicwind/pinax
   agon:
-    root: ἀγών
-    meaning: "contest / race"
+    root: [toxicwind/agon](https://github.com/toxicwind/agon)
+    meaning: "—"
     local: /home/toxic/pens/olympus/products/agon
     repo: https://github.com/toxicwind/agon
   antilogos:
-    root: ἀντίλογος
-    meaning: "counter-argument / debate"
+    root: [toxicwind/antilogos](https://github.com/toxicwind/antilogos)
+    meaning: "—"
     local: /home/toxic/pens/olympus/products/antilogos
     repo: https://github.com/toxicwind/antilogos
-  pylae:
-    root: πύλαι
-    meaning: "gates"
-    local: /home/toxic/pens/olympus/products/pylae
-    repo: https://github.com/toxicwind/pylae
-  propylon:
-    root: πρόπυλον
-    meaning: "monumental gateway"
-    local: /home/toxic/pens/olympus/products/propylon
-    repo: https://github.com/toxicwind/propylon
-  opsis:
-    root: ὄψις
-    meaning: "sight / appearance"
-    local: /home/toxic/pens/olympus/products/opsis
-    repo: https://github.com/toxicwind/opsis
-  didymos:
-    root: δίδυμος
-    meaning: "twin"
-    local: /home/toxic/pens/olympus/products/didymos
-    repo: https://github.com/toxicwind/didymos
   chronos-forge:
-    root: χρόνος
-    meaning: "time"
+    root: [toxicwind/chronos-forge](https://github.com/toxicwind/chronos-forge)
+    meaning: "—"
     local: /home/toxic/pens/olympus/products/chronos-forge
     repo: https://github.com/toxicwind/chronos-forge
+  didymos:
+    root: [toxicwind/didymos](https://github.com/toxicwind/didymos)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/didymos
+    repo: https://github.com/toxicwind/didymos
+  ergane:
+    root: [toxicwind/ergane](https://github.com/toxicwind/ergane)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/ergane
+    repo: https://github.com/toxicwind/ergane
+  forge:
+    root: [toxicwind/forge](https://github.com/toxicwind/forge)
+    meaning: "20128"
+    local: /home/toxic/pens/olympus/products/forge
+    repo: https://github.com/toxicwind/forge
+  haos:
+    root: [toxicwind/haos](https://github.com/toxicwind/haos)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/haos
+    repo: https://github.com/toxicwind/haos
+  hestia:
+    root: [toxicwind/hestia](https://github.com/toxicwind/hestia)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/hestia
+    repo: https://github.com/toxicwind/hestia
+  hodos:
+    root: [toxicwind/hodos](https://github.com/toxicwind/hodos)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/hodos
+    repo: https://github.com/toxicwind/hodos
+  kappa:
+    root: [toxicwind/kappa](https://github.com/toxicwind/kappa)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/kappa
+    repo: https://github.com/toxicwind/kappa
+  keryx:
+    root: [toxicwind/keryx](https://github.com/toxicwind/keryx)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/keryx
+    repo: https://github.com/toxicwind/keryx
+  kilo:
+    root: [toxicwind/kilo-code](https://github.com/toxicwind/kilo-code)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/kilo
+    repo: https://github.com/toxicwind/kilo-code
+  kleio:
+    root: [toxicwind/kleio](https://github.com/toxicwind/kleio)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/kleio
+    repo: https://github.com/toxicwind/kleio
+  kryptos:
+    root: [toxicwind/kryptos](https://github.com/toxicwind/kryptos)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/kryptos
+    repo: https://github.com/toxicwind/kryptos
+  lambda:
+    root: [toxicwind/kimi-code](https://github.com/toxicwind/kimi-code)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/lambda
+    repo: https://github.com/toxicwind/kimi-code
+  mneme:
+    root: [toxicwind/mneme](https://github.com/toxicwind/mneme)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/mneme
+    repo: https://github.com/toxicwind/mneme
+  morphe:
+    root: [toxicwind/morphe](https://github.com/toxicwind/morphe)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/morphe
+    repo: https://github.com/toxicwind/morphe
+  muse:
+    root: [toxicwind/muse-cli](https://github.com/toxicwind/muse-cli)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/muse
+    repo: https://github.com/toxicwind/muse-cli
+  opentui:
+    root: [toxicwind/opentui](https://github.com/toxicwind/opentui)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/opentui
+    repo: https://github.com/toxicwind/opentui
+  opsis:
+    root: [toxicwind/opsis](https://github.com/toxicwind/opsis)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/opsis
+    repo: https://github.com/toxicwind/opsis
+  pcap-capture:
+    root: [toxicwind/pcap-capture](https://github.com/toxicwind/pcap-capture)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/pcap-capture
+    repo: https://github.com/toxicwind/pcap-capture
+  pinax:
+    root: [toxicwind/pinax](https://github.com/toxicwind/pinax)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/pinax
+    repo: https://github.com/toxicwind/pinax
+  primitives:
+    root: [toxicwind/primitives](https://github.com/toxicwind/primitives)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/primitives
+    repo: https://github.com/toxicwind/primitives
+  propylon:
+    root: [toxicwind/propylon](https://github.com/toxicwind/propylon)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/propylon
+    repo: https://github.com/toxicwind/propylon
+  pylae:
+    root: [toxicwind/pylae](https://github.com/toxicwind/pylae)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/pylae
+    repo: https://github.com/toxicwind/pylae
+  rig-citizen:
+    root: [toxicwind/rig-citizen](https://github.com/toxicwind/rig-citizen)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/rig-citizen
+    repo: local-dir
+  sigma:
+    root: [toxicwind/sigma](https://github.com/toxicwind/sigma)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/sigma
+    repo: https://github.com/toxicwind/home/toxic/ranch-corrupt-salvage-20260930/sigma-full.bundle
+  skopos:
+    root: [toxicwind/skopos](https://github.com/toxicwind/skopos)
+    meaning: "25236"
+    local: /home/toxic/pens/olympus/products/skopos
+    repo: https://github.com/toxicwind/skopos
+  tarachos:
+    root: [toxicwind/tarachos](https://github.com/toxicwind/tarachos)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/tarachos
+    repo: https://github.com/toxicwind/tarachos
+  tau:
+    root: [toxicwind/tau](https://github.com/toxicwind/tau)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/tau
+    repo: https://github.com/toxicwind/tau
+  ts-blank-space:
+    root: [bloomberg/ts-blank-space](https://github.com/bloomberg/ts-blank-space)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/ts-blank-space
+    repo: https://github.com/bloomberg/ts-blank-space
+  typescript-go:
+    root: [microsoft/typescript-go](https://github.com/microsoft/typescript-go)
+    meaning: "—"
+    local: /home/toxic/pens/olympus/products/typescript-go
+    repo: https://github.com/microsoft/typescript-go

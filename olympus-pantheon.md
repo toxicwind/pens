@@ -11,7 +11,7 @@ Deep GitHub links + local paths for every Greek-coded product.
 | **muse** | μοῦσα | the muse (inspiration) | [toxicwind/muse-cli](https://github.com/toxicwind/muse-cli) | `pens/olympus/products/muse` |
 | **keryx** | κῆρυξ | herald | [toxicwind/keryx](https://github.com/toxicwind/keryx) | `pens/olympus/products/keryx` |
 | **rhodochrosite** | ὁδός | way / road | [toxicwind/rhodochrosite](https://github.com/toxicwind/rhodochrosite) | `pens/olympus/products/rhodochrosite` |
-| **kairos** | καιρός | the opportune moment | [toxicwind/kairos](https://github.com/toxicwind/kairos) | `pens/olympus/products/kairos` |
+| **kairos** | καιρός | the opportune moment | [toxicwind/kairos](https://github.com/toxicwind/kairos) | `pens/ergasterion/products/kairos` |
 | **kryptos** | κρυπτός | hidden | [toxicwind/kryptos](https://github.com/toxicwind/kryptos) | `pens/olympus/products/kryptos` |
 | **agele** | ἀγέλη | herd (of cattle) | [toxicwind/agele](https://github.com/toxicwind/agele) | `pens/olympus/products/agele` |
 | **pinax** | πίναξ | tablet / catalog | [toxicwind/pinax](https://github.com/toxicwind/pinax) | `pens/olympus/products/pinax` |
