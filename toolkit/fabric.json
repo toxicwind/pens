@@ -1,5 +1,5 @@
 {
-  "minted_at": "2026-11-03T19:08:03.568Z",
+  "minted_at": "2026-11-04T07:42:07.887Z",
   "pens": [
     {
       "pen": "agentic-moment",
@@ -16,7 +16,7 @@
           "name": "audit",
           "aliases": [],
           "head": "62ee6ee",
-          "dirty": 3
+          "dirty": 4
         },
         {
           "name": "log-helper",
@@ -59,6 +59,9 @@
       "pen": "barn",
       "products": [
         {
+          "name": "agentic-toolkit"
+        },
+        {
           "name": "archguard",
           "aliases": [],
           "head": "0bf1cec",
@@ -67,7 +70,7 @@
         {
           "name": "blackbird",
           "head": "61b7262",
-          "dirty": 31
+          "dirty": 32
         },
         {
           "name": "bun-control-mcp",
@@ -112,6 +115,11 @@
           "dirty": 1
         },
         {
+          "name": "freeinference-coordinator",
+          "head": "408abe2",
+          "dirty": 0
+        },
+        {
           "name": "gatehouse",
           "aliases": []
         },
@@ -130,6 +138,14 @@
           "aliases": []
         },
         {
+          "name": "gitleaks",
+          "head": "728b3de",
+          "dirty": 0
+        },
+        {
+          "name": "latency-fallback"
+        },
+        {
           "name": "lookout",
           "aliases": []
         },
@@ -137,6 +153,9 @@
           "name": "loom",
           "head": "37575043a",
           "dirty": 0
+        },
+        {
+          "name": "model-stats"
         },
         {
           "name": "nativelink",
@@ -151,6 +170,9 @@
           "dirty": 0
         },
         {
+          "name": "polyglot-bun-audit"
+        },
+        {
           "name": "rosec",
           "aliases": []
         },
@@ -161,8 +183,8 @@
         {
           "name": "thresher",
           "aliases": [],
-          "head": "f019deae",
-          "dirty": 0
+          "head": "75e24603",
+          "dirty": 10
         },
         {
           "name": "weave",
@@ -190,6 +212,30 @@
       "products": [
         {
           "name": "spinel"
+        }
+      ]
+    },
+    {
+      "pen": "codeflux",
+      "products": [
+        {
+          "name": "code-racer",
+          "aliases": []
+        },
+        {
+          "name": "codeflux-patchling",
+          "aliases": [
+            "fluxling",
+            "gptdiff"
+          ],
+          "head": "2b2c75e",
+          "dirty": 1
+        },
+        {
+          "name": "codeflux-rig",
+          "aliases": [],
+          "head": "01508ea",
+          "dirty": 0
         }
       ]
     },
@@ -338,17 +384,6 @@
           "aliases": []
         },
         {
-          "name": "codeflux-patchling",
-          "aliases": [],
-          "head": "d13697e",
-          "dirty": 1
-        },
-        {
-          "name": "codeflux-rig",
-          "head": "01508ea",
-          "dirty": 0
-        },
-        {
           "name": "pens-fleet-site",
           "head": "d151532",
           "dirty": 0
@@ -376,12 +411,12 @@
           "name": "azurite",
           "aliases": [],
           "head": "55b4e17",
-          "dirty": 46
+          "dirty": 59
         },
         {
           "name": "bge-oracle",
           "head": "fc78b15",
-          "dirty": 2
+          "dirty": 3
         },
         {
           "name": "bornite",
@@ -393,7 +428,7 @@
           "name": "chalcopyrite",
           "aliases": [],
           "head": "b63fd10",
-          "dirty": 0
+          "dirty": 2
         },
         {
           "name": "cleavage",
@@ -454,7 +489,16 @@
           "dirty": 1
         },
         {
+          "name": "multiformat-lsp",
+          "head": "2864b41",
+          "dirty": 0
+        },
+        {
           "name": "onyx",
+          "aliases": [
+            "cookie-vault",
+            "cf-borrow"
+          ],
           "head": "d177c68",
           "dirty": 0
         },
@@ -470,6 +514,9 @@
             "lapidary"
           ],
           "aliasOf": "lapidary"
+        },
+        {
+          "name": "pcap-capture"
         },
         {
           "name": "pens-completions",
@@ -508,7 +555,7 @@
           "name": "rhodochrosite",
           "aliases": [],
           "head": "ac5a14b",
-          "dirty": 0
+          "dirty": 8
         },
         {
           "name": "scintillator",
@@ -529,7 +576,7 @@
           "name": "trio",
           "aliases": [],
           "head": "f1c0794",
-          "dirty": 0
+          "dirty": 2
         },
         {
           "name": "triphylite",
@@ -554,6 +601,9 @@
           "name": "kennel",
           "head": "e9a9f0a",
           "dirty": 0
+        },
+        {
+          "name": "pens-ui"
         },
         {
           "name": "waterbowl",
@@ -674,14 +724,14 @@
         {
           "name": "kairos",
           "aliases": [],
-          "head": "fd479f6",
+          "head": "7cc9d8b",
           "dirty": 0
         },
         {
           "name": "kappa",
           "aliases": [],
-          "head": "a865b57",
-          "dirty": 0
+          "head": "8cb2f9b",
+          "dirty": 4
         },
         {
           "name": "keryx",
@@ -704,8 +754,8 @@
         {
           "name": "kryptos",
           "aliases": [],
-          "head": "ec8e7d8",
-          "dirty": 0
+          "head": "c22870a",
+          "dirty": 1
         },
         {
           "name": "lambda",
@@ -742,6 +792,9 @@
           "aliases": [],
           "head": "2f72bf1",
           "dirty": 0
+        },
+        {
+          "name": "pcap-capture"
         },
         {
           "name": "pinax",
@@ -789,7 +842,7 @@
           "name": "tau",
           "aliases": [],
           "head": "9e8fcfc7d6",
-          "dirty": 264
+          "dirty": 267
         },
         {
           "name": "ts-blank-space",
@@ -1070,7 +1123,7 @@
         {
           "name": "ferret-den",
           "aliases": [],
-          "head": "479dfff",
+          "head": "218407b",
           "dirty": 0
         },
         {
@@ -1133,13 +1186,13 @@
           "name": "gibber-mcp",
           "aliases": [],
           "head": "dc4eb708f",
-          "dirty": 1
+          "dirty": 2
         },
         {
           "name": "github-search",
           "aliases": [],
           "head": "12f68ef",
-          "dirty": 0
+          "dirty": 1
         },
         {
           "name": "gito",
@@ -1400,12 +1453,12 @@
           "name": "nuvio",
           "aliases": [],
           "head": "ada7d3b",
-          "dirty": 0
+          "dirty": 5
         },
         {
           "name": "nuvio-default",
           "head": "f51f60b",
-          "dirty": 0
+          "dirty": 3
         },
         {
           "name": "nuviotv-bun",
@@ -1494,7 +1547,7 @@
         {
           "name": "ops",
           "aliases": [],
-          "head": "66cee92",
+          "head": "3b003f6",
           "dirty": 0
         },
         {
@@ -1647,7 +1700,7 @@
           "name": "rig",
           "aliases": [],
           "head": "84d1063",
-          "dirty": 0
+          "dirty": 1
         },
         {
           "name": "ring",
