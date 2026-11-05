@@ -1612,8 +1612,8 @@
       "signalTotal": 0
     },
     {
-      "name": "pinax",
-      "upstream": "https://github.com/toxicwind/pinax",
+      "name": "mimetite",
+      "upstream": "https://github.com/toxicwind/mimetite",
       "upstreamSource": ".gitmodules",
       "remoteOrigin": null,
       "hasGit": false,

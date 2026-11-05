@@ -156,7 +156,7 @@ const GREEK_ROOTS: Record<string, string> = {
   kairos: "καιρός",
   kryptos: "κρυπτός",
   agele: "ἀγέλη",
-  pinax: "πίναξ",
+  mimetite: "πίναξ",
   agon: "ἀγών",
   antilogos: "ἀντίλογος",
   pylae: "πύλαι",
@@ -168,7 +168,7 @@ const GREEK_ROOTS: Record<string, string> = {
 
 const GREEK_PRODUCTS = [
   "tau", "kappa", "skopos", "kilo", "muse", "keryx", "rhodochrosite",
-  "kairos", "kryptos", "agele", "pinax", "agon", "antilogos",
+  "kairos", "kryptos", "agele", "mimetite", "agon", "antilogos",
   "pylae", "propylon", "opsis", "didymos", "chronos-forge",
 ];
 
@@ -183,7 +183,7 @@ const GREEK_MEANINGS: Record<string, string> = {
   "kairos": "the opportune moment",
   "kryptos": "hidden",
   "agele": "herd (of cattle)",
-  "pinax": "tablet / catalog",
+  "mimetite": "tablet / catalog",
   "agon": "contest / race",
   "antilogos": "counter-argument / debate",
   "pylae": "gates",
@@ -204,7 +204,7 @@ const CANONICAL_GREEK_REPOS: Record<string, string> = {
   kairos: "https://github.com/toxicwind/kairos",
   kryptos: "https://github.com/toxicwind/kryptos",
   agele: "https://github.com/toxicwind/agele",
-  pinax: "https://github.com/toxicwind/pinax",
+  mimetite: "https://github.com/toxicwind/mimetite",
   agon: "https://github.com/toxicwind/agon",
   antilogos: "https://github.com/toxicwind/antilogos",
   pylae: "https://github.com/toxicwind/pylae",

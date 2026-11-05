@@ -38,8 +38,8 @@ olympus:
     repo: https://github.com/toxicwind/olympus.git
   "opsis":
     repo: https://github.com/toxicwind/opsis.git
-  "pinax":
-    repo: https://github.com/toxicwind/pinax.git
+  "mimetite":
+    repo: https://github.com/toxicwind/mimetite.git
   "skopos":
     repo: https://github.com/toxicwind/skopos.git
   "tau-verify":

@@ -123,7 +123,7 @@ By source:
 | `pearlctl` | [github.com/toxicwind/pearlctl](https://github.com/toxicwind/pearlctl) | .gitmodules | — |
 | `phone-lane` | [github.com/toxicwind/phone-lane](https://github.com/toxicwind/phone-lane) | .gitmodules | — |
 | `phone-ocr-sweep` | [github.com/toxicwind/phone-ocr-sweep](https://github.com/toxicwind/phone-ocr-sweep) | .gitmodules | — |
-| `pinax` | [github.com/toxicwind/pinax](https://github.com/toxicwind/pinax) | .gitmodules | — |
+| `mimetite` | [github.com/toxicwind/mimetite](https://github.com/toxicwind/mimetite) | .gitmodules | — |
 | `pj-fast` | [github.com/toxicwind/pj-fast](https://github.com/toxicwind/pj-fast) | .gitmodules | — |
 | `plugin-ecosystem` | [github.com/toxicwind/plugin-ecosystem](https://github.com/toxicwind/plugin-ecosystem) | .gitmodules | — |
 | `ralph-dashboard` | [github.com/toxicwind/ralph-dashboard](https://github.com/toxicwind/ralph-dashboard) | .gitmodules | — |

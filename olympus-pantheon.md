@@ -14,7 +14,7 @@ Deep GitHub links + local paths for every Greek-coded product.
 | **kairos** | καιρός | the opportune moment | [toxicwind/kairos](https://github.com/toxicwind/kairos) | `pens/ergasterion/products/kairos` |
 | **kryptos** | κρυπτός | hidden | [toxicwind/kryptos](https://github.com/toxicwind/kryptos) | `pens/olympus/products/kryptos` |
 | **agele** | ἀγέλη | herd (of cattle) | [toxicwind/agele](https://github.com/toxicwind/agele) | `pens/olympus/products/agele` |
-| **pinax** | πίναξ | tablet / catalog | [toxicwind/pinax](https://github.com/toxicwind/pinax) | `pens/olympus/products/pinax` |
+| **mimetite** | πίναξ | tablet / catalog | [toxicwind/mimetite](https://github.com/toxicwind/mimetite) | `pens/olympus/products/mimetite` |
 | **agon** | ἀγών | contest / race | [toxicwind/agon](https://github.com/toxicwind/agon) | `pens/olympus/products/agon` |
 | **antilogos** | ἀντίλογος | counter-argument / debate | [toxicwind/antilogos](https://github.com/toxicwind/antilogos) | `pens/olympus/products/antilogos` |
 | **pylae** | πύλαι | gates | [toxicwind/pylae](https://github.com/toxicwind/pylae) | `pens/olympus/products/pylae` |

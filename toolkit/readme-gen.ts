@@ -66,7 +66,7 @@ const GREEK_REPOS: Record<string, string> = {
   kairos: "https://github.com/toxicwind/kairos",
   kryptos: "https://github.com/toxicwind/kryptos",
   agele: "https://github.com/toxicwind/agele",
-  pinax: "https://github.com/toxicwind/pinax",
+  mimetite: "https://github.com/toxicwind/mimetite",
   agon: "https://github.com/toxicwind/agon",
   antilogos: "https://github.com/toxicwind/antilogos",
   pylae: "https://github.com/toxicwind/pylae",

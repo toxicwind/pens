@@ -41,6 +41,14 @@ pens:
     local: /home/toxic/pens/fathom
     repo: https://github.com/toxicwind/fathom
     abyss: abyss
+  fleet:
+    local: /home/toxic/pens/fleet
+    repo: local-dir
+    abyss: vault
+  fleets:
+    local: /home/toxic/pens/fleets
+    repo: local-dir
+    abyss: vault
   forge:
     local: /home/toxic/pens/forge
     repo: local-dir
@@ -101,6 +109,10 @@ pens:
     local: /home/toxic/pens/wip
     repo: local-dir
     abyss: vault
+  wtf:
+    local: /home/toxic/pens/wtf
+    repo: https://github.com/toxicwind/wtf
+    abyss: vault
 
 olympus_pantheon:
   tau:
@@ -153,11 +165,11 @@ olympus_pantheon:
     meaning: "herd (of cattle)"
     local: /home/toxic/pens/olympus/products/agele
     repo: https://github.com/toxicwind/agele
-  pinax:
+  mimetite:
     root: πίναξ
     meaning: "tablet / catalog"
-    local: /home/toxic/pens/olympus/products/pinax
-    repo: https://github.com/toxicwind/pinax
+    local: /home/toxic/pens/olympus/products/mimetite
+    repo: https://github.com/toxicwind/mimetite
   agon:
     root: ἀγών
     meaning: "contest / race"
