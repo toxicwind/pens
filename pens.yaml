@@ -10,7 +10,7 @@ pens:
     abyss: backchannel
   army:
     local: /home/toxic/pens/army
-    repo: local-dir
+    repo: https://github.com/toxicwind/army
     abyss: bunker
   barn:
     local: /home/toxic/pens/barn
@@ -18,11 +18,11 @@ pens:
     abyss: silo
   bench:
     local: /home/toxic/pens/bench
-    repo: local-dir
+    repo: https://github.com/toxicwind/bench
     abyss: vault
   codeflux:
     local: /home/toxic/pens/codeflux
-    repo: local-dir
+    repo: https://github.com/toxicwind/codeflux
     abyss: vault
   dedicated:
     local: /home/toxic/pens/dedicated
@@ -75,15 +75,15 @@ pens:
     abyss: vault
   mesh:
     local: /home/toxic/pens/mesh
-    repo: local-dir
+    repo: https://github.com/toxicwind/mesh
     abyss: vault
   mosaic:
     local: /home/toxic/pens/mosaic
-    repo: local-dir
+    repo: https://github.com/toxicwind/mosaic
     abyss: tesserae
   netrace:
     local: /home/toxic/pens/netrace
-    repo: local-dir
+    repo: https://github.com/toxicwind/netrace
     abyss: packet-hole
   nomenclator:
     local: /home/toxic/pens/nomenclator
