@@ -43,11 +43,15 @@ pens:
     abyss: abyss
   fleet:
     local: /home/toxic/pens/fleet
-    repo: local-dir
+    repo: https://github.com/toxicwind/fleet
     abyss: vault
   fleets:
     local: /home/toxic/pens/fleets
-    repo: local-dir
+    repo: https://github.com/toxicwind/fleet
+    abyss: vault
+  flux:
+    local: /home/toxic/pens/flux
+    repo: https://github.com/toxicwind/flux
     abyss: vault
   forge:
     local: /home/toxic/pens/forge
@@ -103,7 +107,7 @@ pens:
     abyss: none
   toolkit:
     local: /home/toxic/pens/toolkit
-    repo: local-dir
+    repo: https://github.com/toxicwind/toolkit
     abyss: vault
   wip:
     local: /home/toxic/pens/wip
