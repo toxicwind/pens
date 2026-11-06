@@ -101,6 +101,10 @@ pens:
     local: /home/toxic/pens/recon
     repo: https://github.com/toxicwind/recon
     abyss: blind
+  squawk:
+    local: /home/toxic/pens/squawk
+    repo: local-dir
+    abyss: vault
   tmp:
     local: /home/toxic/pens/tmp
     repo: local-dir
