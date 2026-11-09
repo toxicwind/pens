@@ -112,10 +112,10 @@
       "signalTotal": 0
     },
     {
-      "name": "ergasterion",
+      "name": "flux",
       "upstream": null,
       "upstreamSource": null,
-      "remoteOrigin": "https://github.com/toxicwind/ergasterion.git",
+      "remoteOrigin": "https://github.com/toxicwind/flux.git",
       "hasGit": true,
       "isSubmodule": false,
       "sizeBytes": 2289331464,

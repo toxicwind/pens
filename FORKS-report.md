@@ -15,7 +15,7 @@ By source:
 | `codeflux` | — | — | github.com/toxicwind/codeflux.git |
 | `dedicated` | — | — | — |
 | `docs` | — | — | — |
-| `ergasterion` | — | — | github.com/toxicwind/ergasterion.git |
+| `flux` | — | — | github.com/toxicwind/flux.git |
 | `estate` | — | — | github.com/toxicwind/estate.git |
 | `fathom` | — | — | github.com/toxicwind/fathom.git |
 | `fleet` | — | — | github.com/toxicwind/fleet.git |

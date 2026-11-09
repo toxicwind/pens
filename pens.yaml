@@ -28,9 +28,9 @@ pens:
     local: /home/toxic/pens/dedicated
     repo: local-dir
     abyss: vault
-  ergasterion:
-    local: /home/toxic/pens/ergasterion
-    repo: https://github.com/toxicwind/ergasterion
+  flux:
+    local: /home/toxic/pens/flux
+    repo: https://github.com/toxicwind/flux
     abyss: adytum
     aliases: ["egrestrion", "ergastrion", "ergasterium", "workshop"]
   estate:
@@ -153,15 +153,10 @@ olympus_pantheon:
     meaning: "herald"
     local: /home/toxic/pens/olympus/products/keryx
     repo: https://github.com/toxicwind/keryx
-  rhodochrosite:
-    root: ὁδός
-    meaning: "way / road"
-    local: /home/toxic/pens/olympus/products/rhodochrosite
-    repo: https://github.com/toxicwind/rhodochrosite
   kairos:
     root: καιρός
     meaning: "the opportune moment"
-    local: /home/toxic/pens/ergasterion/products/kairos
+    local: /home/toxic/pens/flux/products/kairos
     repo: https://github.com/toxicwind/kairos
   kryptos:
     root: κρυπτός

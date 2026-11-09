@@ -34,7 +34,7 @@ The **pens** organization — a pointer superproject that tracks the four planes
 
 | Plane | GitHub | Local Path | Role |
 | --- | --- | --- | --- |
-| [**estate**](https://github.com/toxicwind/estate) | [toxicwind/estate](https://github.com/toxicwind/estate) | `/home/toxic/estate` | Control plane & deploy plane |
+| [**estate**](https://github.com/toxicwind/estate) | [toxicwind/estate](https://github.com/toxicwind/estate) | `/home/toxic/pens/estate` | Control plane & deploy plane |
 | [**pens**](https://github.com/toxicwind/pens) | [toxicwind/pens](https://github.com/toxicwind/pens) | `/home/toxic/pens` | Pointer superproject + registry |
 | [**olympus**](https://github.com/toxicwind/olympus) | [toxicwind/olympus](https://github.com/toxicwind/olympus) | `/home/toxic/pens/olympus` | Greek-coded products registry |
 | [**ranch**](https://github.com/toxicwind/ranch) | [toxicwind/ranch](https://github.com/toxicwind/ranch) | `/home/toxic/pens/ranch` | Bounded-context peer repos |
@@ -49,7 +49,6 @@ The **pens** organization — a pointer superproject that tracks the four planes
 | **kilo** | χίλιοι | thousand | ⚡ `Bun` | [toxicwind/kilo](https://github.com/toxicwind/kilo) | `olympus/products/kilo` |
 | **muse** | μοῦσα | the muse (inspiration) | 🐍 `Python` | [toxicwind/muse-cli](https://github.com/toxicwind/muse-cli) | `olympus/products/muse` |
 | **keryx** | κῆρυξ | herald | 📖 `Docs/Data` | [toxicwind/keryx](https://github.com/toxicwind/keryx) | `olympus/products/keryx` |
-| **rhodochrosite** | ὁδός | way / road | `—` | [toxicwind/rhodochrosite](https://github.com/toxicwind/rhodochrosite) | `olympus/products/rhodochrosite` |
 | **kairos** | καιρός | the opportune moment | `—` | [toxicwind/kairos](https://github.com/toxicwind/kairos) | `olympus/products/kairos` |
 | **kryptos** | κρυπτός | hidden | ⚡ `Bun` | [toxicwind/kryptos](https://github.com/toxicwind/kryptos) | `olympus/products/kryptos` |
 | **agele** | ἀγέλη | herd (of cattle) | `—` | [toxicwind/agele](https://github.com/toxicwind/agele) | `olympus/products/agele` |
