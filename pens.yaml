@@ -24,18 +24,13 @@ pens:
     local: /home/toxic/pens/codeflux
     repo: https://github.com/toxicwind/codeflux
     abyss: vault
+  control-plane:
+    local: /home/toxic/pens/control-plane
+    repo: local-dir
+    abyss: vault
   dedicated:
     local: /home/toxic/pens/dedicated
     repo: local-dir
-    abyss: vault
-  flux:
-    local: /home/toxic/pens/flux
-    repo: https://github.com/toxicwind/flux
-    abyss: adytum
-    aliases: ["egrestrion", "ergastrion", "ergasterium", "workshop"]
-  estate:
-    local: /home/toxic/pens/estate
-    repo: https://github.com/toxicwind/estate
     abyss: vault
   fathom:
     local: /home/toxic/pens/fathom
@@ -69,6 +64,10 @@ pens:
     local: /home/toxic/pens/hatch-kite-cli
     repo: https://github.com/toxicwind/kite-cli
     abyss: nest
+  hermes:
+    local: /home/toxic/pens/hermes
+    repo: local-dir
+    abyss: vault
   kelpie:
     local: /home/toxic/pens/kelpie
     repo: https://github.com/toxicwind/kelpie
